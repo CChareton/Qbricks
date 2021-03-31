@@ -1,2 +1,2 @@
 # Qbricks
-To be released soon
+Download Qbricks at https://sites.google.com/site/christophechareton/
