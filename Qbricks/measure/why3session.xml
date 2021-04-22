@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="CVC3" version="2.4.1" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="1" name="Z3" version="4.4.1" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="2" name="CVC4" version="1.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="3" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="4" name="Z3" version="4.4.1" alternative="noBV" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="5" name="Z3" version="4.4.1" timelimit="5" steplimit="0" memlimit="1000"/>
+<file>
+<path name=".."/>
+<path name="measure.mlw"/>
+<theory name="Measure">
+ <goal name="VC discard" expl="VC for discard" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC discard.0" expl="postcondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.31" steps="167"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_first_bits_but_one" expl="VC for proba_measure_first_bits_but_one">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_first_bits_but_one.0" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.26" steps="169"/></proof>
+  </goal>
+  <goal name="VC proba_measure_first_bits_but_one.1" expl="precondition">
+  <transf name="split_vc" >
+   <goal name="VC proba_measure_first_bits_but_one.1.0" expl="precondition">
+   <proof prover="0"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2"><result status="timeout" time="5.00"/></proof>
+   <proof prover="3"><result status="timeout" time="5.00"/></proof>
+   </goal>
+   <goal name="VC proba_measure_first_bits_but_one.1.1" expl="precondition" proved="true">
+   <proof prover="3"><result status="valid" time="0.25" steps="169"/></proof>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="VC proba_measure_first_bits_but_one.2" expl="precondition" proved="true">
+  <transf name="split_vc" proved="true" >
+   <goal name="VC proba_measure_first_bits_but_one.2.0" expl="precondition" proved="true">
+   <proof prover="3"><result status="valid" time="0.24" steps="172"/></proof>
+   </goal>
+   <goal name="VC proba_measure_first_bits_but_one.2.1" expl="precondition" proved="true">
+   <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   <proof prover="3"><result status="valid" time="0.26" steps="172"/></proof>
+   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="VC proba_measure_first_bits_but_one.3" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+  <goal name="VC proba_measure_first_bits_but_one.3" expl="postcondition">
+  <proof prover="0"><undone/></proof>
+  <proof prover="1"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><undone/></proof>
+  <proof prover="3"><undone/></proof>
+  <proof prover="4"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure" expl="VC for proba_measure" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC proba_measure.0" expl="postcondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.28" steps="171"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_to_first_bits" expl="VC for proba_measure_to_first_bits">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_to_first_bits.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_sat_p" expl="VC for proba_measure_sat_p" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC proba_measure_sat_p.0" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.24" steps="167"/></proof>
+  </goal>
+  <goal name="VC proba_measure_sat_p.1" expl="precondition" proved="true">
+  <transf name="split_vc" proved="true" >
+   <goal name="VC proba_measure_sat_p.1.0" expl="precondition" proved="true">
+   <proof prover="3"><result status="valid" time="0.25" steps="167"/></proof>
+   </goal>
+   <goal name="VC proba_measure_sat_p.1.1" expl="precondition" proved="true">
+   <proof prover="3"><result status="valid" time="0.24" steps="167"/></proof>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="VC proba_measure_sat_p.2" expl="postcondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1"><result status="valid" time="1.66"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_sum" expl="VC for proba_measure_from_sum" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC proba_measure_from_sum.0" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.45" steps="171"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum.1" expl="postcondition" proved="true">
+  <transf name="rewrite" proved="true" arg1="proba_measure_def">
+   <goal name="VC proba_measure_from_sum.1.0" expl="postcondition" proved="true">
+   <transf name="rewrite" proved="true" arg1="H2">
+    <goal name="VC proba_measure_from_sum.1.0.0" expl="postcondition" proved="true">
+    <transf name="rewrite" proved="true" arg1="H">
+     <goal name="VC proba_measure_from_sum.1.0.0.0" expl="postcondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+     </transf>
+     </goal>
+     <goal name="VC proba_measure_from_sum.1.0.0.1" expl="rewrite premises" proved="true">
+     <proof prover="3"><result status="valid" time="0.26" steps="171"/></proof>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+   <goal name="VC proba_measure_from_sum.1.1" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.27" steps="171"/></proof>
+   </goal>
+   <goal name="VC proba_measure_from_sum.1.2" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.26" steps="171"/></proof>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_sat_p_const" expl="VC for proba_measure_sat_p_const">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_sat_p_const.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_sum_partition" expl="VC for proba_measure_from_sum_partition">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_from_sum_partition.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_sum_partition_gen" expl="VC for proba_measure_from_sum_partition_gen">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_from_sum_partition_gen.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC ket_sum_sum_d_switch" expl="VC for ket_sum_sum_d_switch">
+ <transf name="split_vc" >
+  <goal name="VC ket_sum_sum_d_switch.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_sum_sum" expl="VC for proba_measure_from_sum_sum">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_from_sum_sum.0" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.48" steps="171"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.1" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.48" steps="174"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.2" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.53" steps="174"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.3" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.33" steps="173"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.4" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.36" steps="173"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.5" expl="precondition" proved="true">
+  <proof prover="2"><result status="valid" time="4.00"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.6" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.50" steps="176"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.7" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.48" steps="176"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_sum_sum.8" expl="postcondition">
+  <transf name="rewrite" arg1="proba_measure_def">
+   <goal name="VC proba_measure_from_sum_sum.8.0" expl="postcondition">
+   <transf name="rewrite" arg1="H9">
+    <goal name="VC proba_measure_from_sum_sum.8.0.0" expl="postcondition">
+    <transf name="compute_hyp_specified" arg1="in" arg2="H2">
+     <goal name="VC proba_measure_from_sum_sum.8.0.0.0" expl="postcondition">
+     <transf name="rewrite" arg1="H2">
+      <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0" expl="postcondition">
+      <transf name="compute_hyp_specified" arg1="in" arg2="H">
+       <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0" expl="postcondition">
+       <transf name="replace" arg1="(get
+    (ket_sum_l (n_bvs n)
+     (fun (b:bitvec) -&gt;
+       ket_sum_l (n_bvs n) (fun (a:bitvec) -&gt; ((f @ a) @ b) *.. bv_to_ket b)
+       n)
+     n)
+    l 0)" arg2="(get
+   (ket_sum_l (n_bvs n)
+    (fun (x1:bitvec) -&gt;
+      sum (n_bvs n) (fun (a:bitvec) -&gt; (f @ a) @ x1) *.. bv_to_ket x1)
+    n)
+   l 0)">
+        <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.0" expl="postcondition">
+        <transf name="rewrite" arg1="H">
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.0.0" expl="postcondition">
+         <transf name="compute_specified" proved="true" >
+         </transf>
+         </goal>
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.0.1" expl="rewrite premises">
+         <proof prover="0"><undone/></proof>
+         <proof prover="1"><result status="failure" time="0.00"/></proof>
+         <proof prover="2"><undone/></proof>
+         <proof prover="3"><undone/></proof>
+         <proof prover="4"><result status="failure" time="0.00"/></proof>
+         <proof prover="5"><result status="failure" time="0.00"/></proof>
+         </goal>
+        </transf>
+        </goal>
+        <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1" expl="equality hypothesis">
+        <transf name="rewrite" arg1="ket_sum_l_value">
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0" expl="equality hypothesis">
+         <transf name="rewrite" arg1="ket_sum_l_value">
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0" expl="equality hypothesis">
+          <transf name="apply" arg1="sum_eq">
+           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0" expl="apply premises">
+           <transf name="split_vc" >
+            <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0" expl="apply premises">
+            <transf name="compute_specified" >
+             <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0" expl="apply premises">
+             <transf name="rewrite" arg1="ket_sum_l_value">
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.0" expl="apply premises">
+              <transf name="compute_specified" >
+               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.0.0" expl="apply premises">
+               <transf name="rewrite" arg1="scalar_values">
+                <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.0.0.0" expl="apply premises">
+                <transf name="rewrite" arg1="scalar_values">
+                 <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0" expl="apply premises">
+                 <transf name="rewrite" arg1="sum_scal_rev_right">
+                  <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0" expl="apply premises">
+                  <transf name="compute_specified" proved="true" >
+                  </transf>
+                  </goal>
+                 </transf>
+                 </goal>
+                </transf>
+                </goal>
+               </transf>
+               </goal>
+              </transf>
+              </goal>
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.1" expl="rewrite premises">
+              <proof prover="0"><undone/></proof>
+              <proof prover="1"><result status="failure" time="0.00"/></proof>
+              <proof prover="2"><undone/></proof>
+              <proof prover="3"><undone/></proof>
+              <proof prover="4"><result status="failure" time="0.00"/></proof>
+              <proof prover="5"><result status="failure" time="0.00"/></proof>
+              </goal>
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.2" expl="rewrite premises">
+              <proof prover="0"><undone/></proof>
+              <proof prover="1"><result status="failure" time="0.00"/></proof>
+              <proof prover="2"><undone/></proof>
+              <proof prover="3"><undone/></proof>
+              <proof prover="4"><result status="failure" time="0.00"/></proof>
+              <proof prover="5"><result status="failure" time="0.00"/></proof>
+              </goal>
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.3" expl="rewrite premises">
+              <proof prover="0"><undone/></proof>
+              <proof prover="1"><result status="failure" time="0.00"/></proof>
+              <proof prover="2"><undone/></proof>
+              <proof prover="3"><undone/></proof>
+              <proof prover="4"><result status="failure" time="0.00"/></proof>
+              <proof prover="5"><result status="failure" time="0.00"/></proof>
+              </goal>
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.4" expl="rewrite premises">
+              <transf name="split_vc" >
+               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.4.0" expl="rewrite premises">
+               <transf name="compute_specified" >
+                <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.4.0.0" expl="rewrite premises">
+                <proof prover="0"><undone/></proof>
+                <proof prover="1"><result status="failure" time="0.00"/></proof>
+                <proof prover="2"><undone/></proof>
+                <proof prover="3"><undone/></proof>
+                <proof prover="4"><result status="failure" time="0.00"/></proof>
+                <proof prover="5"><result status="failure" time="0.00"/></proof>
+                </goal>
+               </transf>
+               </goal>
+              </transf>
+              </goal>
+             </transf>
+             </goal>
+            </transf>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.1" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.2" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.3" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.4" expl="rewrite premises">
+          <transf name="split_vc" >
+           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.4.0" expl="rewrite premises">
+           <transf name="compute_specified" >
+            <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.4.0.0" expl="rewrite premises">
+            <proof prover="0"><undone/></proof>
+            <proof prover="1"><result status="failure" time="0.00"/></proof>
+            <proof prover="2"><undone/></proof>
+            <proof prover="3"><undone/></proof>
+            <proof prover="4"><result status="failure" time="0.00"/></proof>
+            <proof prover="5"><result status="failure" time="0.00"/></proof>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+         </transf>
+         </goal>
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.1" expl="rewrite premises">
+         <proof prover="0"><undone/></proof>
+         <proof prover="1"><result status="failure" time="0.00"/></proof>
+         <proof prover="2"><undone/></proof>
+         <proof prover="3"><undone/></proof>
+         <proof prover="4"><result status="failure" time="0.00"/></proof>
+         <proof prover="5"><result status="failure" time="0.00"/></proof>
+         </goal>
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.2" expl="rewrite premises">
+         <proof prover="0"><undone/></proof>
+         <proof prover="1"><result status="failure" time="0.00"/></proof>
+         <proof prover="2"><undone/></proof>
+         <proof prover="3"><undone/></proof>
+         <proof prover="4"><result status="failure" time="0.00"/></proof>
+         <proof prover="5"><result status="failure" time="0.00"/></proof>
+         </goal>
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.3" expl="rewrite premises">
+         <proof prover="0"><undone/></proof>
+         <proof prover="1"><result status="failure" time="0.00"/></proof>
+         <proof prover="2"><undone/></proof>
+         <proof prover="3"><undone/></proof>
+         <proof prover="4"><result status="failure" time="0.00"/></proof>
+         <proof prover="5"><result status="failure" time="0.00"/></proof>
+         </goal>
+         <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4" expl="rewrite premises">
+         <transf name="split_vc" >
+          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0" expl="rewrite premises">
+          <transf name="compute_specified" >
+           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0" expl="rewrite premises">
+           <transf name="apply" arg1="ket_sum_ket_l">
+            <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.0" expl="apply premises">
+            <proof prover="0"><undone/></proof>
+            <proof prover="1"><result status="failure" time="0.00"/></proof>
+            <proof prover="2"><undone/></proof>
+            <proof prover="3"><undone/></proof>
+            <proof prover="4"><result status="failure" time="0.00"/></proof>
+            <proof prover="5"><result status="failure" time="0.00"/></proof>
+            </goal>
+            <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.1" expl="apply premises">
+            <transf name="split_vc" >
+             <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.1.0" expl="apply premises">
+             <transf name="compute_specified" >
+              <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.1.0.0" expl="apply premises">
+              <proof prover="0"><undone/></proof>
+              <proof prover="1"><result status="failure" time="0.00"/></proof>
+              <proof prover="2"><undone/></proof>
+              <proof prover="3"><undone/></proof>
+              <proof prover="4"><result status="failure" time="0.00"/></proof>
+              <proof prover="5"><result status="failure" time="0.00"/></proof>
+              </goal>
+             </transf>
+             </goal>
+            </transf>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+         </transf>
+         </goal>
+        </transf>
+        </goal>
+       </transf>
+       </goal>
+      </transf>
+      </goal>
+     </transf>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+   <goal name="VC proba_measure_from_sum_sum.8.1" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.27" steps="175"/></proof>
+   </goal>
+   <goal name="VC proba_measure_from_sum_sum.8.2" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.26" steps="175"/></proof>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_scal_sum_sum" expl="VC for proba_measure_from_scal_sum_sum">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_from_scal_sum_sum.0" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.47" steps="175"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.1" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.50" steps="178"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.2" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.48" steps="178"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.3" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.26" steps="177"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.4" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.24" steps="177"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.5" expl="precondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.6" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.44" steps="180"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.7" expl="precondition" proved="true">
+  <proof prover="3"><result status="valid" time="0.45" steps="180"/></proof>
+  </goal>
+  <goal name="VC proba_measure_from_scal_sum_sum.8" expl="postcondition">
+  <transf name="rewrite" arg1="proba_measure_def">
+   <goal name="VC proba_measure_from_scal_sum_sum.8.0" expl="postcondition">
+   <transf name="rewrite" arg1="H10">
+    <goal name="VC proba_measure_from_scal_sum_sum.8.0.0" expl="postcondition">
+    <transf name="compute_hyp_specified" arg1="in" arg2="H2">
+     <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0" expl="postcondition">
+     <transf name="rewrite" arg1="H2">
+      <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0" expl="postcondition">
+      <transf name="compute_hyp_specified" arg1="in" arg2="H">
+       <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0" expl="postcondition">
+       <transf name="rewrite" arg1="scalar_values">
+        <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0" expl="postcondition">
+        <transf name="replace" arg1="(get
+       (ket_sum_l (n_bvs n)
+        (fun (b:bitvec) -&gt;
+          ket_sum_l (n_bvs n)
+          (fun (a:bitvec) -&gt; ((f @ a) @ b) *.. bv_to_ket b) n)
+        n)
+       i 0)" arg2="(get
+   (ket_sum_l (n_bvs n)
+    (fun (x1:bitvec) -&gt;
+      sum (n_bvs n) (fun (a:bitvec) -&gt; (f @ a) @ x1) *.. bv_to_ket x1)
+    n)
+   i 0)">
+         <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0" expl="postcondition">
+         <transf name="rewrite" arg1="H">
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0" expl="postcondition">
+          <transf name="rewrite" arg1="mult_modulus">
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0" expl="postcondition">
+           <transf name="rewrite" arg1="mult_cpower_rev">
+            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0" expl="postcondition">
+            <transf name="replace" arg1="(cpower (modulus s) 2)" arg2="s2">
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0" expl="postcondition">
+             <transf name="apply" arg1="mult_eq_t">
+              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.0" expl="apply premises">
+              <proof prover="0"><undone/></proof>
+              <proof prover="1"><result status="failure" time="0.00"/></proof>
+              <proof prover="2"><undone/></proof>
+              <proof prover="3"><undone/></proof>
+              <proof prover="4"><result status="failure" time="0.00"/></proof>
+              <proof prover="5"><result status="failure" time="0.00"/></proof>
+              </goal>
+              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.1" expl="apply premises">
+              <transf name="apply" arg1="cpower_eq">
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.1.0" expl="apply premises">
+               <transf name="compute_specified" proved="true" >
+               </transf>
+               </goal>
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.1.1" expl="apply premises">
+               <proof prover="0"><undone/></proof>
+               <proof prover="1"><result status="failure" time="0.00"/></proof>
+               <proof prover="2"><undone/></proof>
+               <proof prover="3"><undone/></proof>
+               <proof prover="4"><result status="failure" time="0.00"/></proof>
+               <proof prover="5"><result status="failure" time="0.00"/></proof>
+               </goal>
+              </transf>
+              </goal>
+             </transf>
+             </goal>
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.1" expl="equality hypothesis">
+             <proof prover="0"><undone/></proof>
+             <proof prover="1"><result status="failure" time="0.00"/></proof>
+             <proof prover="2"><undone/></proof>
+             <proof prover="3"><undone/></proof>
+             <proof prover="4"><result status="failure" time="0.00"/></proof>
+             <proof prover="5"><result status="failure" time="0.00"/></proof>
+             </goal>
+            </transf>
+            </goal>
+            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.1" expl="rewrite premises">
+            <proof prover="0"><undone/></proof>
+            <proof prover="1"><result status="failure" time="0.00"/></proof>
+            <proof prover="2"><undone/></proof>
+            <proof prover="3"><undone/></proof>
+            <proof prover="4"><result status="failure" time="0.00"/></proof>
+            <proof prover="5"><result status="failure" time="0.00"/></proof>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.1" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+         </transf>
+         </goal>
+         <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1" expl="equality hypothesis">
+         <transf name="rewrite" arg1="ket_sum_l_value">
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0" expl="equality hypothesis">
+          <transf name="rewrite" arg1="ket_sum_l_value">
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0" expl="equality hypothesis">
+           <transf name="apply" arg1="sum_eq">
+            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0" expl="apply premises">
+            <transf name="split_vc" >
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0" expl="apply premises">
+             <transf name="compute_specified" >
+              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0" expl="apply premises">
+              <transf name="rewrite" arg1="ket_sum_l_value">
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.0" expl="apply premises">
+               <transf name="compute_specified" >
+                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.0.0" expl="apply premises">
+                <transf name="rewrite" arg1="scalar_values">
+                 <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0" expl="apply premises">
+                 <transf name="rewrite" arg1="scalar_values">
+                  <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0" expl="apply premises">
+                  <transf name="rewrite" arg1="sum_scal_rev_right">
+                   <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0" expl="apply premises">
+                   <transf name="compute_specified" proved="true" >
+                   </transf>
+                   </goal>
+                  </transf>
+                  </goal>
+                 </transf>
+                 </goal>
+                </transf>
+                </goal>
+               </transf>
+               </goal>
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.1" expl="rewrite premises">
+               <proof prover="0"><undone/></proof>
+               <proof prover="1"><result status="failure" time="0.00"/></proof>
+               <proof prover="2"><undone/></proof>
+               <proof prover="3"><undone/></proof>
+               <proof prover="4"><result status="failure" time="0.00"/></proof>
+               <proof prover="5"><result status="failure" time="0.00"/></proof>
+               </goal>
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.2" expl="rewrite premises">
+               <proof prover="0"><undone/></proof>
+               <proof prover="1"><result status="failure" time="0.00"/></proof>
+               <proof prover="2"><undone/></proof>
+               <proof prover="3"><undone/></proof>
+               <proof prover="4"><result status="failure" time="0.00"/></proof>
+               <proof prover="5"><result status="failure" time="0.00"/></proof>
+               </goal>
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.3" expl="rewrite premises">
+               <proof prover="0"><undone/></proof>
+               <proof prover="1"><result status="failure" time="0.00"/></proof>
+               <proof prover="2"><undone/></proof>
+               <proof prover="3"><undone/></proof>
+               <proof prover="4"><result status="failure" time="0.00"/></proof>
+               <proof prover="5"><result status="failure" time="0.00"/></proof>
+               </goal>
+               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.4" expl="rewrite premises">
+               <transf name="split_vc" >
+                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.4.0" expl="rewrite premises">
+                <transf name="compute_specified" >
+                 <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.4.0.0" expl="rewrite premises">
+                 <proof prover="0"><undone/></proof>
+                 <proof prover="1"><result status="failure" time="0.00"/></proof>
+                 <proof prover="2"><undone/></proof>
+                 <proof prover="3"><undone/></proof>
+                 <proof prover="4"><result status="failure" time="0.00"/></proof>
+                 <proof prover="5"><result status="failure" time="0.00"/></proof>
+                 </goal>
+                </transf>
+                </goal>
+               </transf>
+               </goal>
+              </transf>
+              </goal>
+             </transf>
+             </goal>
+            </transf>
+            </goal>
+           </transf>
+           </goal>
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.1" expl="rewrite premises">
+           <proof prover="0"><undone/></proof>
+           <proof prover="1"><result status="failure" time="0.00"/></proof>
+           <proof prover="2"><undone/></proof>
+           <proof prover="3"><undone/></proof>
+           <proof prover="4"><result status="failure" time="0.00"/></proof>
+           <proof prover="5"><result status="failure" time="0.00"/></proof>
+           </goal>
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.2" expl="rewrite premises">
+           <proof prover="0"><undone/></proof>
+           <proof prover="1"><result status="failure" time="0.00"/></proof>
+           <proof prover="2"><undone/></proof>
+           <proof prover="3"><undone/></proof>
+           <proof prover="4"><result status="failure" time="0.00"/></proof>
+           <proof prover="5"><result status="failure" time="0.00"/></proof>
+           </goal>
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.3" expl="rewrite premises">
+           <proof prover="0"><undone/></proof>
+           <proof prover="1"><result status="failure" time="0.00"/></proof>
+           <proof prover="2"><undone/></proof>
+           <proof prover="3"><undone/></proof>
+           <proof prover="4"><result status="failure" time="0.00"/></proof>
+           <proof prover="5"><result status="failure" time="0.00"/></proof>
+           </goal>
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.4" expl="rewrite premises">
+           <transf name="split_vc" >
+            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.4.0" expl="rewrite premises">
+            <transf name="compute_specified" >
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.4.0.0" expl="rewrite premises">
+             <proof prover="0"><undone/></proof>
+             <proof prover="1"><result status="failure" time="0.00"/></proof>
+             <proof prover="2"><undone/></proof>
+             <proof prover="3"><undone/></proof>
+             <proof prover="4"><result status="failure" time="0.00"/></proof>
+             <proof prover="5"><result status="failure" time="0.00"/></proof>
+             </goal>
+            </transf>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.1" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.2" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.3" expl="rewrite premises">
+          <proof prover="0"><undone/></proof>
+          <proof prover="1"><result status="failure" time="0.00"/></proof>
+          <proof prover="2"><undone/></proof>
+          <proof prover="3"><undone/></proof>
+          <proof prover="4"><result status="failure" time="0.00"/></proof>
+          <proof prover="5"><result status="failure" time="0.00"/></proof>
+          </goal>
+          <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4" expl="rewrite premises">
+          <transf name="split_vc" >
+           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0" expl="rewrite premises">
+           <transf name="compute_specified" >
+            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0.0" expl="rewrite premises">
+            <transf name="apply" arg1="ket_sum_ket_l">
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0.0.0" expl="apply premises">
+             <proof prover="0"><undone/></proof>
+             <proof prover="1"><result status="failure" time="0.00"/></proof>
+             <proof prover="2"><undone/></proof>
+             <proof prover="3"><undone/></proof>
+             <proof prover="4"><result status="failure" time="0.00"/></proof>
+             <proof prover="5"><result status="failure" time="0.00"/></proof>
+             </goal>
+             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0.0.1" expl="apply premises">
+             <proof prover="0"><undone/></proof>
+             <proof prover="1"><result status="failure" time="0.00"/></proof>
+             <proof prover="2"><undone/></proof>
+             <proof prover="3"><undone/></proof>
+             <proof prover="4"><result status="failure" time="0.00"/></proof>
+             <proof prover="5"><result status="failure" time="0.00"/></proof>
+             </goal>
+            </transf>
+            </goal>
+           </transf>
+           </goal>
+          </transf>
+          </goal>
+         </transf>
+         </goal>
+        </transf>
+        </goal>
+       </transf>
+       </goal>
+      </transf>
+      </goal>
+     </transf>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+   <goal name="VC proba_measure_from_scal_sum_sum.8.1" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.28" steps="179"/></proof>
+   </goal>
+   <goal name="VC proba_measure_from_scal_sum_sum.8.2" expl="rewrite premises" proved="true">
+   <proof prover="3"><result status="valid" time="0.28" steps="179"/></proof>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC proba_measure_from_scal_sum_sum_fun" expl="VC for proba_measure_from_scal_sum_sum_fun">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="unknown" time="0.58"/></proof>
+ <proof prover="5" obsolete="true"><result status="unknown" time="0.58"/></proof>
+ </goal>
+ <goal name="VC proba_measure_from_scal_ind_sum" expl="VC for proba_measure_from_scal_ind_sum">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="unknown" time="0.56"/></proof>
+ <proof prover="5" obsolete="true"><result status="unknown" time="0.56"/></proof>
+ </goal>
+ <goal name="VC top_proba_measure_from_scal_ind_sum" expl="VC for top_proba_measure_from_scal_ind_sum">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="unknown" time="0.58"/></proof>
+ <proof prover="5" obsolete="true"><result status="unknown" time="0.58"/></proof>
+ </goal>
+ <goal name="VC proba_measure_from_scal_sum_sum_gen" expl="VC for proba_measure_from_scal_sum_sum_gen">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="unknown" time="0.55"/></proof>
+ <proof prover="5" obsolete="true"><result status="unknown" time="0.62"/></proof>
+ </goal>
+ <goal name="VC proba_measure_cond" expl="VC for proba_measure_cond">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ </goal>
+ <goal name="VC proba_measure_set_of_ind" expl="VC for proba_measure_set_of_ind">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ </goal>
+ <goal name="VC proba_measure_set_of_ind_conds" expl="VC for proba_measure_set_of_ind_conds">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ </goal>
+ <goal name="VC proba_measure_first_bits" expl="VC for proba_measure_first_bits">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_first_bits.0" expl="postcondition">
+  <proof prover="0"><undone/></proof>
+  <proof prover="1"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><undone/></proof>
+  <proof prover="3"><undone/></proof>
+  <proof prover="4"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>
