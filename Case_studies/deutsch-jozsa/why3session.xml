@@ -33,8 +33,7 @@
   <proof prover="3"><result status="valid" time="0.52" steps="366"/></proof>
   </goal>
   <goal name="VC dj_pre.7" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.25"/></proof>
-  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="0"><result status="valid" time="1.56"/></proof>
   </goal>
   <goal name="VC dj_pre.8" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.54" steps="364"/></proof>
@@ -70,7 +69,7 @@
   <proof prover="3"><result status="valid" time="0.58" steps="398"/></proof>
   </goal>
   <goal name="VC dj_pre.19" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.74" steps="396"/></proof>
+  <proof prover="3"><result status="valid" time="0.53" steps="396"/></proof>
   </goal>
   <goal name="VC dj_pre.20" expl="precondition" proved="true">
   <transf name="compute_specified" proved="true" >
@@ -98,9 +97,7 @@
    </transf>
    </goal>
    <goal name="VC dj_pre.21.1" expl="equality hypothesis" proved="true">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
    <proof prover="2"><result status="valid" time="1.64"/></proof>
-   <proof prover="3"><result status="timeout" time="5.00"/></proof>
    </goal>
   </transf>
   </goal>
@@ -130,7 +127,7 @@
        <goal name="VC dj_pre.22.0.0.0.0.3" expl="apply premises" proved="true">
        <transf name="compute_specified" proved="true" >
         <goal name="VC dj_pre.22.0.0.0.0.3.0" expl="apply premises" proved="true">
-        <proof prover="3"><result status="valid" time="4.31" steps="417"/></proof>
+        <proof prover="3"><result status="valid" time="5.09" steps="417"/></proof>
         </goal>
        </transf>
        </goal>
@@ -182,19 +179,17 @@
   <proof prover="3"><result status="valid" time="0.56" steps="408"/></proof>
   </goal>
   <goal name="VC dj_pre.28" expl="postcondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.58" steps="418"/></proof>
+  <proof prover="3"><result status="valid" time="0.77" steps="418"/></proof>
   </goal>
   <goal name="VC dj_pre.29" expl="postcondition" proved="true">
   <transf name="rewrite" proved="true" arg1="H6">
    <goal name="VC dj_pre.29.0" expl="postcondition" proved="true">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="2"><result status="valid" time="1.67"/></proof>
-   <proof prover="3"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2"><result status="valid" time="1.96"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC dj_pre.30" expl="postcondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.58" steps="421"/></proof>
+  <proof prover="3"><result status="valid" time="0.79" steps="421"/></proof>
   </goal>
   <goal name="VC dj_pre.31" expl="postcondition" proved="true">
   <transf name="eliminate_definition" proved="true" >
@@ -223,7 +218,7 @@
   <proof prover="3"><result status="valid" time="0.50" steps="340"/></proof>
   </goal>
   <goal name="VC dj_output.2" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="2.77" steps="343"/></proof>
+  <proof prover="3"><result status="valid" time="3.50" steps="343"/></proof>
   </goal>
   <goal name="VC dj_output.3" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.50" steps="342"/></proof>
@@ -288,7 +283,7 @@
          <goal name="VC dj_output.12.0.0.0.0.0.0.2" expl="rewrite premises" proved="true">
          <transf name="compute_specified" proved="true" >
           <goal name="VC dj_output.12.0.0.0.0.0.0.2.0" expl="rewrite premises" proved="true">
-          <proof prover="3"><result status="valid" time="3.77" steps="370"/></proof>
+          <proof prover="3"><result status="valid" time="4.51" steps="370"/></proof>
           </goal>
          </transf>
          </goal>
@@ -319,10 +314,10 @@
        <goal name="VC dj_output.13.0.0.0.0.0" expl="postcondition" proved="true">
        <transf name="apply" proved="true" arg1="constant_sum">
         <goal name="VC dj_output.13.0.0.0.0.0.0" expl="apply premises" proved="true">
-        <proof prover="3"><result status="valid" time="0.82" steps="322"/></proof>
+        <proof prover="3"><result status="valid" time="1.17" steps="322"/></proof>
         </goal>
         <goal name="VC dj_output.13.0.0.0.0.0.1" expl="apply premises" proved="true">
-        <proof prover="3"><result status="valid" time="0.65" steps="322"/></proof>
+        <proof prover="3"><result status="valid" time="1.19" steps="322"/></proof>
         </goal>
        </transf>
        </goal>
@@ -334,12 +329,9 @@
     </goal>
     <goal name="VC dj_output.13.0.1" expl="rewrite premises" proved="true">
     <proof prover="0"><result status="valid" time="8.49"/></proof>
-    <proof prover="3"><result status="timeout" time="5.00"/></proof>
     </goal>
     <goal name="VC dj_output.13.0.2" expl="rewrite premises" proved="true">
-    <proof prover="0"><result status="timeout" time="5.00"/></proof>
     <proof prover="2"><result status="valid" time="1.48"/></proof>
-    <proof prover="3"><result status="timeout" time="5.00"/></proof>
     </goal>
    </transf>
    </goal>
@@ -358,7 +350,7 @@
        <goal name="VC dj_output.14.0.0.0.0.0" expl="postcondition" proved="true">
        <transf name="apply" proved="true" arg1="bc_sum">
         <goal name="VC dj_output.14.0.0.0.0.0.0" expl="apply premises" proved="true">
-        <proof prover="3"><result status="valid" time="0.72" steps="322"/></proof>
+        <proof prover="3"><result status="valid" time="0.97" steps="322"/></proof>
         </goal>
         <goal name="VC dj_output.14.0.0.0.0.0.1" expl="apply premises" proved="true">
         <proof prover="3"><result status="valid" time="0.82" steps="322"/></proof>
@@ -375,14 +367,10 @@
     </transf>
     </goal>
     <goal name="VC dj_output.14.0.1" expl="rewrite premises" proved="true">
-    <proof prover="0"><result status="timeout" time="5.00"/></proof>
     <proof prover="2"><result status="valid" time="1.40"/></proof>
-    <proof prover="3"><result status="timeout" time="5.00"/></proof>
     </goal>
     <goal name="VC dj_output.14.0.2" expl="rewrite premises" proved="true">
-    <proof prover="0"><result status="timeout" time="5.00"/></proof>
     <proof prover="2"><result status="valid" time="1.42"/></proof>
-    <proof prover="3"><result status="timeout" time="5.00"/></proof>
     </goal>
    </transf>
    </goal>
@@ -396,7 +384,7 @@
   <proof prover="3"><result status="valid" time="0.60" steps="338"/></proof>
   </goal>
   <goal name="VC dj.1" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.53" steps="340"/></proof>
+  <proof prover="3"><result status="valid" time="0.76" steps="340"/></proof>
   </goal>
   <goal name="VC dj.2" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.52" steps="344"/></proof>
@@ -405,19 +393,19 @@
   <proof prover="3"><result status="valid" time="0.53" steps="346"/></proof>
   </goal>
   <goal name="VC dj.4" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.52" steps="358"/></proof>
+  <proof prover="3"><result status="valid" time="0.78" steps="358"/></proof>
   </goal>
   <goal name="VC dj.5" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.53" steps="362"/></proof>
   </goal>
   <goal name="VC dj.6" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.57" steps="370"/></proof>
+  <proof prover="3"><result status="valid" time="0.80" steps="370"/></proof>
   </goal>
   <goal name="VC dj.7" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.54" steps="378"/></proof>
   </goal>
   <goal name="VC dj.8" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.56" steps="388"/></proof>
+  <proof prover="3"><result status="valid" time="0.78" steps="388"/></proof>
   </goal>
   <goal name="VC dj.9" expl="precondition" proved="true">
   <transf name="apply" proved="true" arg1="ket_l_ket_sum_scalar">
@@ -450,7 +438,7 @@
          <proof prover="3"><result status="valid" time="0.61" steps="392"/></proof>
          </goal>
          <goal name="VC dj.11.0.0.0.0.0.0.1" expl="apply premises" proved="true">
-         <proof prover="3"><result status="valid" time="0.60" steps="392"/></proof>
+         <proof prover="3"><result status="valid" time="0.78" steps="392"/></proof>
          </goal>
          <goal name="VC dj.11.0.0.0.0.0.0.2" expl="apply premises" proved="true">
          <transf name="compute_specified" proved="true" >
@@ -480,7 +468,7 @@
              </transf>
              </goal>
              <goal name="VC dj.11.0.0.0.0.0.0.2.0.0.0.1" expl="rewrite premises" proved="true">
-             <proof prover="3"><result status="valid" time="0.57" steps="394"/></proof>
+             <proof prover="3"><result status="valid" time="0.77" steps="394"/></proof>
              </goal>
              <goal name="VC dj.11.0.0.0.0.0.0.2.0.0.0.2" expl="rewrite premises" proved="true">
              <proof prover="3"><result status="valid" time="4.26" steps="400"/></proof>
@@ -488,7 +476,7 @@
             </transf>
             </goal>
             <goal name="VC dj.11.0.0.0.0.0.0.2.0.0.1" expl="rewrite premises" proved="true">
-            <proof prover="3"><result status="valid" time="4.24" steps="400"/></proof>
+            <proof prover="3"><result status="valid" time="5.50" steps="400"/></proof>
             </goal>
            </transf>
            </goal>
@@ -522,7 +510,7 @@
        <goal name="VC dj.11.0.0.0.3.0" expl="rewrite premises" proved="true">
        <transf name="compute_specified" proved="true" >
         <goal name="VC dj.11.0.0.0.3.0.0" expl="rewrite premises" proved="true">
-        <proof prover="3"><result status="valid" time="4.61" steps="400"/></proof>
+        <proof prover="3"><result status="valid" time="6.15" steps="400"/></proof>
         </goal>
        </transf>
        </goal>
@@ -533,12 +521,12 @@
     </transf>
     </goal>
     <goal name="VC dj.11.0.1" expl="rewrite premises" proved="true">
-    <proof prover="3"><result status="valid" time="4.26" steps="398"/></proof>
+    <proof prover="3"><result status="valid" time="5.02" steps="398"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC dj.11.1" expl="equality hypothesis" proved="true">
-   <proof prover="3"><result status="valid" time="4.48" steps="398"/></proof>
+   <proof prover="3"><result status="valid" time="5.49" steps="398"/></proof>
    </goal>
   </transf>
   </goal>
@@ -567,16 +555,16 @@
   <proof prover="3"><result status="valid" time="0.69" steps="428"/></proof>
   </goal>
   <goal name="VC dj.20" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.59" steps="428"/></proof>
+  <proof prover="3"><result status="valid" time="0.81" steps="428"/></proof>
   </goal>
   <goal name="VC dj.21" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.55" steps="428"/></proof>
   </goal>
   <goal name="VC dj.22" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.57" steps="439"/></proof>
+  <proof prover="3"><result status="valid" time="0.83" steps="439"/></proof>
   </goal>
   <goal name="VC dj.23" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.59" steps="445"/></proof>
+  <proof prover="3"><result status="valid" time="0.57" steps="445"/></proof>
   </goal>
   <goal name="VC dj.24" expl="precondition" proved="true">
   <transf name="compute_specified" proved="true" >
@@ -585,17 +573,16 @@
     <goal name="VC dj.24.0.0" expl="precondition" proved="true">
     <transf name="apply" proved="true" arg1="kronecker_ket_l">
      <goal name="VC dj.24.0.0.0" expl="apply premises" proved="true">
-     <proof prover="3"><result status="valid" time="0.68" steps="447"/></proof>
+     <proof prover="3"><result status="valid" time="0.91" steps="447"/></proof>
      </goal>
      <goal name="VC dj.24.0.0.1" expl="apply premises" proved="true">
      <proof prover="3"><result status="valid" time="0.70" steps="447"/></proof>
      </goal>
      <goal name="VC dj.24.0.0.2" expl="apply premises" proved="true">
-     <proof prover="0"><result status="valid" time="1.48"/></proof>
-     <proof prover="3"><result status="timeout" time="5.00"/></proof>
+     <proof prover="0"><result status="valid" time="1.91"/></proof>
      </goal>
      <goal name="VC dj.24.0.0.3" expl="apply premises" proved="true">
-     <proof prover="3"><result status="valid" time="0.59" steps="447"/></proof>
+     <proof prover="3"><result status="valid" time="0.89" steps="447"/></proof>
      </goal>
     </transf>
     </goal>
@@ -615,33 +602,31 @@
   </transf>
   </goal>
   <goal name="VC dj.27" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.61" steps="453"/></proof>
+  <proof prover="3"><result status="valid" time="0.82" steps="453"/></proof>
   </goal>
   <goal name="VC dj.28" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.66" steps="449"/></proof>
   </goal>
   <goal name="VC dj.29" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.59" steps="449"/></proof>
+  <proof prover="3"><result status="valid" time="0.75" steps="449"/></proof>
   </goal>
   <goal name="VC dj.30" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.60" steps="449"/></proof>
+  <proof prover="3"><result status="valid" time="0.83" steps="449"/></proof>
   </goal>
   <goal name="VC dj.31" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.60" steps="449"/></proof>
   </goal>
   <goal name="VC dj.32" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.57" steps="455"/></proof>
+  <proof prover="3"><result status="valid" time="0.89" steps="455"/></proof>
   </goal>
   <goal name="VC dj.33" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.59" steps="451"/></proof>
   </goal>
   <goal name="VC dj.34" expl="postcondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.62" steps="461"/></proof>
+  <proof prover="3"><result status="valid" time="0.88" steps="461"/></proof>
   </goal>
   <goal name="VC dj.35" expl="postcondition" proved="true">
-  <proof prover="0"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="valid" time="1.99"/></proof>
-  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="valid" time="2.94"/></proof>
   </goal>
   <goal name="VC dj.36" expl="postcondition" proved="true">
   <proof prover="3"><result status="valid" time="0.81" steps="464"/></proof>
@@ -652,9 +637,7 @@
    <proof prover="3"><result status="valid" time="0.65" steps="464"/></proof>
    </goal>
    <goal name="VC dj.37.1" expl="rewrite premises" proved="true">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="2"><result status="valid" time="2.06"/></proof>
-   <proof prover="3"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2"><result status="valid" time="3.07"/></proof>
    </goal>
    <goal name="VC dj.37.2" expl="rewrite premises" proved="true">
    <proof prover="3"><result status="valid" time="0.61" steps="464"/></proof>

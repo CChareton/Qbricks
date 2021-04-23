@@ -179,7 +179,7 @@ let function compute_step ( i:int):circuit
 let function grover_run ( i:int):circuit
       requires{1<=i}
       ensures{path_sem result (ket n 0) = psi_i  (1 + 2*i)}
-       ensures{proba_measure_sat_p (path_sem result (ket n 0))  n f  =  cpower (sin  ((theta()) *. i_to_c (2*i+1))) 2}
+       ensures{proba_measure_cond (path_sem result (ket n 0))  n f  =  cpower (sin  ((theta()) *. i_to_c (2*i+1))) 2}
       ensures{width result = n}
            = let rec steps (s:int)
                        requires{1<=s}
@@ -194,21 +194,11 @@ let function grover_run ( i:int):circuit
     scalar_ket_l_values (cos  ((theta()) *. i_to_c (2*i+1))) (unif_neg()) n;
     assert{forall j. 0<= j < power_ 2 n -> f j -> get_ket (path_sem (sequence (repeat_had n) o) (ket n 0)) j
                                               =  sin  ((theta()) *. i_to_c (2*i+1)) /. square_rt (i_to_c k)};
-    proba_measure_sat_p_const (path_sem (sequence (repeat_had n) o) (ket n 0)) n f (cpower (sin  ((theta()) *. i_to_c (2*i+1)) /. square_rt (i_to_c k)) 2)
+    proba_measure_cond_const (path_sem (sequence (repeat_had n) o) (ket n 0)) n f (cpower (sin  ((theta()) *. i_to_c (2*i+1)) /. square_rt (i_to_c k)) 2)
        (cpower (sin  ((theta()) *. i_to_c (2*i+1))) 2) ;
     sequence (repeat_had n) o
     end
 
-         (* let function run (k1 n1 i:int) (f1:int-> bool)
-   *              requires{2<=n1}
-   *              requires{0<k1<power_ 2 n1}
-   *              requires{cardinal (my_filter  (to_fset 0 n1) f1) = k1}
-   *              requires{1<=i}
-   *              ensures{pat_sem result (ket n 0) = psi_i  (1 + 2*i)}
-   *              ensures{proba_measure_sat_p (pat_sem result (ket n 0))  n f  =  cpower (sin  (ang_mult_int theta (2*i+1))) 2}
-   *              ensures{width result = n}
-   * = g() := {s = n1;cardi=k1;functi = f1};
-   *   grover_run i *)
 
                                       
 end

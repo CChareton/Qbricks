@@ -12,7 +12,8 @@ module Shor_spec
          use  complex_operations.Base_type
          use qbricks.Circuit_macros
          use arit.Inverse
-  
+use p_set.Fset_comp
+       
 let lemma shor_meas_j_k    (a bound n i  k:int)
                requires{0<n}
                requires{0<= a < power_ 2 n}
@@ -36,8 +37,6 @@ let lemma shor_meas_j_k    (a bound n i  k:int)
        (fun l -> mod (power_ a l) bound)  (pow_inv_2 (2*n)))
     (proba_measure (path_sem (shor_circ a bound n) (kronecker (ket (2*n) 0) (ket n 1)))
        ( mod (best_appr_  k a bound n) (power_ 2 (2*n)) * (power_ 2 n) + mod (power_ a i ) bound) (3*n))
-
-use p_set.Fset_comp
   
 let lemma greatest_factor_sum (a bound n:int)(cst:complex)
                requires{0<n}
@@ -77,12 +76,6 @@ let lemma  shor_meas_spec    (a bound n  :int)
                        <=.   proba_measure_cond (path_sem (shor_circ a bound n) (kronecker (ket (2*n) 0) (ket n 1)))  (3*n)
                                (fun y1 -> exists k. 0<= k < multi_order a bound && div y1 (power_ 2 n) =  mod ( best_appr_ k a bound n)  (power_ 2 (2*n)))}
                ensures{ (i_to_c (euler_phi (multi_order a bound ))/. i_to_c (multi_order a bound) ) *.  (min_mod_sum a bound n)
-                       <=.   proba_measure_cond (path_sem (shor_circ a bound n) (kronecker (ket (2*n) 0) (ket n 1)))  (3*n)
-                               (fun y1 -> exists k. 0<= k < multi_order a bound && co_prime k (multi_order a bound) && div y1 (power_ 2 n) =  mod ( best_appr_ k a bound n)  (power_ 2 (2*n)))}
-               ensures{i_to_c 4/. cpower pi 2 +. epsilon_sum  a bound n
-                       <=.   proba_measure_cond (path_sem (shor_circ a bound n) (kronecker (ket (2*n) 0) (ket n 1)))  (3*n)
-                               (fun y1 -> exists k. 0<= k < multi_order a bound && div y1 (power_ 2 n) =  mod ( best_appr_ k a bound n)  (power_ 2 (2*n)))}
-               ensures{ (i_to_c (euler_phi (multi_order a bound ))/. i_to_c (multi_order a bound) ) *.  (i_to_c 4/. cpower pi 2 +. epsilon_sum  a bound n)
                        <=.   proba_measure_cond (path_sem (shor_circ a bound n) (kronecker (ket (2*n) 0) (ket n 1)))  (3*n)
                                (fun y1 -> exists k. 0<= k < multi_order a bound && co_prime k (multi_order a bound) && div y1 (power_ 2 n) =  mod ( best_appr_ k a bound n)  (power_ 2 (2*n)))}
   = 

@@ -28,20 +28,20 @@ let function discard (x y z:matrix complex) (k n:int)
            ensures{is_a_ket_l result  k }
   = x
 
-let function proba_measure_first_bits (x:matrix complex) (i k n:int)
-               requires{is_a_ket_l x n}
-               requires{0< k <=n}
-               requires{0<= i < power_ 2 k}
-           (* ensures{result = sum (n_bvs (n-k)) (fun y -> cpower (modulus (get_ket (bv_to_ket (concat (int_to_bv i n) y))  i))2)} *)
-  = cpower (modulus (get x i 0)) 2
-
-let function proba_measure_first_bits_but_one (x:matrix complex) (i  n:int)
-               requires{is_a_ket_l x n}
-               requires{1 <=n}
-               requires{0<= i < power_ 2 (n-1)}
-               (* ensures{result = sum (n_bvs 1) (fun y -> cpower (modulus (get_ket (bv_to_ket (concat (int_to_bv i n) y)) i))2) } *)
-               ensures{result = cpower (modulus (get_ket x (2*i))) 2 +. cpower (modulus (get_ket x (2*i+1))) 2}
-                                = proba_measure_first_bits x i (n-1) n
+(* let function proba_measure_first_bits (x:matrix complex) (i k n:int)
+ *                requires{is_a_ket_l x n}
+ *                requires{0< k <=n}
+ *                requires{0<= i < power_ 2 k}
+ *            (\* ensures{result = sum (n_bvs (n-k)) (fun y -> cpower (modulus (get_ket (bv_to_ket (concat (int_to_bv i n) y))  i))2)} *\)
+ *   = cpower (modulus (get x i 0)) 2
+ * 
+ * let function proba_measure_first_bits_but_one (x:matrix complex) (i  n:int)
+ *                requires{is_a_ket_l x n}
+ *                requires{1 <=n}
+ *                requires{0<= i < power_ 2 (n-1)}
+ *                (\* ensures{result = sum (n_bvs 1) (fun y -> cpower (modulus (get_ket (bv_to_ket (concat (int_to_bv i n) y)) i))2) } *\)
+ *                ensures{result = cpower (modulus (get_ket x (2*i))) 2 +. cpower (modulus (get_ket x (2*i+1))) 2}
+ *                                 = proba_measure_first_bits x i (n-1) n *)
 
 let function proba_measure (x:matrix complex) (i n:int)
                requires{is_a_ket_l x n}
@@ -52,21 +52,29 @@ let function proba_measure (x:matrix complex) (i n:int)
 
   
 
-let lemma proba_measure_to_first_bits (x:matrix complex) (i n:int)
-               requires{is_a_ket_l x n}
-               requires{0<= i < power_ 2 n}
-           ensures{proba_measure x i n = proba_measure_first_bits x i 0 n}
-  = cpower (modulus (get x i 0)) 2
+(* let lemma proba_measure_to_first_bits (x:matrix complex) (i n:int)
+ *                requires{is_a_ket_l x n}
+ *                requires{0<= i < power_ 2 n}
+ *            ensures{proba_measure x i n = proba_measure_first_bits x i 0 n}
+ *   = cpower (modulus (get x i 0)) 2 *)
 
                
 use set.Fset
 use p_set.IndexestoSet
 use complex_operations.FromInt           
 
-let function proba_measure_sat_p (x:matrix complex) (n:int) (f : int-> bool)
+let function proba_measure_cond (x:matrix complex) (n:int) (p: int -> bool)
                requires{is_a_ket_l x n}
-           ensures{result = sum (my_filter (to_fset 0 (power_ 2 n)) f) (fun k -> proba_measure x k n )}
-  = sum (my_filter (to_fset 0 (power_ 2 n)) f) (fun k -> if 0<= k < power_ 2 n  then proba_measure x k n else c_zero)
+  = sum (my_filter   (to_fset 0 (power_ 2 n)) p) (fun i -> proba_measure x i n)
+
+  
+(* let function proba_measure_sat_p (x:matrix complex) (n:int) (f : int-> bool)
+ *                requires{is_a_ket_l x n}
+ *            ensures{result = sum (my_filter (to_fset 0 (power_ 2 n)) f) (fun k -> proba_measure x k n )}
+ *   = sum (my_filter (to_fset 0 (power_ 2 n)) f) (fun k -> if 0<= k < power_ 2 n  then proba_measure x k n else c_zero)
+ * (\* let function proba_measure_cond (x:matrix complex) (n:int) (p: int -> bool)
+ *  *                requires{is_a_ket_l x n}
+ *  *   = sum (my_filter   (to_fset 0 (power_ 2 n)) p) (fun i -> proba_measure x i n) *\) *)
 
 
   
@@ -78,68 +86,62 @@ let lemma proba_measure_from_sum (x:matrix complex)(i n :int) (f: bitvec-> compl
   =  ket_sum_of_scalars f n
 
    
-let lemma proba_measure_sat_p_const (x:matrix complex)(n :int) (f: int-> bool) (t t':complex)
-               requires{is_a_ket_l x n}
-               requires{t' = t *. (i_to_c (cardinal (my_filter (to_fset 0 (power_ 2 n)) f)))}
-               requires{forall i. f i -> 0<= i < power_ 2 n -> proba_measure x i n = t}
-               ensures{proba_measure_sat_p x  n f  = t'}
-  = ()
-       use set.Fset
+
+      use set.Fset
    use exponentiation.Int_Exponentiation
    use p_set.IndexestoSet
    use matrices.Matrix_addition
    
-let lemma proba_measure_from_sum_partition (x:matrix complex) (s1 s2 : set int)(i n :int) (scal1 scal2 :complex)(f1 f2: int-> complex)
-      requires{union s1 s2 = to_fset 0 (power 2 n)}
-      requires{inter s1 s2 = empty}
-      requires{real_ scal1}
-      requires{real_ scal2}
-      requires{is_a_ket_l x n}
-               requires{0<= i < power_ 2 n}
-               requires{x = add_mat (scal1 *.. (ket_sum_l s1 (fun k -> f1 k *..  (ket n k)) n))
-                            (scal2 *.. (ket_sum_l s2 (fun k -> f2 k *..  (ket n k)) n))}
-                                             ensures{proba_measure x i n = if mem i s1 then cpower (scal1 *. f1 i) 2 else cpower (scal2 *. f2 i) 2}
-  = ()
-           
-
-let lemma proba_measure_from_sum_partition_gen (x:matrix complex) (s1 s2 : set int)( n :int) (scal1 scal2 :complex)
-      requires{union s1 s2 = to_fset 0 (power 2 n)}
-      requires{inter s1 s2 = empty}
-      requires{real_ scal1}
-      requires{real_ scal2}
-      requires{is_a_ket_l x n}
-      requires{x = add_mat (scal1 *.. (ket_sum_l s1 (ket n) n))
-                     (scal2 *.. (ket_sum_l s2 (ket n) n))}
-      ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = if mem i s1 then cpower scal1  2 else cpower scal2 2}
-       = ()
+(* let lemma proba_measure_from_sum_partition (x:matrix complex) (s1 s2 : set int)(i n :int) (scal1 scal2 :complex)(f1 f2: int-> complex)
+ *       requires{union s1 s2 = to_fset 0 (power 2 n)}
+ *       requires{inter s1 s2 = empty}
+ *       requires{real_ scal1}
+ *       requires{real_ scal2}
+ *       requires{is_a_ket_l x n}
+ *                requires{0<= i < power_ 2 n}
+ *                requires{x = add_mat (scal1 *.. (ket_sum_l s1 (fun k -> f1 k *..  (ket n k)) n))
+ *                             (scal2 *.. (ket_sum_l s2 (fun k -> f2 k *..  (ket n k)) n))}
+ *                                              ensures{proba_measure x i n = if mem i s1 then cpower (scal1 *. f1 i) 2 else cpower (scal2 *. f2 i) 2}
+ *   = ()
+ *            
+ * 
+ * let lemma proba_measure_from_sum_partition_gen (x:matrix complex) (s1 s2 : set int)( n :int) (scal1 scal2 :complex)
+ *       requires{union s1 s2 = to_fset 0 (power 2 n)}
+ *       requires{inter s1 s2 = empty}
+ *       requires{real_ scal1}
+ *       requires{real_ scal2}
+ *       requires{is_a_ket_l x n}
+ *       requires{x = add_mat (scal1 *.. (ket_sum_l s1 (ket n) n))
+ *                      (scal2 *.. (ket_sum_l s2 (ket n) n))}
+ *       ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = if mem i s1 then cpower scal1  2 else cpower scal2 2}
+ *        = () *)
                       
-let  lemma ket_sum_sum_d_switch (sa: set 'a) (sb: set 'b) (f: 'a -> 'b -> matrix complex) (n : int)
-          requires{n>=0}
-          requires{cardinal sa > 0}
-          requires{cardinal sb > 0}
-          requires{forall a: 'a. forall b: 'b.  mem a sa -> mem b sb ->  is_a_ket_l (f a b) n}
-          ensures{ket_sum_l sa (fun a -> ket_sum_l sb (f a)  n) n = ket_sum_l sb (fun b -> ket_sum_l sa (fun a -> f a b) n) n}     
-  = ()
+(* let  lemma ket_sum_sum_d_switch (sa: set 'a) (sb: set 'b) (f: 'a -> 'b -> matrix complex) (n : int)
+ *           requires{n>=0}
+ *           requires{cardinal sa > 0}
+ *           requires{cardinal sb > 0}
+ *           requires{forall a: 'a. forall b: 'b.  mem a sa -> mem b sb ->  is_a_ket_l (f a b) n}
+ *           ensures{ket_sum_l sa (fun a -> ket_sum_l sb (f a)  n) n = ket_sum_l sb (fun b -> ket_sum_l sa (fun a -> f a b) n) n}     
+ *   = ()
+ * 
+ * let lemma proba_measure_from_sum_sum (x:matrix complex)(l n :int)  (f: bitvec-> bitvec-> complex)
+ *                requires{is_a_ket_l x n}
+ *                requires{0<= l < power_ 2 n}
+ *                requires{x = ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
+ *                ensures{proba_measure x l n = cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv l n)))) 2}
+ *   =  ket_sum_sum_d_switch  (n_bvs n) (n_bvs n) (fun k l -> f k l *..  (bv_to_ket l)) n;
+ *      ket_sum_of_scalars (fun b -> sum (n_bvs n) (fun a -> f a b)) n
+ * 
+ * 
+ * let lemma proba_measure_from_scal_sum_sum (x:matrix complex)(i n :int)  (f: bitvec-> bitvec-> complex) (s s2:complex)
+ *                requires{is_a_ket_l x n}
+ *                requires{0<= i < power_ 2 n}
+ *                requires{real_ s}
+ *                requires{x = s*.. ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
+ *                requires{s2 = cpower s 2}
+ *                ensures{proba_measure x i n = s2 *. cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv i n)))) 2}
+ *   = proba_measure_from_sum_sum x i n (fun x y -> s*. f x y ) *)
 
-let lemma proba_measure_from_sum_sum (x:matrix complex)(l n :int)  (f: bitvec-> bitvec-> complex)
-               requires{is_a_ket_l x n}
-               requires{0<= l < power_ 2 n}
-               requires{x = ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
-               ensures{proba_measure x l n = cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv l n)))) 2}
-  =  ket_sum_sum_d_switch  (n_bvs n) (n_bvs n) (fun k l -> f k l *..  (bv_to_ket l)) n;
-     ket_sum_of_scalars (fun b -> sum (n_bvs n) (fun a -> f a b)) n
-
-
-let lemma proba_measure_from_scal_sum_sum (x:matrix complex)(i n :int)  (f: bitvec-> bitvec-> complex) (s s2:complex)
-               requires{is_a_ket_l x n}
-               requires{0<= i < power_ 2 n}
-               requires{real_ s}
-               requires{x = s*.. ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
-               requires{s2 = cpower s 2}
-               ensures{proba_measure x i n = s2 *. cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv i n)))) 2}
-  =
-   ket_sum_sum_d_switch  (n_bvs n) (n_bvs n) (fun k l -> f k l *..  (bv_to_ket l)) n;
-     ket_sum_of_scalars (fun b -> sum (n_bvs n) (fun a -> f a b)) n
 
 
 
@@ -153,11 +155,25 @@ let function proba_measure_from_scal_sum_sum_fun (x:matrix complex) (i y k n n1 
                requires{n=n1+n2}
                requires{x = scal *.. ket_sum_l (n_bvs n') (fun i1 -> ket_sum_l (n_bvs n')
                                                                       (fun j1 -> f (bv_to_int i1) (bv_to_int j1)  *.. kronecker (ket n2 (bv_to_int j1))  (ket n1 (g' (bv_to_int i1)))) n)n}
-               requires{forall ind. 0<= ind < k -> g' (g ind) = g' i}
-               ensures{result <=.proba_measure  x (y * power_ 2 n1 + (g' i)) n}
+               requires{forall j. 0<= j < power_ 2 n1 -> g' j = g' i <-> exists ind. 0<=ind < k && g ind = j}
+               ensures{result = proba_measure  x (y * power_ 2 n1 + (g' i)) n}
                ensures{result = cpower scal 2 *. cpower ( modulus (ind_sum (fun i1 -> f   (g i1) y) 0 k)) 2 }
-  = cpower (modulus (get x (y * power_ 2 n1 + g' i) 0)) 2
-
+  =
+  let func = (fun i1 -> ket_sum_l (n_bvs n')
+                       (fun j1 -> f (bv_to_int i1) (bv_to_int j1)  *.. kronecker (ket n2 (bv_to_int j1))  (ket n1 (g' (bv_to_int i1)))) n)
+  in
+  let func' = (fun x  -> func (int_to_bv x n') )
+    in
+  begin
+    ket_sum_l_to_fset func n' n;
+    ket_sum_partition (to_fset 0 (power_ 2 n')) (my_filter (to_fset 0 (power_ 2 n')) (fun j -> g j = g i))
+      (my_filter (to_fset 0 (power_ 2 n')) (fun j -> g j <> g i)) func' n;
+    sum_null  (my_filter (to_fset 0 (power_ 2 n')) (fun j -> g j <> g i)) (fun j -> get_ket (func' i) (y * power_ 2 n1 + (g' i))) ;
+    map_ket_sum_l func' (to_fset 0 k) g n;
+assert {proba_measure  x (y * power_ 2 n1 + (g' i)) n = proba_measure  (ket_sum_l (to_fset 0 k) (fun j -> f (g j) y *.. kronecker (ket n2 y) (ket n1 (g' i))) n') (y * power_ 2 n1 + (g' i)) n};
+end;
+proba_measure  x (y * power_ 2 n1 + (g' i)) n
+   
 
 let lemma proba_measure_from_scal_ind_sum (x:matrix complex)(i n :int)  (f: int-> int-> complex) (s s2:complex)
                requires{is_a_ket_l x n}
@@ -182,25 +198,39 @@ let ghost function top_proba_measure_from_scal_ind_sum (a:matrix complex)(i n :i
   = proba_measure x i n
 
 
-let lemma proba_measure_from_scal_sum_sum_gen (x:matrix complex)(n :int)  (f: bitvec-> bitvec-> complex) (s s2:complex)
-               requires{real_ s}
-               requires{x = s*.. ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
-               requires{s2 = cpower s 2}
-               ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = s2 *. cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv i n)))) 2}
-               ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = s2 *. cpower (modulus (sum (to_fset 0 (power_ 2 n)) (fun k -> f (int_to_bv k n) (int_to_bv i n)))) 2}
-  = ()
+(* let lemma proba_measure_from_scal_sum_sum_gen (x:matrix complex)(n :int)  (f: bitvec-> bitvec-> complex) (s s2:complex)
+ *                requires{real_ s}
+ *                requires{x = s*.. ket_sum_l (n_bvs n) (fun k -> ket_sum_l (n_bvs n) (fun l -> f k l *..  (bv_to_ket l))n)n}
+ *                requires{s2 = cpower s 2}
+ *                ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = s2 *. cpower (modulus (sum (n_bvs n) (fun k -> f k (int_to_bv i n)))) 2}
+ *                ensures{forall i. 0<= i < power_ 2 n -> proba_measure x i n = s2 *. cpower (modulus (sum (to_fset 0 (power_ 2 n)) (fun k -> f (int_to_bv k n) (int_to_bv i n)))) 2}
+ *   = () *)
   
 
-let function proba_measure_cond (x:matrix complex) (n:int) (p: int -> bool)
-               requires{is_a_ket_l x n}
-  = sum (my_filter   (to_fset 0 (power_ 2 n)) p) (fun i -> proba_measure x i n)
+(* let function proba_measure_cond (x:matrix complex) (n:int) (p: int -> bool)
+ *                requires{is_a_ket_l x n}
+ *   = sum (my_filter   (to_fset 0 (power_ 2 n)) p) (fun i -> proba_measure x i n) *)
 
+let lemma proba_measure_cond_entails (x:matrix complex) (n:int) (p p': int -> bool)
+               requires{is_a_ket_l x n}
+               requires{forall i. 0<=i<power_ 2 n -> p i -> p' i}
+               ensures{proba_measure_cond x n p <=. proba_measure_cond x n p }
+  = ()
+  
 let lemma proba_measure_cond_eq (x:matrix complex) (n:int) (p p': int -> bool)
                requires{is_a_ket_l x n}
                requires{forall i. 0<= i < power_ 2 n -> (p i <-> p' i)}
                ensures{proba_measure_cond x n p = proba_measure_cond x n p'}
   =()
 
+
+let lemma proba_measure_cond_const (x:matrix complex)(n :int) (f: int-> bool) (t t':complex)
+               requires{is_a_ket_l x n}
+               requires{t' = t *. (i_to_c (cardinal (my_filter (to_fset 0 (power_ 2 n)) f)))}
+               requires{forall i. f i -> 0<= i < power_ 2 n -> proba_measure x i n = t}
+               ensures{proba_measure_cond x  n f  = t'}
+  = ()
+  
   
 let lemma proba_measure_set_of_ind (x:matrix complex) (s:set int) (n:int) (p: int -> bool) (scal_f:int ->  complex)(scal:  complex) (f:int->int)
                requires{is_a_ket_l x n}

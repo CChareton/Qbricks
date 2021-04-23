@@ -28,7 +28,7 @@
   <transf name="split_vc" >
    <goal name="VC proba_measure_first_bits_but_one.1.0" expl="precondition">
    <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="2"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
    <proof prover="3"><result status="timeout" time="5.00"/></proof>
    </goal>
    <goal name="VC proba_measure_first_bits_but_one.1.1" expl="precondition" proved="true">
@@ -54,7 +54,7 @@
   <goal name="VC proba_measure_first_bits_but_one.3" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -62,7 +62,7 @@
   <goal name="VC proba_measure_first_bits_but_one.3" expl="postcondition">
   <proof prover="0"><undone/></proof>
   <proof prover="1"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><undone/></proof>
+  <proof prover="2"><result status="failure" time="0.00"/></proof>
   <proof prover="3"><undone/></proof>
   <proof prover="4"><result status="timeout" time="5.00"/></proof>
   <proof prover="5"><result status="timeout" time="5.00"/></proof>
@@ -81,7 +81,7 @@
   <goal name="VC proba_measure_to_first_bits.0" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -105,7 +105,7 @@
   </goal>
   <goal name="VC proba_measure_sat_p.2" expl="postcondition" proved="true">
   <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="1"><result status="valid" time="1.66"/></proof>
+  <proof prover="1"><result status="valid" time="2.15"/></proof>
   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -116,7 +116,7 @@
  <goal name="VC proba_measure_from_sum" expl="VC for proba_measure_from_sum" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC proba_measure_from_sum.0" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.45" steps="171"/></proof>
+  <proof prover="3"><result status="valid" time="0.82" steps="171"/></proof>
   </goal>
   <goal name="VC proba_measure_from_sum.1" expl="postcondition" proved="true">
   <transf name="rewrite" proved="true" arg1="proba_measure_def">
@@ -150,7 +150,7 @@
   <goal name="VC proba_measure_sat_p_const.0" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -162,7 +162,7 @@
   <goal name="VC proba_measure_from_sum_partition.0" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -174,7 +174,7 @@
   <goal name="VC proba_measure_from_sum_partition_gen.0" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -186,7 +186,7 @@
   <goal name="VC ket_sum_sum_d_switch.0" expl="postcondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
@@ -196,7 +196,7 @@
  <goal name="VC proba_measure_from_sum_sum" expl="VC for proba_measure_from_sum_sum">
  <transf name="split_vc" >
   <goal name="VC proba_measure_from_sum_sum.0" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="0.48" steps="171"/></proof>
+  <proof prover="3"><result status="valid" time="0.73" steps="171"/></proof>
   </goal>
   <goal name="VC proba_measure_from_sum_sum.1" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.48" steps="174"/></proof>
@@ -211,7 +211,7 @@
   <proof prover="3"><result status="valid" time="0.36" steps="173"/></proof>
   </goal>
   <goal name="VC proba_measure_from_sum_sum.5" expl="precondition" proved="true">
-  <proof prover="2"><result status="valid" time="4.00"/></proof>
+  <proof prover="2"><result status="valid" time="4.65"/></proof>
   </goal>
   <goal name="VC proba_measure_from_sum_sum.6" expl="precondition" proved="true">
   <proof prover="3"><result status="valid" time="0.50" steps="176"/></proof>
@@ -251,7 +251,7 @@
          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.0.1" expl="rewrite premises">
          <proof prover="0"><undone/></proof>
          <proof prover="1"><result status="failure" time="0.00"/></proof>
-         <proof prover="2"><undone/></proof>
+         <proof prover="2"><result status="failure" time="0.00"/></proof>
          <proof prover="3"><undone/></proof>
          <proof prover="4"><result status="failure" time="0.00"/></proof>
          <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -293,7 +293,7 @@
               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.1" expl="rewrite premises">
               <proof prover="0"><undone/></proof>
               <proof prover="1"><result status="failure" time="0.00"/></proof>
-              <proof prover="2"><undone/></proof>
+              <proof prover="2"><result status="failure" time="0.00"/></proof>
               <proof prover="3"><undone/></proof>
               <proof prover="4"><result status="failure" time="0.00"/></proof>
               <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -301,7 +301,7 @@
               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.2" expl="rewrite premises">
               <proof prover="0"><undone/></proof>
               <proof prover="1"><result status="failure" time="0.00"/></proof>
-              <proof prover="2"><undone/></proof>
+              <proof prover="2"><result status="failure" time="0.00"/></proof>
               <proof prover="3"><undone/></proof>
               <proof prover="4"><result status="failure" time="0.00"/></proof>
               <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -309,7 +309,7 @@
               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.3" expl="rewrite premises">
               <proof prover="0"><undone/></proof>
               <proof prover="1"><result status="failure" time="0.00"/></proof>
-              <proof prover="2"><undone/></proof>
+              <proof prover="2"><result status="failure" time="0.00"/></proof>
               <proof prover="3"><undone/></proof>
               <proof prover="4"><result status="failure" time="0.00"/></proof>
               <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -321,7 +321,7 @@
                 <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.0.0.0.0.4.0.0" expl="rewrite premises">
                 <proof prover="0"><undone/></proof>
                 <proof prover="1"><result status="failure" time="0.00"/></proof>
-                <proof prover="2"><undone/></proof>
+                <proof prover="2"><result status="failure" time="0.00"/></proof>
                 <proof prover="3"><undone/></proof>
                 <proof prover="4"><result status="failure" time="0.00"/></proof>
                 <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -341,7 +341,7 @@
           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.1" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -349,7 +349,7 @@
           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.2" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -357,7 +357,7 @@
           <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.3" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -369,7 +369,7 @@
             <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.0.4.0.0" expl="rewrite premises">
             <proof prover="0"><undone/></proof>
             <proof prover="1"><result status="failure" time="0.00"/></proof>
-            <proof prover="2"><undone/></proof>
+            <proof prover="2"><result status="failure" time="0.00"/></proof>
             <proof prover="3"><undone/></proof>
             <proof prover="4"><result status="failure" time="0.00"/></proof>
             <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -383,7 +383,7 @@
          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.1" expl="rewrite premises">
          <proof prover="0"><undone/></proof>
          <proof prover="1"><result status="failure" time="0.00"/></proof>
-         <proof prover="2"><undone/></proof>
+         <proof prover="2"><result status="failure" time="0.00"/></proof>
          <proof prover="3"><undone/></proof>
          <proof prover="4"><result status="failure" time="0.00"/></proof>
          <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -391,7 +391,7 @@
          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.2" expl="rewrite premises">
          <proof prover="0"><undone/></proof>
          <proof prover="1"><result status="failure" time="0.00"/></proof>
-         <proof prover="2"><undone/></proof>
+         <proof prover="2"><result status="failure" time="0.00"/></proof>
          <proof prover="3"><undone/></proof>
          <proof prover="4"><result status="failure" time="0.00"/></proof>
          <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -399,7 +399,7 @@
          <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.3" expl="rewrite premises">
          <proof prover="0"><undone/></proof>
          <proof prover="1"><result status="failure" time="0.00"/></proof>
-         <proof prover="2"><undone/></proof>
+         <proof prover="2"><result status="failure" time="0.00"/></proof>
          <proof prover="3"><undone/></proof>
          <proof prover="4"><result status="failure" time="0.00"/></proof>
          <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -413,7 +413,7 @@
             <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.0" expl="apply premises">
             <proof prover="0"><undone/></proof>
             <proof prover="1"><result status="failure" time="0.00"/></proof>
-            <proof prover="2"><undone/></proof>
+            <proof prover="2"><result status="failure" time="0.00"/></proof>
             <proof prover="3"><undone/></proof>
             <proof prover="4"><result status="failure" time="0.00"/></proof>
             <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -425,7 +425,7 @@
               <goal name="VC proba_measure_from_sum_sum.8.0.0.0.0.0.1.4.0.0.1.0.0" expl="apply premises">
               <proof prover="0"><undone/></proof>
               <proof prover="1"><result status="failure" time="0.00"/></proof>
-              <proof prover="2"><undone/></proof>
+              <proof prover="2"><result status="failure" time="0.00"/></proof>
               <proof prover="3"><undone/></proof>
               <proof prover="4"><result status="failure" time="0.00"/></proof>
               <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -481,7 +481,7 @@
   </goal>
   <goal name="VC proba_measure_from_scal_sum_sum.5" expl="precondition">
   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   <proof prover="3"><result status="timeout" time="5.00"/></proof>
   </goal>
   <goal name="VC proba_measure_from_scal_sum_sum.6" expl="precondition" proved="true">
@@ -528,7 +528,7 @@
               <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.0" expl="apply premises">
               <proof prover="0"><undone/></proof>
               <proof prover="1"><result status="failure" time="0.00"/></proof>
-              <proof prover="2"><undone/></proof>
+              <proof prover="2"><result status="failure" time="0.00"/></proof>
               <proof prover="3"><undone/></proof>
               <proof prover="4"><result status="failure" time="0.00"/></proof>
               <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -542,7 +542,7 @@
                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.0.1.1" expl="apply premises">
                <proof prover="0"><undone/></proof>
                <proof prover="1"><result status="failure" time="0.00"/></proof>
-               <proof prover="2"><undone/></proof>
+               <proof prover="2"><result status="failure" time="0.00"/></proof>
                <proof prover="3"><undone/></proof>
                <proof prover="4"><result status="failure" time="0.00"/></proof>
                <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -554,7 +554,7 @@
              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.0.1" expl="equality hypothesis">
              <proof prover="0"><undone/></proof>
              <proof prover="1"><result status="failure" time="0.00"/></proof>
-             <proof prover="2"><undone/></proof>
+             <proof prover="2"><result status="failure" time="0.00"/></proof>
              <proof prover="3"><undone/></proof>
              <proof prover="4"><result status="failure" time="0.00"/></proof>
              <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -564,7 +564,7 @@
             <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.0.0.1" expl="rewrite premises">
             <proof prover="0"><undone/></proof>
             <proof prover="1"><result status="failure" time="0.00"/></proof>
-            <proof prover="2"><undone/></proof>
+            <proof prover="2"><result status="failure" time="0.00"/></proof>
             <proof prover="3"><undone/></proof>
             <proof prover="4"><result status="failure" time="0.00"/></proof>
             <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -576,7 +576,7 @@
           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.0.1" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -618,7 +618,7 @@
                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.1" expl="rewrite premises">
                <proof prover="0"><undone/></proof>
                <proof prover="1"><result status="failure" time="0.00"/></proof>
-               <proof prover="2"><undone/></proof>
+               <proof prover="2"><result status="failure" time="0.00"/></proof>
                <proof prover="3"><undone/></proof>
                <proof prover="4"><result status="failure" time="0.00"/></proof>
                <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -626,7 +626,7 @@
                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.2" expl="rewrite premises">
                <proof prover="0"><undone/></proof>
                <proof prover="1"><result status="failure" time="0.00"/></proof>
-               <proof prover="2"><undone/></proof>
+               <proof prover="2"><result status="failure" time="0.00"/></proof>
                <proof prover="3"><undone/></proof>
                <proof prover="4"><result status="failure" time="0.00"/></proof>
                <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -634,7 +634,7 @@
                <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.3" expl="rewrite premises">
                <proof prover="0"><undone/></proof>
                <proof prover="1"><result status="failure" time="0.00"/></proof>
-               <proof prover="2"><undone/></proof>
+               <proof prover="2"><result status="failure" time="0.00"/></proof>
                <proof prover="3"><undone/></proof>
                <proof prover="4"><result status="failure" time="0.00"/></proof>
                <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -646,7 +646,7 @@
                  <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.0.0.0.0.4.0.0" expl="rewrite premises">
                  <proof prover="0"><undone/></proof>
                  <proof prover="1"><result status="failure" time="0.00"/></proof>
-                 <proof prover="2"><undone/></proof>
+                 <proof prover="2"><result status="failure" time="0.00"/></proof>
                  <proof prover="3"><undone/></proof>
                  <proof prover="4"><result status="failure" time="0.00"/></proof>
                  <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -666,7 +666,7 @@
            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.1" expl="rewrite premises">
            <proof prover="0"><undone/></proof>
            <proof prover="1"><result status="failure" time="0.00"/></proof>
-           <proof prover="2"><undone/></proof>
+           <proof prover="2"><result status="failure" time="0.00"/></proof>
            <proof prover="3"><undone/></proof>
            <proof prover="4"><result status="failure" time="0.00"/></proof>
            <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -674,7 +674,7 @@
            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.2" expl="rewrite premises">
            <proof prover="0"><undone/></proof>
            <proof prover="1"><result status="failure" time="0.00"/></proof>
-           <proof prover="2"><undone/></proof>
+           <proof prover="2"><result status="failure" time="0.00"/></proof>
            <proof prover="3"><undone/></proof>
            <proof prover="4"><result status="failure" time="0.00"/></proof>
            <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -682,7 +682,7 @@
            <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.3" expl="rewrite premises">
            <proof prover="0"><undone/></proof>
            <proof prover="1"><result status="failure" time="0.00"/></proof>
-           <proof prover="2"><undone/></proof>
+           <proof prover="2"><result status="failure" time="0.00"/></proof>
            <proof prover="3"><undone/></proof>
            <proof prover="4"><result status="failure" time="0.00"/></proof>
            <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -694,7 +694,7 @@
              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.0.4.0.0" expl="rewrite premises">
              <proof prover="0"><undone/></proof>
              <proof prover="1"><result status="failure" time="0.00"/></proof>
-             <proof prover="2"><undone/></proof>
+             <proof prover="2"><result status="failure" time="0.00"/></proof>
              <proof prover="3"><undone/></proof>
              <proof prover="4"><result status="failure" time="0.00"/></proof>
              <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -708,7 +708,7 @@
           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.1" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -716,7 +716,7 @@
           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.2" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -724,7 +724,7 @@
           <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.3" expl="rewrite premises">
           <proof prover="0"><undone/></proof>
           <proof prover="1"><result status="failure" time="0.00"/></proof>
-          <proof prover="2"><undone/></proof>
+          <proof prover="2"><result status="failure" time="0.00"/></proof>
           <proof prover="3"><undone/></proof>
           <proof prover="4"><result status="failure" time="0.00"/></proof>
           <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -738,7 +738,7 @@
              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0.0.0" expl="apply premises">
              <proof prover="0"><undone/></proof>
              <proof prover="1"><result status="failure" time="0.00"/></proof>
-             <proof prover="2"><undone/></proof>
+             <proof prover="2"><result status="failure" time="0.00"/></proof>
              <proof prover="3"><undone/></proof>
              <proof prover="4"><result status="failure" time="0.00"/></proof>
              <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -746,7 +746,7 @@
              <goal name="VC proba_measure_from_scal_sum_sum.8.0.0.0.0.0.0.1.4.0.0.1" expl="apply premises">
              <proof prover="0"><undone/></proof>
              <proof prover="1"><result status="failure" time="0.00"/></proof>
-             <proof prover="2"><undone/></proof>
+             <proof prover="2"><result status="failure" time="0.00"/></proof>
              <proof prover="3"><undone/></proof>
              <proof prover="4"><result status="failure" time="0.00"/></proof>
              <proof prover="5"><result status="failure" time="0.00"/></proof>
@@ -784,7 +784,7 @@
  <goal name="VC proba_measure_from_scal_sum_sum_fun" expl="VC for proba_measure_from_scal_sum_sum_fun">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="unknown" time="0.58"/></proof>
  <proof prover="5" obsolete="true"><result status="unknown" time="0.58"/></proof>
@@ -792,7 +792,7 @@
  <goal name="VC proba_measure_from_scal_ind_sum" expl="VC for proba_measure_from_scal_ind_sum">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="unknown" time="0.56"/></proof>
  <proof prover="5" obsolete="true"><result status="unknown" time="0.56"/></proof>
@@ -800,7 +800,7 @@
  <goal name="VC top_proba_measure_from_scal_ind_sum" expl="VC for top_proba_measure_from_scal_ind_sum">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="unknown" time="0.58"/></proof>
  <proof prover="5" obsolete="true"><result status="unknown" time="0.58"/></proof>
@@ -808,7 +808,7 @@
  <goal name="VC proba_measure_from_scal_sum_sum_gen" expl="VC for proba_measure_from_scal_sum_sum_gen">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="unknown" time="0.55"/></proof>
  <proof prover="5" obsolete="true"><result status="unknown" time="0.62"/></proof>
@@ -816,38 +816,42 @@
  <goal name="VC proba_measure_cond" expl="VC for proba_measure_cond">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ </goal>
+ <goal name="VC proba_measure_cond_eq" expl="VC for proba_measure_cond_eq">
+ <transf name="split_vc" >
+  <goal name="VC proba_measure_cond_eq.0" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2" obsolete="true"><result status="failure" time="0.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
  </goal>
  <goal name="VC proba_measure_set_of_ind" expl="VC for proba_measure_set_of_ind">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
  </goal>
- <goal name="VC proba_measure_set_of_ind_conds" expl="VC for proba_measure_set_of_ind_conds">
+ <goal name="VC proba_measure_cond_add" expl="VC for proba_measure_cond_add">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <proof prover="3"><result status="timeout" time="5.00"/></proof>
+ </goal>
+ <goal name="VC proba_measure_sum_of_conds" expl="VC for proba_measure_sum_of_conds">
  <proof prover="0"><result status="timeout" time="5.00"/></proof>
  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="2"><result status="timeout" time="5.00"/></proof>
+ <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="3"><result status="timeout" time="5.00"/></proof>
  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
- </goal>
- <goal name="VC proba_measure_first_bits" expl="VC for proba_measure_first_bits">
- <transf name="split_vc" >
-  <goal name="VC proba_measure_first_bits.0" expl="postcondition">
-  <proof prover="0"><undone/></proof>
-  <proof prover="1"><result status="timeout" time="5.00"/></proof>
-  <proof prover="2"><undone/></proof>
-  <proof prover="3"><undone/></proof>
-  <proof prover="4"><result status="timeout" time="5.00"/></proof>
-  <proof prover="5"><result status="timeout" time="5.00"/></proof>
-  </goal>
- </transf>
  </goal>
 </theory>
 </file>

@@ -1333,8 +1333,6 @@ let lemma ket_sum_partition (s s1 s2: set 'a) (f: 'a -> matrix complex) (n:int)
   =()
 
 
-
-
   
 let lemma ket_decomp (m: matrix complex) ( n:int)
       requires{0<=n}

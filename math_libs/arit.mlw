@@ -1728,6 +1728,7 @@ let function greatest_factor_in_n (multi n i:int):int
                ensures{1<=result}
            ensures{forall j. 0<= j < power_ 2 n -> mod j multi = i <-> exists k. 0<= k < result && j =  k * multi + i}
            ensures{i_to_c (result-1) <=. i_to_c (power_ 2 n -i) /. i_to_c multi}
+           ensures{forall i'. mod i' multi <= i ->  div i' multi < result}
   = if i < mod (power_ 2 n) multi  then div (power_ 2 n) multi +1
     else div (power_ 2 n) multi
 
@@ -2010,6 +2011,23 @@ let lemma injec_mod_prod_multi_order (pick bound i i':int)
   = if i < i' then injec_mod_prod_multi_order_pre pick bound i i'
                   else injec_mod_prod_multi_order_pre pick bound i'  i
 
+let lemma mod_eq_power_to_multi_order (pick bound i i':int)
+                                            requires{co_prime pick bound}
+                                            requires{0<pick < bound}
+                                            requires{0<=  i }
+                                            requires{0<= i'}
+                                            requires{mod (power_ pick i') bound = mod (power_ pick i) bound }                                            
+                                            ensures{mod i (multi_order pick bound)  = mod i' (multi_order pick bound)  }
+  = ()
+
+let lemma mod_eq_multi_order_to_power (pick bound i i':int)
+                                            requires{co_prime pick bound}
+                                            requires{0<pick < bound}
+                                            requires{0<=  i }
+                                            requires{0<= i'}
+                                            requires{mod i (multi_order pick bound)  = mod i' (multi_order pick bound)  }
+                                            ensures{mod (power_ pick i') bound = mod (power_ pick i) bound }                                            
+  = ()
 
 end 
      

@@ -167,6 +167,8 @@ let function greatest_factor (a bound n i:int)
                ensures{1<=result}
            ensures{forall j. 0<= j < power_ 2 (2*n) -> mod j (multi_order a bound) = i <-> exists k. 0<= k < result && j =  k * (multi_order a bound) + i}
            ensures{i_to_c (result-1) <=. i_to_c (power_ 2 (2*n) -i) /. i_to_c (multi_order a bound)}
+           ensures{div i (multi_order a bound) < result}
+           ensures{forall j. 0<= j < power_ 2 n -> mod j  (multi_order a bound) <= mod i  (multi_order a bound) -> div j (multi_order a bound) < result}
   = greatest_factor_in_n (multi_order a bound) (2*n) i
 
       use complex_operations.Base_type
@@ -198,21 +200,6 @@ let ghost function min_mod_sum (a bound n :int)
                     cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2
                     /. ( cpower (i_to_c (greatest_factor a bound n i)) 2) else c_zero) else c_zero
     in min_set_complex (to_fset 0 (multi_order a bound)) min_mod_sum_pre
-
-let ghost function epsilon_sum (a bound n :int)
-               requires{0<n}
-               requires{0<= a < power_ 2 n}
-               requires{a < bound}
-               requires{power_ 2 (n-1)< bound < power_ 2 n}
-               requires{co_prime a bound}
-               ensures{i_to_c 4/. cpower pi 2 = min_mod_sum a bound n -.result}
-               ensures{i_to_c 4/. cpower pi 2 +. result = min_mod_sum a bound n}
-               ensures{forall i k. 0<= i < multi_order a bound ->  0<= k < multi_order a bound -> result +. (i_to_c 4/. cpower pi 2) <=.
-                       cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2
-                /. ( cpower (i_to_c (greatest_factor a bound n i)) 2)}
-=
-  assert{forall res divi minsum. res = minsum -. divi -> divi = minsum -. res};
-  min_mod_sum a bound n -. (i_to_c 4/. cpower pi 2)
   
 let lemma separated_best_appr (k k' a bound n:int)
                requires{0<n}
