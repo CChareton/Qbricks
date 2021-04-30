@@ -309,7 +309,6 @@ let function permut_modular_multiplier (pick bound  n :int) :circuit
   
 let function modular_multiplier (pick bound  n :int) :circuit
                requires{0<n}
-               (* requires{0<= pick < bound} *)
                requires{power_ 2 (n-1)< bound < power_ 2 n}
                requires{co_prime pick bound}
                ensures{ancillas result = n+4}

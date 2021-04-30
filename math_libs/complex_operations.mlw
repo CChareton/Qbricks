@@ -311,6 +311,23 @@ let   lemma sum_plus_one (s: set 'b)(f: 'b -> complex)
         ensures{sum s f  = (f (choose s)) +. sum (remove (choose s)s) f}
   = sum_add (remove (choose s)s) f (choose s)
 
+let rec  lemma sum_partition  (s s': set 'b)(f: 'b -> complex)
+        (* requires{cardinal s >1} *)
+        requires{forall e. mem e s -> not (mem e s')}
+        ensures{sum (union s s') f  = sum s f +. sum s' f}
+       variant{cardinal s'}
+  = if cardinal s' = 0 then ()
+    else
+      if cardinal s' = 1 then sum_add s f (choose s')
+      else
+      begin
+        assert{union s s' = union (add (choose s' ) s) (remove (choose s') s')};
+        sum_partition (add (choose s') s) (remove (choose s') s') f;
+        sum_plus_one s' f;
+        sum_add s f (choose s');
+      end
+
+
 
 let rec lemma sum_real (s: set 'a) (f: 'a -> complex)
   requires{forall a. mem a s -> real_ (f a)}
@@ -1350,6 +1367,44 @@ let rec lemma ind_sum_constant_from_z  (f :int -> complex) (valu:complex)  (j:in
       use p_set.Choose_filter
            use  set.FsetComprehension
 
+  
+let rec lemma sum_constant_lower_bound (s: set 'a) (t:  'a -> complex) (x:complex)
+          requires{ forall e. mem e s -> real_ (t e)}
+          requires{ forall e. mem e s -> t e <=. x}
+          requires{real_ x}
+          ensures{sum s t <=. i_to_c (cardinal s) *. x}
+      variant{cardinal s}
+  = if cardinal s = 0 then() else
+    if cardinal s = 1 then sum_one s t
+    else begin 
+        sum_constant_lower_bound (remove (choose s) s) t x;
+        sum_plus_one s t;
+        assert{cardinal s = cardinal (remove (choose s)s) +1};
+        mult_distr_add_r x (i_to_c (cardinal (remove (choose s)s))) c_one;
+      end  
+
+let rec lemma sum_inf (s: set 'a) (t t':  'a -> complex) 
+          requires{ forall e. mem e s -> real_ (t e)}
+          requires{ forall e. mem e s -> real_ (t' e)}
+          requires{ forall e. mem e s -> t e <=. t' e}
+          ensures{sum s t <=. sum s t'}
+      variant{cardinal s}
+  = if cardinal s = 0 then() else
+      if cardinal s = 1 then
+        begin
+        sum_one s t;
+        sum_one s t';
+        end
+      else
+        begin 
+        sum_inf (remove (choose s) s) t t';
+        sum_plus_one s t;
+        sum_plus_one s t';
+        assert{cardinal s = cardinal (remove (choose s)s) +1};
+        end;
+    ()
+
+  
 let rec lemma sum_constant (s: set 'a) (t:  'a -> complex) (x:complex)
           requires{ forall e. mem e s -> t e = x}
           ensures{sum s t = i_to_c (cardinal s) *. x}

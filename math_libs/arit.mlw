@@ -84,6 +84,12 @@ let lemma get_div (j q r:int)
       ensures{div ((q* j) + r) j = q}
   = ()
 
+let lemma get_mod (j q r:int)
+      requires{0<j}
+      requires{0 <= r < j }
+      ensures{mod ((q* j) + r) j = r}
+  = ()
+
 let lemma positive_div (i j :int)
       requires{0<j <i}
       ensures{0 < div i j}
@@ -1726,6 +1732,7 @@ let function greatest_factor_in_n (multi n i:int):int
                requires{0< multi < power_ 2 n}
                requires{0<= i < multi}
                ensures{1<=result}
+           ensures{forall j. 0<= j < result  -> j * multi + mod i multi < power_ 2 n}
            ensures{forall j. 0<= j < power_ 2 n -> mod j multi = i <-> exists k. 0<= k < result && j =  k * multi + i}
            ensures{i_to_c (result-1) <=. i_to_c (power_ 2 n -i) /. i_to_c multi}
            ensures{forall i'. mod i' multi <= i ->  div i' multi < result}

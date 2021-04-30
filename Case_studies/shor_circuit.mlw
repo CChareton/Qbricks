@@ -155,6 +155,8 @@ let lemma best_appr_orders  (k a bound n:int)
                requires{0<= k < multi_order a bound}
                ensures{(i_to_c  (k * power_ 2 (2*n)) /. (i_to_c(multi_order a bound))) -. c_one /. ttwo <=. i_to_c (best_appr_ k a bound n)
                        <=. (i_to_c  (k * power_ 2 (2*n)) /. (i_to_c(multi_order a bound))) +. c_one /. ttwo}
+                 ensures{0<= best_appr_ k a bound n < power_ 2 (2*n)}
+  (* prouver ça-> si c'est égal a power_ 2 (2*n)  k - multi_order a boun est inf à 1/2b, ensuite virer dans shor les mod (best_appr_ ...) *)  
   =  modulus_real_minus_bound (i_to_c  (k * power_ 2 (2*n)) /. (i_to_c(multi_order a bound))) (i_to_c (best_appr_ k a bound n)) (c_one /. ttwo)
    
 let function greatest_factor (a bound n i:int)
@@ -165,10 +167,11 @@ let function greatest_factor (a bound n i:int)
                requires{co_prime a bound}
                requires{0<= i < multi_order a bound}
                ensures{1<=result}
+               ensures{forall j. 0<= j < result -> j * (multi_order a bound) + mod i (multi_order a bound) <  power_ 2 (2*n)}
            ensures{forall j. 0<= j < power_ 2 (2*n) -> mod j (multi_order a bound) = i <-> exists k. 0<= k < result && j =  k * (multi_order a bound) + i}
            ensures{i_to_c (result-1) <=. i_to_c (power_ 2 (2*n) -i) /. i_to_c (multi_order a bound)}
            ensures{div i (multi_order a bound) < result}
-           ensures{forall j. 0<= j < power_ 2 n -> mod j  (multi_order a bound) <= mod i  (multi_order a bound) -> div j (multi_order a bound) < result}
+           ensures{forall j. 0<= j < power_ 2 (2*n) -> mod j  (multi_order a bound) <= mod i  (multi_order a bound) -> div j (multi_order a bound) < result}
   = greatest_factor_in_n (multi_order a bound) (2*n) i
 
       use complex_operations.Base_type
@@ -183,21 +186,25 @@ let ghost function min_mod_sum (a bound n :int)
                ensures{c_zero<=.result}
                ensures{real_ result}
           ensures{forall i k. 0<= i < multi_order a bound ->  0<= k < multi_order a bound -> 
-                result <=. cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2
+                  result <=. cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+ mod i (multi_order a bound))
+                                                                    (-  (best_appr_ k a bound n) ) (2*n))) 0 (greatest_factor a bound n i)))2
                 /. ( cpower (i_to_c (greatest_factor a bound n i)) 2)}
           ensures{forall i k. 0<= i < multi_order a bound ->  0<= k < multi_order a bound -> 
                   ( cpower (i_to_c (greatest_factor a bound n i)) 2) *. result <=.
-                    cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2}
+                    cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+mod i (multi_order a bound))
+                                                           (-  (best_appr_ k a bound n) ) (2*n))) 0 (greatest_factor a bound n i)))2}
   = let min_mod_sum_pre (k:int)
                ensures{c_zero<=.result}
           ensures{real_ result}
           ensures{0<= k < (multi_order a bound) -> forall i. 0<= i < multi_order a bound -> 
-              result <=.  cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2
+                  result <=.  cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+mod i (multi_order a bound))
+                                                                     (-  (best_appr_ k a bound n) ) (2*n))) 0 (greatest_factor a bound n i)))2
               /.( cpower (i_to_c (greatest_factor a bound n i)) 2)}
       = if 0<= k < (multi_order a bound) then
       min_set_complex (to_fset 0 (multi_order a bound))
         (fun i -> if 0<= i < multi_order a bound then
-                    cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+i) (- mod (best_appr_ k a bound n) (power_ 2 (2*n))) (2*n))) 0 (greatest_factor a bound n i)))2
+                    cpower (modulus (ind_sum  (fun y -> (int_qft_coeff (y  * multi_order a bound+mod i (multi_order a bound))
+                                                           (-  (best_appr_ k a bound n) ) (2*n))) 0 (greatest_factor a bound n i)))2
                     /. ( cpower (i_to_c (greatest_factor a bound n i)) 2) else c_zero) else c_zero
     in min_set_complex (to_fset 0 (multi_order a bound)) min_mod_sum_pre
   
@@ -224,6 +231,7 @@ transitive_infeq_inf (i_to_c (best_appr_ k a bound n))
 transitive_inf_infeq (i_to_c (best_appr_ k a bound n))
   ((i_to_c (k' * power_ 2 (2*n)) /. (i_to_c(multi_order a bound))) -. c_one /. ttwo)
   (i_to_c (best_appr_ k' a bound n))
+
 
 end                   
 

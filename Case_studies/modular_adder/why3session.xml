@@ -18,62 +18,62 @@
   <goal name="VC cascade_adder_.1" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.1.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.75" steps="366"/></proof>
+   <proof prover="1"><result status="valid" time="1.40" steps="366"/></proof>
    </goal>
    <goal name="VC cascade_adder_.1.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.68" steps="366"/></proof>
+   <proof prover="1"><result status="valid" time="1.29" steps="366"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="1.18" steps="364"/></proof>
   </goal>
   <goal name="VC cascade_adder_.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.51" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="1.14" steps="364"/></proof>
   </goal>
   <goal name="VC cascade_adder_.4" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.50" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.83" steps="364"/></proof>
   </goal>
   <goal name="VC cascade_adder_.5" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.5.0" expl="precondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.19"/></proof>
+   <proof prover="0"><result status="valid" time="1.64"/></proof>
    </goal>
    <goal name="VC cascade_adder_.5.1" expl="precondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.50"/></proof>
+   <proof prover="0"><result status="valid" time="1.87"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.6" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.6.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.53" steps="366"/></proof>
+   <proof prover="1"><result status="valid" time="0.94" steps="366"/></proof>
    </goal>
    <goal name="VC cascade_adder_.6.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.54" steps="366"/></proof>
+   <proof prover="1"><result status="valid" time="1.13" steps="366"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.7" expl="variant decrease" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.94" steps="370"/></proof>
   </goal>
   <goal name="VC cascade_adder_.8" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.95" steps="370"/></proof>
   </goal>
   <goal name="VC cascade_adder_.9" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.9.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.62" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="0.96" steps="370"/></proof>
    </goal>
    <goal name="VC cascade_adder_.9.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.56" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="1.24" steps="370"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.10" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.10.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.59" steps="372"/></proof>
+   <proof prover="1"><result status="valid" time="0.88" steps="372"/></proof>
    </goal>
   </transf>
   </goal>
@@ -103,7 +103,7 @@
       </transf>
       </goal>
       <goal name="VC cascade_adder_.12.0.0.0.1" expl="apply premises" proved="true">
-      <proof prover="1"><result status="valid" time="0.53" steps="382"/></proof>
+      <proof prover="1"><result status="valid" time="0.86" steps="382"/></proof>
       </goal>
      </transf>
      </goal>
@@ -115,7 +115,7 @@
        <proof prover="0"><result status="valid" time="1.69"/></proof>
        </goal>
        <goal name="VC cascade_adder_.12.0.0.1.0.1" expl="false case (equality hypothesis)" proved="true">
-       <proof prover="0"><result status="valid" time="2.00"/></proof>
+       <proof prover="0"><result status="valid" time="2.81"/></proof>
        </goal>
       </transf>
       </goal>
@@ -128,7 +128,7 @@
   </transf>
   </goal>
   <goal name="VC cascade_adder_.13" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="382"/></proof>
+  <proof prover="1"><result status="valid" time="1.23" steps="382"/></proof>
   </goal>
   <goal name="VC cascade_adder_.14" expl="precondition" proved="true">
   <transf name="compute_specified" proved="true" >
@@ -143,28 +143,28 @@
       </transf>
       </goal>
       <goal name="VC cascade_adder_.14.0.0.0.1" expl="equality hypothesis" proved="true">
-      <proof prover="1"><result status="valid" time="0.70" steps="385"/></proof>
+      <proof prover="1"><result status="valid" time="0.89" steps="385"/></proof>
       </goal>
      </transf>
      </goal>
      <goal name="VC cascade_adder_.14.0.0.1" expl="apply premises" proved="true">
      <transf name="compute_specified" proved="true" >
       <goal name="VC cascade_adder_.14.0.0.1.0" expl="apply premises" proved="true">
-      <proof prover="1"><result status="valid" time="0.65" steps="385"/></proof>
+      <proof prover="1"><result status="valid" time="1.25" steps="385"/></proof>
       </goal>
      </transf>
      </goal>
     </transf>
     </goal>
     <goal name="VC cascade_adder_.14.0.1" expl="rewrite premises" proved="true">
-    <proof prover="1"><result status="valid" time="0.61" steps="385"/></proof>
+    <proof prover="1"><result status="valid" time="0.99" steps="385"/></proof>
     </goal>
    </transf>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.15" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.81" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="6.30" steps="390"/></proof>
   </goal>
   <goal name="VC cascade_adder_.16" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
@@ -193,7 +193,7 @@
         </transf>
         </goal>
         <goal name="VC cascade_adder_.16.0.0.0.0.0.1" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.63" steps="374"/></proof>
+        <proof prover="1"><result status="valid" time="1.10" steps="374"/></proof>
         </goal>
        </transf>
        </goal>
@@ -204,12 +204,12 @@
          <goal name="VC cascade_adder_.16.0.0.0.0.1.0.0" expl="equality hypothesis" proved="true">
          <transf name="compute_specified" proved="true" >
           <goal name="VC cascade_adder_.16.0.0.0.0.1.0.0.0" expl="equality hypothesis" proved="true">
-          <proof prover="0"><result status="valid" time="2.25"/></proof>
+          <proof prover="0"><result status="valid" time="3.20"/></proof>
           </goal>
          </transf>
          </goal>
          <goal name="VC cascade_adder_.16.0.0.0.0.1.0.1" expl="rewrite premises" proved="true">
-         <proof prover="1"><result status="valid" time="0.54" steps="374"/></proof>
+         <proof prover="1"><result status="valid" time="0.90" steps="374"/></proof>
          </goal>
         </transf>
         </goal>
@@ -236,20 +236,20 @@
   <goal name="VC cascade_adder_.17" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.17.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.58" steps="374"/></proof>
+   <proof prover="1"><result status="valid" time="1.26" steps="374"/></proof>
    </goal>
    <goal name="VC cascade_adder_.17.1" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="392"/></proof>
+   <proof prover="1"><result status="valid" time="1.06" steps="392"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC cascade_adder_.18" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC cascade_adder_.18.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.58" steps="375"/></proof>
+   <proof prover="1"><result status="valid" time="1.30" steps="375"/></proof>
    </goal>
    <goal name="VC cascade_adder_.18.1" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="393"/></proof>
+   <proof prover="1"><result status="valid" time="1.27" steps="393"/></proof>
    </goal>
   </transf>
   </goal>
@@ -262,73 +262,73 @@
    <goal name="VC pre_adder_const_.0.0" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.0.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.55" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.05" steps="358"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.0.1" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.56" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.32" steps="358"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.1" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.1.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.55" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="0.99" steps="358"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.1.1" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.59" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.21" steps="358"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.2" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.2.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.57" steps="360"/></proof>
+    <proof prover="1"><result status="valid" time="1.12" steps="360"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.3" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.58" steps="362"/></proof>
+   <proof prover="1"><result status="valid" time="1.16" steps="362"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.4" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.67" steps="362"/></proof>
+   <proof prover="1"><result status="valid" time="1.17" steps="362"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.5" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="362"/></proof>
+   <proof prover="1"><result status="valid" time="1.27" steps="362"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.6" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.6.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.56" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.12" steps="358"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.6.1" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.57" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.04" steps="358"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.7" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.7.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.61" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.21" steps="358"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.7.1" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.60" steps="358"/></proof>
+    <proof prover="1"><result status="valid" time="1.19" steps="358"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.8" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.8.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.65" steps="360"/></proof>
+    <proof prover="1"><result status="valid" time="1.22" steps="360"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.9" expl="variant decrease" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.9.0" expl="variant decrease" proved="true">
-    <proof prover="1"><result status="valid" time="0.68" steps="366"/></proof>
+    <proof prover="1"><result status="valid" time="1.06" steps="366"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.9.1" expl="variant decrease" proved="true">
-    <proof prover="1"><result status="valid" time="0.62" steps="366"/></proof>
+    <proof prover="1"><result status="valid" time="1.01" steps="366"/></proof>
     </goal>
    </transf>
    </goal>
@@ -351,7 +351,7 @@
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.13" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.59" steps="378"/></proof>
+   <proof prover="1"><result status="valid" time="1.31" steps="378"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.14" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
@@ -368,25 +368,25 @@
         </transf>
         </goal>
         <goal name="VC pre_adder_const_.0.14.0.0.0.0.1" expl="equality hypothesis" proved="true">
-        <proof prover="1"><result status="valid" time="0.72" steps="381"/></proof>
+        <proof prover="1"><result status="valid" time="0.97" steps="381"/></proof>
         </goal>
        </transf>
        </goal>
        <goal name="VC pre_adder_const_.0.14.0.0.0.1" expl="apply premises" proved="true">
        <transf name="apply" proved="true" arg1="ang_sum_eq_gen">
         <goal name="VC pre_adder_const_.0.14.0.0.0.1.0" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.67" steps="381"/></proof>
+        <proof prover="1"><result status="valid" time="1.12" steps="381"/></proof>
         </goal>
         <goal name="VC pre_adder_const_.0.14.0.0.0.1.1" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.58" steps="381"/></proof>
+        <proof prover="1"><result status="valid" time="1.23" steps="381"/></proof>
         </goal>
         <goal name="VC pre_adder_const_.0.14.0.0.0.1.2" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.66" steps="381"/></proof>
+        <proof prover="1"><result status="valid" time="1.15" steps="381"/></proof>
         </goal>
         <goal name="VC pre_adder_const_.0.14.0.0.0.1.3" expl="apply premises" proved="true">
         <transf name="compute_specified" proved="true" >
          <goal name="VC pre_adder_const_.0.14.0.0.0.1.3.0" expl="apply premises" proved="true">
-         <proof prover="1"><result status="valid" time="0.53" steps="385"/></proof>
+         <proof prover="1"><result status="valid" time="1.14" steps="385"/></proof>
          </goal>
         </transf>
         </goal>
@@ -397,7 +397,7 @@
      </transf>
      </goal>
      <goal name="VC pre_adder_const_.0.14.0.1" expl="rewrite premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.56" steps="381"/></proof>
+     <proof prover="1"><result status="valid" time="0.93" steps="381"/></proof>
      </goal>
     </transf>
     </goal>
@@ -406,10 +406,10 @@
    <goal name="VC pre_adder_const_.0.15" expl="postcondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.15.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.59" steps="368"/></proof>
+    <proof prover="1"><result status="valid" time="1.10" steps="368"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.15.1" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="3.88" steps="386"/></proof>
+    <proof prover="1"><result status="valid" time="6.37" steps="386"/></proof>
     </goal>
    </transf>
    </goal>
@@ -446,7 +446,7 @@
         </transf>
         </goal>
         <goal name="VC pre_adder_const_.0.16.0.0.0.0.1" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.65" steps="370"/></proof>
+        <proof prover="1"><result status="valid" time="1.25" steps="370"/></proof>
         </goal>
        </transf>
        </goal>
@@ -459,23 +459,23 @@
           <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.0.0" expl="equality hypothesis" proved="true">
           <transf name="apply" proved="true" arg1="ang_sum_eq_gen">
            <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.0.0.0" expl="apply premises" proved="true">
-           <proof prover="1"><result status="valid" time="0.65" steps="370"/></proof>
+           <proof prover="1"><result status="valid" time="1.07" steps="370"/></proof>
            </goal>
            <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.0.0.1" expl="apply premises" proved="true">
-           <proof prover="1"><result status="valid" time="0.61" steps="370"/></proof>
+           <proof prover="1"><result status="valid" time="0.93" steps="370"/></proof>
            </goal>
            <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.0.0.2" expl="apply premises" proved="true">
-           <proof prover="1"><result status="valid" time="0.57" steps="370"/></proof>
+           <proof prover="1"><result status="valid" time="1.29" steps="370"/></proof>
            </goal>
            <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.0.0.3" expl="apply premises" proved="true">
-           <proof prover="0"><result status="valid" time="1.24"/></proof>
+           <proof prover="0"><result status="valid" time="2.28"/></proof>
            </goal>
           </transf>
           </goal>
          </transf>
          </goal>
          <goal name="VC pre_adder_const_.0.16.0.0.0.1.0.1" expl="rewrite premises" proved="true">
-         <proof prover="1"><result status="valid" time="0.52" steps="370"/></proof>
+         <proof prover="1"><result status="valid" time="0.97" steps="370"/></proof>
          </goal>
         </transf>
         </goal>
@@ -496,64 +496,64 @@
    <goal name="VC pre_adder_const_.0.17" expl="postcondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.17.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.55" steps="370"/></proof>
+    <proof prover="1"><result status="valid" time="1.02" steps="370"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.17.1" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.57" steps="388"/></proof>
+    <proof prover="1"><result status="valid" time="1.14" steps="388"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.18" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.59" steps="362"/></proof>
+   <proof prover="1"><result status="valid" time="0.98" steps="362"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.19" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.56" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="1.09" steps="354"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.20" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.54" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="1.08" steps="354"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.21" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="0.81" steps="354"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.22" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.54" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="1.08" steps="354"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.23" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="0.79" steps="354"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.24" expl="precondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.24.0" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.57" steps="356"/></proof>
+    <proof prover="1"><result status="valid" time="1.17" steps="356"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.24.1" expl="precondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.58" steps="356"/></proof>
+    <proof prover="1"><result status="valid" time="0.84" steps="356"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.25" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.54" steps="366"/></proof>
+   <proof prover="1"><result status="valid" time="0.95" steps="366"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.26" expl="precondition" proved="true">
    <transf name="replace" proved="true" arg1="(n * ((n - 1) + 1))" arg2="(power_ n 2)">
     <goal name="VC pre_adder_const_.0.26.0" expl="precondition" proved="true">
-    <proof prover="0"><result status="valid" time="1.36"/></proof>
+    <proof prover="0"><result status="valid" time="2.01"/></proof>
     </goal>
     <goal name="VC pre_adder_const_.0.26.1" expl="equality hypothesis" proved="true">
-    <proof prover="1"><result status="valid" time="3.64" steps="368"/></proof>
+    <proof prover="1"><result status="valid" time="6.02" steps="368"/></proof>
     </goal>
    </transf>
    </goal>
    <goal name="VC pre_adder_const_.0.27" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.58" steps="368"/></proof>
+   <proof prover="1"><result status="valid" time="1.08" steps="368"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.28" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.51" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="0.93" steps="370"/></proof>
    </goal>
    <goal name="VC pre_adder_const_.0.29" expl="postcondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC pre_adder_const_.0.29.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.66" steps="370"/></proof>
+    <proof prover="1"><result status="valid" time="1.17" steps="370"/></proof>
     </goal>
    </transf>
    </goal>
@@ -573,7 +573,7 @@
      </transf>
      </goal>
      <goal name="VC pre_adder_const_.0.31.0.1" expl="equality hypothesis" proved="true">
-     <proof prover="1"><result status="valid" time="0.57" steps="370"/></proof>
+     <proof prover="1"><result status="valid" time="1.16" steps="370"/></proof>
      </goal>
     </transf>
     </goal>
@@ -602,7 +602,7 @@
        </transf>
        </goal>
        <goal name="VC pre_adder_const_.0.32.0.0.0.1" expl="apply premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.60" steps="374"/></proof>
+       <proof prover="1"><result status="valid" time="1.19" steps="374"/></proof>
        </goal>
       </transf>
       </goal>
@@ -611,13 +611,13 @@
        <goal name="VC pre_adder_const_.0.32.0.0.1.0" expl="equality hypothesis" proved="true">
        <transf name="rewrite" proved="true" arg1="H16">
         <goal name="VC pre_adder_const_.0.32.0.0.1.0.0" expl="equality hypothesis" proved="true">
-        <proof prover="1"><result status="valid" time="0.55" steps="374"/></proof>
+        <proof prover="1"><result status="valid" time="1.24" steps="374"/></proof>
         </goal>
         <goal name="VC pre_adder_const_.0.32.0.0.1.0.1" expl="rewrite premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.56" steps="374"/></proof>
+        <proof prover="1"><result status="valid" time="0.89" steps="374"/></proof>
         </goal>
         <goal name="VC pre_adder_const_.0.32.0.0.1.0.2" expl="rewrite premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.51" steps="374"/></proof>
+        <proof prover="1"><result status="valid" time="0.85" steps="374"/></proof>
         </goal>
        </transf>
        </goal>
@@ -641,21 +641,21 @@
   <goal name="VC pre_adder_const_apply.0" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC pre_adder_const_apply.0.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="354"/></proof>
+   <proof prover="1"><result status="valid" time="0.89" steps="354"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC pre_adder_const_apply.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.72" steps="358"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="358"/></proof>
   </goal>
   <goal name="VC pre_adder_const_apply.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.54" steps="362"/></proof>
+  <proof prover="1"><result status="valid" time="1.03" steps="362"/></proof>
   </goal>
   <goal name="VC pre_adder_const_apply.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.54" steps="362"/></proof>
+  <proof prover="1"><result status="valid" time="1.14" steps="362"/></proof>
   </goal>
   <goal name="VC pre_adder_const_apply.4" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.50" steps="372"/></proof>
+  <proof prover="1"><result status="valid" time="1.01" steps="372"/></proof>
   </goal>
   <goal name="VC pre_adder_const_apply.5" expl="postcondition" proved="true">
   <transf name="eliminate_definition" proved="true" >
@@ -674,10 +674,10 @@
          <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0" expl="apply premises" proved="true">
          <transf name="apply" proved="true" arg1="ket_sum_eq">
           <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.0" expl="apply premises" proved="true">
-          <proof prover="1"><result status="valid" time="0.66" steps="336"/></proof>
+          <proof prover="1"><result status="valid" time="1.70" steps="336"/></proof>
           </goal>
           <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.1" expl="apply premises" proved="true">
-          <proof prover="1"><result status="valid" time="0.68" steps="336"/></proof>
+          <proof prover="1"><result status="valid" time="1.50" steps="336"/></proof>
           </goal>
           <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2" expl="apply premises" proved="true">
           <transf name="split_vc" proved="true" >
@@ -692,22 +692,22 @@
                <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0" expl="apply premises" proved="true">
                <transf name="apply" proved="true" arg1="scalar_eq_gen">
                 <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.0" expl="apply premises" proved="true">
-                <proof prover="1"><result status="valid" time="0.67" steps="338"/></proof>
+                <proof prover="1"><result status="valid" time="1.49" steps="338"/></proof>
                 </goal>
                 <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.1" expl="apply premises" proved="true">
                 <transf name="replace" proved="true" arg1="(bv_to_int (int_to_bv j n))" arg2="j">
                  <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.1.0" expl="apply premises" proved="true">
                  <transf name="rewrite" proved="true" arg1="int_qft_coeff_add">
                   <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.1.0.0" expl="apply premises" proved="true">
-                  <proof prover="1"><result status="valid" time="0.68" steps="338"/></proof>
+                  <proof prover="1"><result status="valid" time="1.67" steps="338"/></proof>
                   </goal>
                   <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.1.0.1" expl="rewrite premises" proved="true">
-                  <proof prover="1"><result status="valid" time="0.68" steps="338"/></proof>
+                  <proof prover="1"><result status="valid" time="1.35" steps="338"/></proof>
                   </goal>
                  </transf>
                  </goal>
                  <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.0.0.1.1" expl="equality hypothesis" proved="true">
-                 <proof prover="0"><result status="valid" time="3.71"/></proof>
+                 <proof prover="4"><result status="valid" time="1.91"/></proof>
                  </goal>
                 </transf>
                 </goal>
@@ -716,12 +716,12 @@
               </transf>
               </goal>
               <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.0.1" expl="rewrite premises" proved="true">
-              <proof prover="0"><result status="valid" time="4.89"/></proof>
+              <proof prover="4"><result status="valid" time="1.74"/></proof>
               </goal>
              </transf>
              </goal>
              <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.0.2.0.0.1" expl="rewrite premises" proved="true">
-             <proof prover="0"><result status="valid" time="4.12"/></proof>
+             <proof prover="4"><result status="valid" time="1.71"/></proof>
              </goal>
             </transf>
             </goal>
@@ -732,10 +732,10 @@
          </transf>
          </goal>
          <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.1" expl="rewrite premises" proved="true">
-         <proof prover="4"><result status="valid" time="1.51"/></proof>
+         <proof prover="4"><result status="valid" time="1.83"/></proof>
          </goal>
          <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.2" expl="rewrite premises" proved="true">
-         <proof prover="1"><result status="valid" time="0.71" steps="336"/></proof>
+         <proof prover="1"><result status="valid" time="1.51" steps="336"/></proof>
          </goal>
          <goal name="VC pre_adder_const_apply.5.0.0.0.0.0.0.3" expl="rewrite premises" proved="true">
          <transf name="compute_specified" proved="true" >
@@ -758,12 +758,12 @@
       </transf>
       </goal>
       <goal name="VC pre_adder_const_apply.5.0.0.0.1" expl="rewrite premises" proved="true">
-      <proof prover="1"><result status="valid" time="0.71" steps="336"/></proof>
+      <proof prover="1"><result status="valid" time="1.19" steps="336"/></proof>
       </goal>
      </transf>
      </goal>
      <goal name="VC pre_adder_const_apply.5.0.0.1" expl="rewrite premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.79" steps="336"/></proof>
+     <proof prover="1"><result status="valid" time="1.16" steps="336"/></proof>
      </goal>
     </transf>
     </goal>
@@ -772,7 +772,7 @@
   </transf>
   </goal>
   <goal name="VC pre_adder_const_apply.6" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.22" steps="380"/></proof>
+  <proof prover="1"><result status="valid" time="6.44" steps="380"/></proof>
   </goal>
  </transf>
  </goal>
@@ -784,10 +784,10 @@
    <transf name="replace" proved="true" arg1="(path_sem (pre_adder_const_ n (int_to_bv j n)) (apply_qft n i))" arg2="(pre_adder_const_apply n i j)
 ">
     <goal name="VC pre_adder_const_add.0.0.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="3.05" steps="356"/></proof>
+    <proof prover="1"><result status="valid" time="5.19" steps="356"/></proof>
     </goal>
     <goal name="VC pre_adder_const_add.0.0.1" expl="equality hypothesis" proved="true">
-    <proof prover="1"><result status="valid" time="3.01" steps="356"/></proof>
+    <proof prover="1"><result status="valid" time="6.87" steps="356"/></proof>
     </goal>
    </transf>
    </goal>
@@ -798,38 +798,38 @@
  <goal name="VC add_in_qft" expl="VC for add_in_qft" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC add_in_qft.0" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="2.95" steps="352"/></proof>
+  <proof prover="1"><result status="valid" time="5.13" steps="352"/></proof>
   </goal>
   <goal name="VC add_in_qft.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.52" steps="350"/></proof>
+  <proof prover="1"><result status="valid" time="1.07" steps="350"/></proof>
   </goal>
   <goal name="VC add_in_qft.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.59" steps="352"/></proof>
+  <proof prover="1"><result status="valid" time="5.24" steps="352"/></proof>
   </goal>
   <goal name="VC add_in_qft.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.53" steps="352"/></proof>
+  <proof prover="1"><result status="valid" time="5.65" steps="352"/></proof>
   </goal>
   <goal name="VC add_in_qft.4" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.66" steps="350"/></proof>
+  <proof prover="1"><result status="valid" time="1.13" steps="350"/></proof>
   </goal>
   <goal name="VC add_in_qft.5" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="354"/></proof>
+  <proof prover="1"><result status="valid" time="0.96" steps="354"/></proof>
   </goal>
   <goal name="VC add_in_qft.6" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="355"/></proof>
+  <proof prover="1"><result status="valid" time="1.31" steps="355"/></proof>
   </goal>
   <goal name="VC add_in_qft.7" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC add_in_qft.7.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="364"/></proof>
+   <proof prover="1"><result status="valid" time="0.98" steps="364"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC add_in_qft.8" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="1.31" steps="364"/></proof>
   </goal>
   <goal name="VC add_in_qft.9" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.68" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.92" steps="364"/></proof>
   </goal>
   <goal name="VC add_in_qft.10" expl="postcondition" proved="true">
   <transf name="eliminate_definition" proved="true" >
@@ -842,13 +842,13 @@
       <goal name="VC add_in_qft.10.0.0.0.0" expl="apply premises" proved="true">
       <transf name="rewrite" proved="true" arg1="pre_adder_const__spec3">
        <goal name="VC add_in_qft.10.0.0.0.0.0" expl="apply premises" proved="true">
-       <proof prover="0"><result status="valid" time="4.75"/></proof>
+       <proof prover="0"><result status="valid" time="8.93"/></proof>
        </goal>
        <goal name="VC add_in_qft.10.0.0.0.0.1" expl="rewrite premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.71" steps="324"/></proof>
+       <proof prover="1"><result status="valid" time="1.83" steps="324"/></proof>
        </goal>
        <goal name="VC add_in_qft.10.0.0.0.0.2" expl="rewrite premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.94" steps="324"/></proof>
+       <proof prover="1"><result status="valid" time="1.62" steps="324"/></proof>
        </goal>
       </transf>
       </goal>
@@ -864,7 +864,7 @@
         <proof prover="4"><result status="valid" time="1.46"/></proof>
         </goal>
         <goal name="VC add_in_qft.10.0.0.1.0.0.1" expl="rewrite premises" proved="true">
-        <proof prover="0"><result status="valid" time="4.36"/></proof>
+        <proof prover="0"><result status="valid" time="9.78"/></proof>
         </goal>
        </transf>
        </goal>
@@ -917,7 +917,7 @@
    <goal name="VC place_add_in_qft.8.0" expl="postcondition" proved="true">
    <transf name="rewrite" proved="true" arg1="result_def">
     <goal name="VC place_add_in_qft.8.0.0" expl="postcondition" proved="true">
-    <proof prover="0"><result status="valid" time="4.33"/></proof>
+    <proof prover="0"><result status="valid" time="8.10"/></proof>
     </goal>
    </transf>
    </goal>
@@ -1156,25 +1156,25 @@
   <proof prover="1"><result status="valid" time="3.53" steps="374"/></proof>
   </goal>
   <goal name="VC cont_add_in_qft.5" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.55" steps="374"/></proof>
+  <proof prover="1"><result status="valid" time="4.24" steps="374"/></proof>
   </goal>
   <goal name="VC cont_add_in_qft.6" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="372"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="372"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC check_first_bit_is_one" expl="VC for check_first_bit_is_one" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC check_first_bit_is_one.0" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="350"/></proof>
+  <proof prover="1"><result status="valid" time="0.75" steps="350"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="350"/></proof>
+  <proof prover="1"><result status="valid" time="1.01" steps="350"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one.2" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC check_first_bit_is_one.2.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="351"/></proof>
+   <proof prover="1"><result status="valid" time="0.78" steps="351"/></proof>
    </goal>
    <goal name="VC check_first_bit_is_one.2.1" expl="precondition" proved="true">
    <proof prover="1"><result status="valid" time="0.59" steps="351"/></proof>
@@ -1182,7 +1182,7 @@
   </transf>
   </goal>
   <goal name="VC check_first_bit_is_one.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="353"/></proof>
+  <proof prover="1"><result status="valid" time="1.04" steps="353"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one.4" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.60" steps="358"/></proof>
@@ -1193,7 +1193,7 @@
   <goal name="VC check_first_bit_is_one.6" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC check_first_bit_is_one.6.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.65" steps="358"/></proof>
+   <proof prover="1"><result status="valid" time="1.05" steps="358"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1207,18 +1207,18 @@
      <proof prover="1"><result status="valid" time="0.63" steps="362"/></proof>
      </goal>
      <goal name="VC check_first_bit_is_one.7.0.0.1" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.60" steps="362"/></proof>
+     <proof prover="1"><result status="valid" time="1.06" steps="362"/></proof>
      </goal>
      <goal name="VC check_first_bit_is_one.7.0.0.2" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="3.43" steps="364"/></proof>
+     <proof prover="1"><result status="valid" time="4.72" steps="364"/></proof>
      </goal>
      <goal name="VC check_first_bit_is_one.7.0.0.3" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.61" steps="362"/></proof>
+     <proof prover="1"><result status="valid" time="1.10" steps="362"/></proof>
      </goal>
     </transf>
     </goal>
     <goal name="VC check_first_bit_is_one.7.0.1" expl="equality hypothesis" proved="true">
-    <proof prover="1"><result status="valid" time="0.56" steps="362"/></proof>
+    <proof prover="1"><result status="valid" time="1.01" steps="362"/></proof>
     </goal>
    </transf>
    </goal>
@@ -1231,20 +1231,20 @@
       <goal name="VC check_first_bit_is_one.7.1.0.0.0" expl="apply premises" proved="true">
       <transf name="apply" proved="true" arg1="H11">
        <goal name="VC check_first_bit_is_one.7.1.0.0.0.0" expl="apply premises" proved="true">
-       <proof prover="0"><result status="valid" time="4.67"/></proof>
+       <proof prover="0"><result status="valid" time="8.29"/></proof>
        </goal>
        <goal name="VC check_first_bit_is_one.7.1.0.0.0.1" expl="apply premises" proved="true">
        <transf name="apply" proved="true" arg1="ket_is_a_ket_basis_elt">
         <goal name="VC check_first_bit_is_one.7.1.0.0.0.1.0" expl="apply premises" proved="true">
-        <proof prover="1"><result status="valid" time="0.80" steps="322"/></proof>
+        <proof prover="1"><result status="valid" time="1.11" steps="322"/></proof>
         </goal>
         <goal name="VC check_first_bit_is_one.7.1.0.0.0.1.1" expl="apply premises" proved="true">
-        <proof prover="0"><result status="valid" time="4.37"/></proof>
+        <proof prover="0"><result status="valid" time="8.62"/></proof>
         </goal>
        </transf>
        </goal>
        <goal name="VC check_first_bit_is_one.7.1.0.0.0.2" expl="apply premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.74" steps="322"/></proof>
+       <proof prover="1"><result status="valid" time="0.93" steps="322"/></proof>
        </goal>
        <goal name="VC check_first_bit_is_one.7.1.0.0.0.3" expl="apply premises" proved="true">
        <transf name="replace" proved="true" arg1="(ket_to_bv (ket (n + 1) g))" arg2="(int_to_bv g (n+1))">
@@ -1254,10 +1254,10 @@
          <proof prover="4"><result status="valid" time="1.62"/></proof>
          </goal>
          <goal name="VC check_first_bit_is_one.7.1.0.0.0.3.0.1" expl="rewrite premises" proved="true">
-         <proof prover="1"><result status="valid" time="0.73" steps="322"/></proof>
+         <proof prover="1"><result status="valid" time="0.95" steps="322"/></proof>
          </goal>
          <goal name="VC check_first_bit_is_one.7.1.0.0.0.3.0.2" expl="rewrite premises" proved="true">
-         <proof prover="0"><result status="valid" time="4.33"/></proof>
+         <proof prover="0"><result status="valid" time="8.70"/></proof>
          </goal>
          <goal name="VC check_first_bit_is_one.7.1.0.0.0.3.0.3" expl="rewrite premises" proved="true">
          <proof prover="1"><result status="valid" time="0.73" steps="322"/></proof>
@@ -1265,14 +1265,14 @@
         </transf>
         </goal>
         <goal name="VC check_first_bit_is_one.7.1.0.0.0.3.1" expl="equality hypothesis" proved="true">
-        <proof prover="0"><result status="valid" time="4.71"/></proof>
+        <proof prover="0"><result status="valid" time="8.65"/></proof>
         </goal>
        </transf>
        </goal>
       </transf>
       </goal>
       <goal name="VC check_first_bit_is_one.7.1.0.0.1" expl="equality hypothesis" proved="true">
-      <proof prover="1"><result status="valid" time="0.75" steps="322"/></proof>
+      <proof prover="1"><result status="valid" time="0.97" steps="322"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1297,10 +1297,10 @@
       <proof prover="1"><result status="valid" time="0.55" steps="362"/></proof>
       </goal>
       <goal name="VC check_first_bit_is_one.8.0.0.0.2" expl="apply premises" proved="true">
-      <proof prover="1"><result status="valid" time="3.48" steps="364"/></proof>
+      <proof prover="1"><result status="valid" time="4.56" steps="364"/></proof>
       </goal>
       <goal name="VC check_first_bit_is_one.8.0.0.0.3" expl="apply premises" proved="true">
-      <proof prover="1"><result status="valid" time="0.54" steps="362"/></proof>
+      <proof prover="1"><result status="valid" time="0.70" steps="362"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1321,7 +1321,7 @@
         <proof prover="1"><result status="valid" time="0.75" steps="322"/></proof>
         </goal>
         <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.1" expl="rewrite premises" proved="true">
-        <proof prover="0"><result status="valid" time="4.82"/></proof>
+        <proof prover="0"><result status="valid" time="8.74"/></proof>
         </goal>
         <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.2" expl="rewrite premises" proved="true">
         <transf name="apply" proved="true" arg1="ket_is_a_ket_basis_elt">
@@ -1329,7 +1329,7 @@
          <proof prover="1"><result status="valid" time="0.72" steps="322"/></proof>
          </goal>
          <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.2.1" expl="apply premises" proved="true">
-         <proof prover="0"><result status="valid" time="4.38"/></proof>
+         <proof prover="0"><result status="valid" time="8.80"/></proof>
          </goal>
         </transf>
         </goal>
@@ -1339,10 +1339,10 @@
         <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.4" expl="rewrite premises" proved="true">
         <transf name="replace" proved="true" arg1="(ket_to_bv (ket (n + 1) g))" arg2="(int_to_bv g (n+1))">
          <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.4.0" expl="rewrite premises" proved="true">
-         <proof prover="0"><result status="valid" time="4.84"/></proof>
+         <proof prover="0"><result status="valid" time="9.34"/></proof>
          </goal>
          <goal name="VC check_first_bit_is_one.8.0.1.0.0.0.4.1" expl="equality hypothesis" proved="true">
-         <proof prover="0"><result status="valid" time="5.17"/></proof>
+         <proof prover="0"><result status="valid" time="9.00"/></proof>
          </goal>
         </transf>
         </goal>
@@ -1386,7 +1386,7 @@
   <goal name="VC uncheck_first_bit_is_zero.6" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_first_bit_is_zero.6.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.59" steps="358"/></proof>
+   <proof prover="1"><result status="valid" time="0.90" steps="358"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1400,10 +1400,10 @@
      <proof prover="1"><result status="valid" time="0.58" steps="362"/></proof>
      </goal>
      <goal name="VC uncheck_first_bit_is_zero.7.0.0.1" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.58" steps="362"/></proof>
+     <proof prover="1"><result status="valid" time="0.99" steps="362"/></proof>
      </goal>
      <goal name="VC uncheck_first_bit_is_zero.7.0.0.2" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="3.40" steps="364"/></proof>
+     <proof prover="1"><result status="valid" time="5.06" steps="364"/></proof>
      </goal>
      <goal name="VC uncheck_first_bit_is_zero.7.0.0.3" expl="apply premises" proved="true">
      <proof prover="1"><result status="valid" time="0.65" steps="362"/></proof>
@@ -1420,7 +1420,7 @@
     <goal name="VC uncheck_first_bit_is_zero.7.1.0" expl="apply premises" proved="true">
     <transf name="rewrite" proved="true" arg1="result_def">
      <goal name="VC uncheck_first_bit_is_zero.7.1.0.0" expl="apply premises" proved="true">
-     <proof prover="0"><result status="valid" time="4.43"/></proof>
+     <proof prover="0"><result status="valid" time="8.94"/></proof>
      </goal>
     </transf>
     </goal>
@@ -1458,7 +1458,7 @@
     <goal name="VC uncheck_first_bit_is_zero.8.1.0" expl="apply premises" proved="true">
     <transf name="rewrite" proved="true" arg1="result_def">
      <goal name="VC uncheck_first_bit_is_zero.8.1.0.0" expl="apply premises" proved="true">
-     <proof prover="0"><result status="valid" time="4.10"/></proof>
+     <proof prover="4"><result status="valid" time="1.43"/></proof>
      </goal>
     </transf>
     </goal>
@@ -1474,7 +1474,7 @@
   <proof prover="1"><result status="valid" time="0.59" steps="350"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one_from_qft.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="356"/></proof>
+  <proof prover="1"><result status="valid" time="0.76" steps="356"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one_from_qft.2" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.54" steps="357"/></proof>
@@ -1483,7 +1483,7 @@
   <proof prover="1"><result status="valid" time="0.57" steps="357"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one_from_qft.4" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.40"/></proof>
+  <proof prover="0"><result status="valid" time="1.14"/></proof>
   </goal>
   <goal name="VC check_first_bit_is_one_from_qft.5" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.68" steps="364"/></proof>
@@ -1497,7 +1497,7 @@
    <proof prover="0"><result status="valid" time="1.28"/></proof>
    </goal>
    <goal name="VC check_first_bit_is_one_from_qft.7.1" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="0.91" steps="370"/></proof>
    </goal>
    <goal name="VC check_first_bit_is_one_from_qft.7.2" expl="apply premises" proved="true">
    <proof prover="1"><result status="valid" time="0.58" steps="370"/></proof>
@@ -1516,7 +1516,7 @@
    <proof prover="1"><result status="valid" time="0.57" steps="370"/></proof>
    </goal>
    <goal name="VC check_first_bit_is_one_from_qft.8.2" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="0.73" steps="370"/></proof>
    </goal>
    <goal name="VC check_first_bit_is_one_from_qft.8.3" expl="apply premises" proved="true">
    <proof prover="1"><result status="valid" time="3.91" steps="372"/></proof>
@@ -1528,13 +1528,13 @@
  <goal name="VC uncheck_first_bit_is_zero_from_qft" expl="VC for uncheck_first_bit_is_zero_from_qft" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC uncheck_first_bit_is_zero_from_qft.0" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="350"/></proof>
+  <proof prover="1"><result status="valid" time="0.92" steps="350"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="356"/></proof>
+  <proof prover="1"><result status="valid" time="0.80" steps="356"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.52" steps="357"/></proof>
+  <proof prover="1"><result status="valid" time="0.87" steps="357"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.3" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.59" steps="357"/></proof>
@@ -1543,10 +1543,10 @@
   <proof prover="0"><result status="valid" time="1.20"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.5" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="364"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.6" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="365"/></proof>
+  <proof prover="1"><result status="valid" time="0.86" steps="365"/></proof>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.7" expl="postcondition" proved="true">
   <transf name="apply" proved="true" arg1="H5">
@@ -1557,17 +1557,17 @@
    <proof prover="1"><result status="valid" time="0.53" steps="370"/></proof>
    </goal>
    <goal name="VC uncheck_first_bit_is_zero_from_qft.7.2" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="370"/></proof>
+   <proof prover="1"><result status="valid" time="0.74" steps="370"/></proof>
    </goal>
    <goal name="VC uncheck_first_bit_is_zero_from_qft.7.3" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="3.44" steps="372"/></proof>
+   <proof prover="1"><result status="valid" time="4.18" steps="372"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_first_bit_is_zero_from_qft.8" expl="postcondition" proved="true">
   <transf name="apply" proved="true" arg1="H6">
    <goal name="VC uncheck_first_bit_is_zero_from_qft.8.0" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="3.39" steps="372"/></proof>
+   <proof prover="1"><result status="valid" time="4.36" steps="372"/></proof>
    </goal>
    <goal name="VC uncheck_first_bit_is_zero_from_qft.8.1" expl="apply premises" proved="true">
    <proof prover="1"><result status="valid" time="0.58" steps="370"/></proof>
@@ -1576,7 +1576,7 @@
    <proof prover="1"><result status="valid" time="0.63" steps="370"/></proof>
    </goal>
    <goal name="VC uncheck_first_bit_is_zero_from_qft.8.3" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="3.67" steps="372"/></proof>
+   <proof prover="1"><result status="valid" time="5.16" steps="372"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1602,7 +1602,7 @@
   </transf>
   </goal>
   <goal name="VC substract_and_check.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.60" steps="370"/></proof>
   </goal>
   <goal name="VC substract_and_check.4" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.58" steps="382"/></proof>
@@ -1647,13 +1647,13 @@
   <proof prover="1"><result status="valid" time="0.66" steps="390"/></proof>
   </goal>
   <goal name="VC substract_and_check.18" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="3.77" steps="400"/></proof>
+  <proof prover="1"><result status="valid" time="4.42" steps="400"/></proof>
   </goal>
   <goal name="VC substract_and_check.19" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="398"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="398"/></proof>
   </goal>
   <goal name="VC substract_and_check.20" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="406"/></proof>
+  <proof prover="1"><result status="valid" time="0.76" steps="406"/></proof>
   </goal>
   <goal name="VC substract_and_check.21" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="4.29" steps="415"/></proof>
@@ -1701,7 +1701,7 @@
   </transf>
   </goal>
   <goal name="VC substract_and_check.30" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="431"/></proof>
+  <proof prover="1"><result status="valid" time="0.71" steps="431"/></proof>
   </goal>
   <goal name="VC substract_and_check.31" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.56" steps="390"/></proof>
@@ -1713,16 +1713,16 @@
   <proof prover="1"><result status="valid" time="0.57" steps="406"/></proof>
   </goal>
   <goal name="VC substract_and_check.34" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.76" steps="408"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="408"/></proof>
   </goal>
   <goal name="VC substract_and_check.35" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.67" steps="408"/></proof>
   </goal>
   <goal name="VC substract_and_check.36" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.65" steps="410"/></proof>
+  <proof prover="1"><result status="valid" time="0.76" steps="410"/></proof>
   </goal>
   <goal name="VC substract_and_check.37" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="418"/></proof>
+  <proof prover="1"><result status="valid" time="0.75" steps="418"/></proof>
   </goal>
   <goal name="VC substract_and_check.38" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.57" steps="418"/></proof>
@@ -1736,7 +1736,7 @@
    <proof prover="1"><result status="valid" time="0.72" steps="418"/></proof>
    </goal>
    <goal name="VC substract_and_check.40.1" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.64" steps="418"/></proof>
+   <proof prover="1"><result status="valid" time="1.02" steps="418"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1748,15 +1748,15 @@
   </transf>
   </goal>
   <goal name="VC substract_and_check.42" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.84" steps="422"/></proof>
   </goal>
   <goal name="VC substract_and_check.43" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC substract_and_check.43.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.62" steps="429"/></proof>
+   <proof prover="1"><result status="valid" time="0.95" steps="429"/></proof>
    </goal>
    <goal name="VC substract_and_check.43.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.60" steps="420"/></proof>
+   <proof prover="1"><result status="valid" time="0.78" steps="420"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1764,27 +1764,27 @@
   <proof prover="1"><result status="valid" time="0.64" steps="388"/></proof>
   </goal>
   <goal name="VC substract_and_check.45" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="0.87" steps="388"/></proof>
   </goal>
   <goal name="VC substract_and_check.46" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="0.83" steps="388"/></proof>
   </goal>
   <goal name="VC substract_and_check.47" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="4.82" steps="420"/></proof>
+  <proof prover="1"><result status="valid" time="5.46" steps="420"/></proof>
   </goal>
   <goal name="VC substract_and_check.48" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.68" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="1.15" steps="390"/></proof>
   </goal>
   <goal name="VC substract_and_check.49" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.65" steps="391"/></proof>
+  <proof prover="1"><result status="valid" time="1.06" steps="391"/></proof>
   </goal>
   <goal name="VC substract_and_check.50" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC substract_and_check.50.0" expl="postcondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.28"/></proof>
+   <proof prover="0"><result status="valid" time="1.22"/></proof>
    </goal>
    <goal name="VC substract_and_check.50.1" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.56" steps="424"/></proof>
+   <proof prover="1"><result status="valid" time="0.70" steps="424"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1799,7 +1799,7 @@
      <proof prover="1"><result status="valid" time="0.63" steps="435"/></proof>
      </goal>
      <goal name="VC substract_and_check.51.0.0.1" expl="equality hypothesis" proved="true">
-     <proof prover="1"><result status="valid" time="0.61" steps="435"/></proof>
+     <proof prover="1"><result status="valid" time="0.87" steps="435"/></proof>
      </goal>
     </transf>
     </goal>
@@ -1815,79 +1815,79 @@
  <goal name="VC reduces_to_modulo_pre" expl="VC for reduces_to_modulo_pre" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC reduces_to_modulo_pre.0" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="358"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="358"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="358"/></proof>
+  <proof prover="1"><result status="valid" time="0.81" steps="358"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="364"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.80" steps="364"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.4" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.94" steps="364"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.5" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.66" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.59" steps="370"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.6" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.60" steps="382"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.7" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="382"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="382"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.8" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="384"/></proof>
+  <proof prover="1"><result status="valid" time="0.83" steps="384"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.9" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="384"/></proof>
+  <proof prover="1"><result status="valid" time="1.01" steps="384"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.10" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="384"/></proof>
+  <proof prover="1"><result status="valid" time="0.84" steps="384"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.11" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.74" steps="386"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="386"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.12" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.59" steps="387"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.13" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="388"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.14" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="0.89" steps="388"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.15" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="389"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="389"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.16" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.64" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="390"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.17" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.63" steps="390"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.18" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="0.96" steps="390"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.19" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="0.82" steps="390"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.20" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="0.93" steps="390"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.21" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.66" steps="392"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.22" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="400"/></proof>
+  <proof prover="1"><result status="valid" time="0.95" steps="400"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.23" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="408"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="408"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.24" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="410"/></proof>
+  <proof prover="1"><result status="valid" time="0.81" steps="410"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.25" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.72" steps="418"/></proof>
@@ -1905,10 +1905,10 @@
   <proof prover="1"><result status="valid" time="0.61" steps="429"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.30" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.65" steps="429"/></proof>
+  <proof prover="1"><result status="valid" time="0.61" steps="429"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.31" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.64" steps="429"/></proof>
+  <proof prover="1"><result status="valid" time="0.65" steps="429"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.32" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.61" steps="429"/></proof>
@@ -1935,13 +1935,13 @@
   <proof prover="1"><result status="valid" time="0.67" steps="408"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.40" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.66" steps="408"/></proof>
+  <proof prover="1"><result status="valid" time="0.73" steps="408"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.41" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.71" steps="408"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.42" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.73" steps="410"/></proof>
+  <proof prover="1"><result status="valid" time="0.66" steps="410"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.43" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.61" steps="418"/></proof>
@@ -1953,10 +1953,10 @@
   <proof prover="1"><result status="valid" time="0.68" steps="418"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.46" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="418"/></proof>
+  <proof prover="1"><result status="valid" time="0.65" steps="418"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.47" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.65" steps="418"/></proof>
+  <proof prover="1"><result status="valid" time="0.64" steps="418"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.48" expl="precondition" proved="true">
   <transf name="replace" proved="true" arg1="(apply_qft (n + 1) (mod value bound))" arg2="(apply_qft (n + 1) (value - bound))">
@@ -1994,7 +1994,7 @@
   <proof prover="1"><result status="valid" time="0.64" steps="388"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.56" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="0.66" steps="388"/></proof>
   </goal>
   <goal name="VC reduces_to_modulo_pre.57" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="4.63" steps="420"/></proof>
@@ -2139,74 +2139,74 @@
   <proof prover="1"><result status="valid" time="0.58" steps="419"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.26" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="0.73" steps="427"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.27" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="429"/></proof>
+  <proof prover="1"><result status="valid" time="0.59" steps="429"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.28" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.74" steps="437"/></proof>
+  <proof prover="1"><result status="valid" time="0.60" steps="437"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.29" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.75" steps="437"/></proof>
+  <proof prover="1"><result status="valid" time="0.62" steps="437"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.30" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="440"/></proof>
+  <proof prover="1"><result status="valid" time="0.58" steps="440"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.31" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.57" steps="437"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.32" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="437"/></proof>
+  <proof prover="1"><result status="valid" time="0.73" steps="437"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.33" expl="precondition" proved="true">
   <transf name="apply" proved="true" arg1="H1">
    <goal name="VC add_modulo_pre.33.0" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="437"/></proof>
+   <proof prover="1"><result status="valid" time="0.95" steps="437"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC add_modulo_pre.34" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="439"/></proof>
+  <proof prover="1"><result status="valid" time="1.11" steps="439"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.35" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.77" steps="439"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.36" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="394"/></proof>
+  <proof prover="1"><result status="valid" time="0.77" steps="394"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.37" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="402"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="402"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.38" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="402"/></proof>
+  <proof prover="1"><result status="valid" time="1.08" steps="402"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.39" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="410"/></proof>
+  <proof prover="1"><result status="valid" time="1.14" steps="410"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.40" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.74" steps="412"/></proof>
+  <proof prover="1"><result status="valid" time="1.07" steps="412"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.41" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.73" steps="420"/></proof>
+  <proof prover="1"><result status="valid" time="1.10" steps="420"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.42" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="1.14" steps="422"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.43" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="430"/></proof>
+  <proof prover="1"><result status="valid" time="0.97" steps="430"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.44" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.62" steps="430"/></proof>
+  <proof prover="1"><result status="valid" time="0.75" steps="430"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.45" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="433"/></proof>
+  <proof prover="1"><result status="valid" time="0.78" steps="433"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.46" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.60" steps="430"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.47" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="430"/></proof>
+  <proof prover="1"><result status="valid" time="0.60" steps="430"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.48" expl="precondition" proved="true">
   <transf name="apply" proved="true" arg1="H1">
@@ -2222,7 +2222,7 @@
   <proof prover="1"><result status="valid" time="0.74" steps="434"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.51" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.97" steps="392"/></proof>
+  <proof prover="1"><result status="valid" time="0.71" steps="392"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.52" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
@@ -2247,7 +2247,7 @@
   <proof prover="1"><result status="valid" time="0.59" steps="392"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.57" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="4.92" steps="426"/></proof>
+  <proof prover="1"><result status="valid" time="6.40" steps="426"/></proof>
   </goal>
   <goal name="VC add_modulo_pre.58" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.65" steps="394"/></proof>
@@ -2268,10 +2268,10 @@
     <goal name="VC add_modulo_pre.62.0.0" expl="postcondition" proved="true">
     <transf name="apply" proved="true" arg1="sequence_eq">
      <goal name="VC add_modulo_pre.62.0.0.0" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.88" steps="365"/></proof>
+     <proof prover="1"><result status="valid" time="1.16" steps="365"/></proof>
      </goal>
      <goal name="VC add_modulo_pre.62.0.0.1" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="0.88" steps="365"/></proof>
+     <proof prover="1"><result status="valid" time="1.86" steps="365"/></proof>
      </goal>
      <goal name="VC add_modulo_pre.62.0.0.2" expl="apply premises" proved="true">
      <transf name="split_all_full" proved="true" >
@@ -2281,13 +2281,13 @@
        <proof prover="4"><result status="valid" time="2.32"/></proof>
        </goal>
        <goal name="VC add_modulo_pre.62.0.0.2.0.1" expl="rewrite premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.88" steps="365"/></proof>
+       <proof prover="1"><result status="valid" time="1.68" steps="365"/></proof>
        </goal>
        <goal name="VC add_modulo_pre.62.0.0.2.0.2" expl="rewrite premises" proved="true">
        <proof prover="1"><result status="valid" time="0.83" steps="365"/></proof>
        </goal>
        <goal name="VC add_modulo_pre.62.0.0.2.0.3" expl="rewrite premises" proved="true">
-       <proof prover="1"><result status="valid" time="0.91" steps="365"/></proof>
+       <proof prover="1"><result status="valid" time="1.59" steps="365"/></proof>
        </goal>
       </transf>
       </goal>
@@ -2304,16 +2304,16 @@
  <goal name="VC substract_and_uncheck" expl="VC for substract_and_uncheck" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC substract_and_uncheck.0" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="358"/></proof>
+  <proof prover="1"><result status="valid" time="1.05" steps="358"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.1" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="364"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.2" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="364"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="364"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.71" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.84" steps="370"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.4" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.61" steps="382"/></proof>
@@ -2361,10 +2361,10 @@
   <proof prover="1"><result status="valid" time="4.06" steps="400"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.19" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.96" steps="398"/></proof>
+  <proof prover="1"><result status="valid" time="0.61" steps="398"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.20" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.94" steps="406"/></proof>
+  <proof prover="1"><result status="valid" time="0.59" steps="406"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.21" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="4.06" steps="410"/></proof>
@@ -2438,19 +2438,19 @@
   <proof prover="1"><result status="valid" time="0.65" steps="413"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.35" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.63" steps="417"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="417"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.36" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.62" steps="419"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="419"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.37" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.64" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="1.00" steps="427"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.38" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.64" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="427"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.39" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="427"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.40" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="4.79" steps="429"/></proof>
@@ -2471,16 +2471,16 @@
   <proof prover="1"><result status="valid" time="0.94" steps="388"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.46" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.43" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="1.12" steps="388"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.47" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="6.73" steps="415"/></proof>
+  <proof prover="1"><result status="valid" time="4.56" steps="415"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.48" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.44" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="0.80" steps="390"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.49" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.16" steps="391"/></proof>
+  <proof prover="1"><result status="valid" time="0.64" steps="391"/></proof>
   </goal>
   <goal name="VC substract_and_uncheck.50" expl="postcondition" proved="true">
   <proof prover="4"><result status="valid" time="1.72"/></proof>
@@ -2508,7 +2508,7 @@
   <goal name="VC uncheck_modulo.3" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.3.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.79" steps="364"/></proof>
+   <proof prover="1"><result status="valid" time="0.58" steps="364"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.3.1" expl="precondition" proved="true">
    <proof prover="1"><result status="valid" time="0.59" steps="364"/></proof>
@@ -2518,7 +2518,7 @@
   <goal name="VC uncheck_modulo.4" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.4.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.97" steps="364"/></proof>
+   <proof prover="1"><result status="valid" time="0.59" steps="364"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.4.1" expl="precondition" proved="true">
    <proof prover="1"><result status="valid" time="0.59" steps="364"/></proof>
@@ -2526,7 +2526,7 @@
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.5" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.98" steps="370"/></proof>
+  <proof prover="1"><result status="valid" time="0.55" steps="370"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.6" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
@@ -2536,15 +2536,15 @@
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.7" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.88" steps="382"/></proof>
+  <proof prover="1"><result status="valid" time="0.55" steps="382"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.8" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.88" steps="384"/></proof>
+  <proof prover="1"><result status="valid" time="0.55" steps="384"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.9" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.9.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.88" steps="384"/></proof>
+   <proof prover="1"><result status="valid" time="0.56" steps="384"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.9.1" expl="precondition" proved="true">
    <proof prover="1"><result status="valid" time="0.61" steps="384"/></proof>
@@ -2608,13 +2608,13 @@
   <proof prover="1"><result status="valid" time="0.68" steps="410"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.25" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="418"/></proof>
+  <proof prover="1"><result status="valid" time="0.76" steps="418"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.26" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="420"/></proof>
+  <proof prover="1"><result status="valid" time="0.97" steps="420"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.27" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="420"/></proof>
+  <proof prover="1"><result status="valid" time="0.82" steps="420"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.28" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.76" steps="420"/></proof>
@@ -2628,80 +2628,80 @@
   <goal name="VC uncheck_modulo.31" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.31.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="420"/></proof>
+   <proof prover="1"><result status="valid" time="0.89" steps="420"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.31.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="420"/></proof>
+   <proof prover="1"><result status="valid" time="0.80" steps="420"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.32" expl="precondition" proved="true">
   <transf name="split_all_full" proved="true" >
    <goal name="VC uncheck_modulo.32.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.60" steps="420"/></proof>
+   <proof prover="1"><result status="valid" time="1.03" steps="420"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.33" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="4.53" steps="423"/></proof>
+  <proof prover="1"><result status="valid" time="8.05" steps="423"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.34" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="1.10" steps="422"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.35" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.58" steps="390"/></proof>
+  <proof prover="1"><result status="valid" time="0.96" steps="390"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.36" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="398"/></proof>
+  <proof prover="1"><result status="valid" time="0.91" steps="398"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.37" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="406"/></proof>
+  <proof prover="1"><result status="valid" time="0.98" steps="406"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.38" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="408"/></proof>
+  <proof prover="1"><result status="valid" time="1.08" steps="408"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.39" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.61" steps="416"/></proof>
+  <proof prover="1"><result status="valid" time="1.06" steps="416"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.40" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="423"/></proof>
+  <proof prover="1"><result status="valid" time="1.05" steps="423"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.41" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.41.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.71" steps="427"/></proof>
+   <proof prover="1"><result status="valid" time="1.01" steps="427"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.42" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.42.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.56" steps="427"/></proof>
+   <proof prover="1"><result status="valid" time="1.04" steps="427"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.43" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.43.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.57" steps="427"/></proof>
+   <proof prover="1"><result status="valid" time="1.17" steps="427"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.44" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="1.20" steps="427"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.45" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.45.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.58" steps="427"/></proof>
+   <proof prover="1"><result status="valid" time="0.96" steps="427"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.45.1" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.60" steps="427"/></proof>
+   <proof prover="1"><result status="valid" time="1.17" steps="427"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.46" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.59" steps="427"/></proof>
+  <proof prover="1"><result status="valid" time="1.25" steps="427"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.47" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="4.81" steps="431"/></proof>
@@ -2709,7 +2709,7 @@
   <goal name="VC uncheck_modulo.48" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.48.0" expl="precondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.55" steps="431"/></proof>
+   <proof prover="1"><result status="valid" time="0.77" steps="431"/></proof>
    </goal>
   </transf>
   </goal>
@@ -2750,18 +2750,18 @@
   </transf>
   </goal>
   <goal name="VC uncheck_modulo.54" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="388"/></proof>
+  <proof prover="1"><result status="valid" time="0.63" steps="388"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.55" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="4.84" steps="414"/></proof>
+  <proof prover="1"><result status="valid" time="4.20" steps="414"/></proof>
   </goal>
   <goal name="VC uncheck_modulo.56" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC uncheck_modulo.56.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.70" steps="424"/></proof>
+   <proof prover="1"><result status="valid" time="0.77" steps="424"/></proof>
    </goal>
    <goal name="VC uncheck_modulo.56.1" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.77" steps="431"/></proof>
+   <proof prover="1"><result status="valid" time="0.70" steps="431"/></proof>
    </goal>
   </transf>
   </goal>
@@ -2786,15 +2786,15 @@
      <goal name="VC uncheck_modulo.60.0.0.1" expl="apply premises" proved="true">
      <transf name="split_vc" proved="true" >
       <goal name="VC uncheck_modulo.60.0.0.1.0" expl="apply premises" proved="true">
-      <proof prover="0"><result status="valid" time="3.89"/></proof>
+      <proof prover="4"><result status="valid" time="2.10"/></proof>
       </goal>
       <goal name="VC uncheck_modulo.60.0.0.1.1" expl="apply premises" proved="true">
-      <proof prover="0"><result status="valid" time="4.00"/></proof>
+      <proof prover="4"><result status="valid" time="2.19"/></proof>
       </goal>
      </transf>
      </goal>
      <goal name="VC uncheck_modulo.60.0.0.2" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="1.08" steps="361"/></proof>
+     <proof prover="1"><result status="valid" time="0.85" steps="361"/></proof>
      </goal>
     </transf>
     </goal>
@@ -2819,22 +2819,22 @@
   <proof prover="1"><result status="valid" time="0.70" steps="366"/></proof>
   </goal>
   <goal name="VC modular_adder_.4" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.98" steps="368"/></proof>
+  <proof prover="1"><result status="valid" time="0.52" steps="368"/></proof>
   </goal>
   <goal name="VC modular_adder_.5" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.93" steps="368"/></proof>
+  <proof prover="1"><result status="valid" time="0.52" steps="368"/></proof>
   </goal>
   <goal name="VC modular_adder_.6" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.83" steps="368"/></proof>
+  <proof prover="1"><result status="valid" time="0.66" steps="368"/></proof>
   </goal>
   <goal name="VC modular_adder_.7" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.70" steps="368"/></proof>
+  <proof prover="1"><result status="valid" time="0.50" steps="368"/></proof>
   </goal>
   <goal name="VC modular_adder_.8" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.55" steps="374"/></proof>
   </goal>
   <goal name="VC modular_adder_.9" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.71" steps="386"/></proof>
+  <proof prover="1"><result status="valid" time="0.54" steps="386"/></proof>
   </goal>
   <goal name="VC modular_adder_.10" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.70" steps="386"/></proof>
@@ -2876,19 +2876,19 @@
   <proof prover="1"><result status="valid" time="0.58" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.23" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.56" steps="394"/></proof>
+  <proof prover="1"><result status="valid" time="0.72" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.24" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.74" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.25" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.57" steps="394"/></proof>
+  <proof prover="1"><result status="valid" time="0.90" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.26" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.55" steps="394"/></proof>
+  <proof prover="1"><result status="valid" time="0.82" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.27" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.69" steps="396"/></proof>
+  <proof prover="1"><result status="valid" time="0.87" steps="396"/></proof>
   </goal>
   <goal name="VC modular_adder_.28" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.81" steps="404"/></proof>
@@ -2897,13 +2897,13 @@
   <proof prover="1"><result status="valid" time="0.73" steps="404"/></proof>
   </goal>
   <goal name="VC modular_adder_.30" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.62" steps="412"/></proof>
+  <proof prover="1"><result status="valid" time="0.99" steps="412"/></proof>
   </goal>
   <goal name="VC modular_adder_.31" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.74" steps="419"/></proof>
   </goal>
   <goal name="VC modular_adder_.32" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.60" steps="419"/></proof>
+  <proof prover="1"><result status="valid" time="0.88" steps="419"/></proof>
   </goal>
   <goal name="VC modular_adder_.33" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.58" steps="423"/></proof>
@@ -2915,16 +2915,16 @@
   <proof prover="1"><result status="valid" time="0.78" steps="433"/></proof>
   </goal>
   <goal name="VC modular_adder_.36" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.77" steps="433"/></proof>
+  <proof prover="1"><result status="valid" time="0.66" steps="433"/></proof>
   </goal>
   <goal name="VC modular_adder_.37" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.16"/></proof>
+  <proof prover="0"><result status="valid" time="1.41"/></proof>
   </goal>
   <goal name="VC modular_adder_.38" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.74" steps="437"/></proof>
   </goal>
   <goal name="VC modular_adder_.39" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.77" steps="433"/></proof>
+  <proof prover="1"><result status="valid" time="0.80" steps="433"/></proof>
   </goal>
   <goal name="VC modular_adder_.40" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.63" steps="433"/></proof>
@@ -2951,7 +2951,7 @@
   <proof prover="1"><result status="valid" time="0.71" steps="402"/></proof>
   </goal>
   <goal name="VC modular_adder_.48" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.00" steps="402"/></proof>
+  <proof prover="1"><result status="valid" time="0.61" steps="402"/></proof>
   </goal>
   <goal name="VC modular_adder_.49" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.60" steps="410"/></proof>
@@ -2963,34 +2963,34 @@
   <proof prover="1"><result status="valid" time="0.59" steps="412"/></proof>
   </goal>
   <goal name="VC modular_adder_.52" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.99" steps="412"/></proof>
+  <proof prover="1"><result status="valid" time="0.62" steps="412"/></proof>
   </goal>
   <goal name="VC modular_adder_.53" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.72" steps="414"/></proof>
   </goal>
   <goal name="VC modular_adder_.54" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.07" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.62" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.55" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.66" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.77" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.56" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.23"/></proof>
+  <proof prover="0"><result status="valid" time="1.53"/></proof>
   </goal>
   <goal name="VC modular_adder_.57" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.88" steps="426"/></proof>
+  <proof prover="1"><result status="valid" time="0.62" steps="426"/></proof>
   </goal>
   <goal name="VC modular_adder_.58" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.80" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.77" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.59" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.79" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.60" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.66" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.62" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.61" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.72" steps="422"/></proof>
+  <proof prover="1"><result status="valid" time="0.70" steps="422"/></proof>
   </goal>
   <goal name="VC modular_adder_.62" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.66" steps="424"/></proof>
@@ -3000,14 +3000,14 @@
    <goal name="VC modular_adder_.63.0" expl="apply premises" proved="true">
    <transf name="instantiate" proved="true" arg1="unicity_div_mod" arg2="(value + added),bound,1,(value+added-bound)">
     <goal name="VC modular_adder_.63.0.0" expl="apply premises" proved="true">
-    <proof prover="1"><result status="valid" time="1.11" steps="426"/></proof>
+    <proof prover="1"><result status="valid" time="0.63" steps="426"/></proof>
     </goal>
    </transf>
    </goal>
   </transf>
   </goal>
   <goal name="VC modular_adder_.64" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.96" steps="426"/></proof>
+  <proof prover="1"><result status="valid" time="0.61" steps="426"/></proof>
   </goal>
   <goal name="VC modular_adder_.65" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.83" steps="392"/></proof>
@@ -3018,15 +3018,15 @@
   <goal name="VC modular_adder_.67" expl="precondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC modular_adder_.67.0" expl="precondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.19"/></proof>
+   <proof prover="1"><result status="valid" time="4.57" steps="427"/></proof>
    </goal>
    <goal name="VC modular_adder_.67.1" expl="precondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.19"/></proof>
+   <proof prover="1"><result status="valid" time="4.47" steps="427"/></proof>
    </goal>
   </transf>
   </goal>
   <goal name="VC modular_adder_.68" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.18" steps="396"/></proof>
+  <proof prover="1"><result status="valid" time="0.63" steps="396"/></proof>
   </goal>
   <goal name="VC modular_adder_.69" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.79" steps="392"/></proof>
@@ -3035,25 +3035,25 @@
   <proof prover="1"><result status="valid" time="0.79" steps="392"/></proof>
   </goal>
   <goal name="VC modular_adder_.71" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.24" steps="392"/></proof>
+  <proof prover="1"><result status="valid" time="0.64" steps="392"/></proof>
   </goal>
   <goal name="VC modular_adder_.72" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.86" steps="392"/></proof>
+  <proof prover="1"><result status="valid" time="0.64" steps="392"/></proof>
   </goal>
   <goal name="VC modular_adder_.73" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.67" steps="392"/></proof>
   </goal>
   <goal name="VC modular_adder_.74" expl="postcondition" proved="true">
-  <proof prover="4"><result status="valid" time="1.79"/></proof>
+  <proof prover="1"><result status="valid" time="4.82" steps="426"/></proof>
   </goal>
   <goal name="VC modular_adder_.75" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.04" steps="394"/></proof>
+  <proof prover="1"><result status="valid" time="0.60" steps="394"/></proof>
   </goal>
   <goal name="VC modular_adder_.76" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.07" steps="395"/></proof>
+  <proof prover="1"><result status="valid" time="0.67" steps="395"/></proof>
   </goal>
   <goal name="VC modular_adder_.77" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="1.12" steps="398"/></proof>
+  <proof prover="1"><result status="valid" time="0.63" steps="398"/></proof>
   </goal>
   <goal name="VC modular_adder_.78" expl="postcondition" proved="true">
   <transf name="eliminate_definition" proved="true" >
@@ -3062,7 +3062,7 @@
     <goal name="VC modular_adder_.78.0.0" expl="postcondition" proved="true">
     <transf name="apply" proved="true" arg1="sequence_eq">
      <goal name="VC modular_adder_.78.0.0.0" expl="apply premises" proved="true">
-     <proof prover="1"><result status="valid" time="1.43" steps="367"/></proof>
+     <proof prover="1"><result status="valid" time="0.93" steps="367"/></proof>
      </goal>
      <goal name="VC modular_adder_.78.0.0.1" expl="apply premises" proved="true">
      <transf name="split_all_full" proved="true" >
@@ -3073,10 +3073,10 @@
         <goal name="VC modular_adder_.78.0.0.1.0.0.0" expl="apply premises" proved="true">
         <transf name="apply" proved="true" arg1="add_modulo_pre_spec">
          <goal name="VC modular_adder_.78.0.0.1.0.0.0.0" expl="apply premises" proved="true">
-         <proof prover="1"><result status="valid" time="1.43" steps="367"/></proof>
+         <proof prover="1"><result status="valid" time="0.87" steps="367"/></proof>
          </goal>
          <goal name="VC modular_adder_.78.0.0.1.0.0.0.1" expl="apply premises" proved="true">
-         <proof prover="1"><result status="valid" time="1.16" steps="367"/></proof>
+         <proof prover="1"><result status="valid" time="0.86" steps="367"/></proof>
          </goal>
          <goal name="VC modular_adder_.78.0.0.1.0.0.0.2" expl="apply premises" proved="true">
          <proof prover="1"><result status="valid" time="0.93" steps="367"/></proof>
@@ -3092,7 +3092,7 @@
        </transf>
        </goal>
        <goal name="VC modular_adder_.78.0.0.1.0.1" expl="rewrite premises" proved="true">
-       <proof prover="1"><result status="valid" time="1.12" steps="367"/></proof>
+       <proof prover="1"><result status="valid" time="0.89" steps="367"/></proof>
        </goal>
        <goal name="VC modular_adder_.78.0.0.1.0.2" expl="rewrite premises" proved="true">
        <proof prover="1"><result status="valid" time="0.95" steps="367"/></proof>
@@ -3110,13 +3110,13 @@
      <goal name="VC modular_adder_.78.0.0.2" expl="apply premises" proved="true">
      <transf name="rewrite" proved="true" arg1="uncheck_modulo_def">
       <goal name="VC modular_adder_.78.0.0.2.0" expl="apply premises" proved="true">
-      <proof prover="4"><result status="valid" time="1.83"/></proof>
+      <proof prover="4"><result status="valid" time="2.23"/></proof>
       </goal>
       <goal name="VC modular_adder_.78.0.0.2.1" expl="rewrite premises" proved="true">
       <proof prover="1"><result status="valid" time="0.99" steps="367"/></proof>
       </goal>
       <goal name="VC modular_adder_.78.0.0.2.2" expl="rewrite premises" proved="true">
-      <proof prover="0"><result status="valid" time="4.31"/></proof>
+      <proof prover="4"><result status="valid" time="2.17"/></proof>
       </goal>
       <goal name="VC modular_adder_.78.0.0.2.3" expl="rewrite premises" proved="true">
       <proof prover="1"><result status="valid" time="1.00" steps="367"/></proof>
@@ -3140,7 +3140,7 @@
   <proof prover="1"><result status="valid" time="0.54" steps="354"/></proof>
   </goal>
   <goal name="VC modular_adder.2" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.15"/></proof>
+  <proof prover="0"><result status="valid" time="2.22"/></proof>
   </goal>
   <goal name="VC modular_adder.3" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.65" steps="358"/></proof>
@@ -3164,13 +3164,13 @@
     <goal name="VC modular_adder.8.0.0" expl="postcondition" proved="true">
     <transf name="rewrite" proved="true" arg1="modular_adder__def">
      <goal name="VC modular_adder.8.0.0.0" expl="postcondition" proved="true">
-     <proof prover="4"><result status="valid" time="1.34"/></proof>
+     <proof prover="4"><result status="valid" time="1.87"/></proof>
      </goal>
      <goal name="VC modular_adder.8.0.0.1" expl="rewrite premises" proved="true">
      <proof prover="1"><result status="valid" time="0.76" steps="327"/></proof>
      </goal>
      <goal name="VC modular_adder.8.0.0.2" expl="rewrite premises" proved="true">
-     <proof prover="0"><result status="valid" time="4.56"/></proof>
+     <proof prover="0"><result status="valid" time="9.47"/></proof>
      </goal>
      <goal name="VC modular_adder.8.0.0.3" expl="rewrite premises" proved="true">
      <proof prover="1"><result status="valid" time="0.74" steps="327"/></proof>
@@ -3207,14 +3207,14 @@
      </transf>
      </goal>
      <goal name="VC modular_adder.9.0.0.1" expl="equality hypothesis" proved="true">
-     <proof prover="1"><result status="valid" time="4.38" steps="369"/></proof>
+     <proof prover="1"><result status="valid" time="3.38" steps="369"/></proof>
      </goal>
     </transf>
     </goal>
    </transf>
    </goal>
    <goal name="VC modular_adder.9.1" expl="equality hypothesis" proved="true">
-   <proof prover="1"><result status="valid" time="4.56" steps="369"/></proof>
+   <proof prover="1"><result status="valid" time="3.26" steps="369"/></proof>
    </goal>
   </transf>
   </goal>
@@ -3253,7 +3253,7 @@
   <proof prover="1"><result status="valid" time="0.54" steps="352"/></proof>
   </goal>
   <goal name="VC adder_gate_bound.3" expl="precondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.69" steps="352"/></proof>
+  <proof prover="1"><result status="valid" time="0.52" steps="352"/></proof>
   </goal>
   <goal name="VC adder_gate_bound.4" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.65" steps="352"/></proof>
@@ -3265,7 +3265,7 @@
     <goal name="VC adder_gate_bound.5.0.0" expl="postcondition" proved="true">
     <transf name="rewrite" proved="true" arg1="result_def">
      <goal name="VC adder_gate_bound.5.0.0.0" expl="postcondition" proved="true">
-     <proof prover="4"><result status="valid" time="1.84"/></proof>
+     <proof prover="4"><result status="valid" time="2.18"/></proof>
      </goal>
     </transf>
     </goal>

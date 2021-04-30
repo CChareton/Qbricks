@@ -7,7 +7,8 @@
 <prover id="2" name="CVC4" version="1.0" timelimit="5" steplimit="0" memlimit="1000"/>
 <prover id="3" name="Z3" version="4.4.1" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
 <prover id="4" name="Z3" version="4.4.1" timelimit="5" steplimit="0" memlimit="1000"/>
-<file proved="true">
+<prover id="5" name="Z3" version="4.4.1" alternative="noBV" timelimit="5" steplimit="0" memlimit="1000"/>
+<file>
 <path name=".."/>
 <path name="complex.mlw"/>
 <theory name="Assert_equal" proved="true">
@@ -270,7 +271,7 @@
  </transf>
  </goal>
 </theory>
-<theory name="Complex" proved="true">
+<theory name="Complex">
  <goal name="VC teq" expl="VC for teq" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC teq.0" expl="postcondition" proved="true">
@@ -298,6 +299,13 @@
   </goal>
  </transf>
  </goal>
+ <goal name="VC div_as_mult_inv" expl="VC for div_as_mult_inv" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC div_as_mult_inv.0" expl="postcondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="33"/></proof>
+  </goal>
+ </transf>
+ </goal>
  <goal name="VC add_opposite" expl="VC for add_opposite" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC add_opposite.0" expl="postcondition" proved="true">
@@ -316,13 +324,6 @@
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_num.0" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.00" steps="15"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC div_as_mult_inv" expl="VC for div_as_mult_inv" proved="true">
- <transf name="split_vc" proved="true" >
-  <goal name="VC div_as_mult_inv.0" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="0.02" steps="35"/></proof>
   </goal>
  </transf>
  </goal>
@@ -485,7 +486,7 @@
   <proof prover="4"><result status="valid" time="0.17"/></proof>
   </goal>
   <goal name="VC decomp_mult.1" expl="assertion" proved="true">
-  <proof prover="0"><result status="valid" time="0.64"/></proof>
+  <proof prover="0"><result status="valid" time="0.87"/></proof>
   </goal>
   <goal name="VC decomp_mult.2" expl="assertion" proved="true">
   <proof prover="0"><result status="valid" time="0.03"/></proof>
@@ -610,7 +611,7 @@
  <goal name="VC mult_real_real" expl="VC for mult_real_real" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_real_real.0" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.12"/></proof>
+  <proof prover="0"><result status="valid" time="0.29"/></proof>
   </goal>
   <goal name="VC mult_real_real.1" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
@@ -717,7 +718,7 @@
   <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
   </goal>
   <goal name="VC non_zero_prod_pre.10" expl="assertion" proved="true">
-  <proof prover="1"><result status="valid" time="3.08" steps="187"/></proof>
+  <proof prover="1"><result status="valid" time="3.95" steps="187"/></proof>
   </goal>
   <goal name="VC non_zero_prod_pre.11" expl="assertion" proved="true">
   <transf name="split_vc" proved="true" >
@@ -745,7 +746,7 @@
    <goal name="VC non_zero_prod_pre.12.0" expl="assertion" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC non_zero_prod_pre.12.0.0" expl="assertion" proved="true">
-    <proof prover="1"><result status="valid" time="1.52" steps="127"/></proof>
+    <proof prover="1"><result status="valid" time="2.28" steps="127"/></proof>
     </goal>
    </transf>
    </goal>
@@ -852,7 +853,7 @@
    <goal name="VC non_zero_prod_pre.17.1" expl="postcondition" proved="true">
    <transf name="split_vc" proved="true" >
     <goal name="VC non_zero_prod_pre.17.1.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="2.23" steps="128"/></proof>
+    <proof prover="1"><result status="valid" time="3.14" steps="128"/></proof>
     </goal>
     <goal name="VC non_zero_prod_pre.17.1.1" expl="postcondition" proved="true">
     <proof prover="1"><result status="valid" time="0.02" steps="35"/></proof>
@@ -882,7 +883,7 @@
     <goal name="VC minus_c_one.0.0.1" expl="equality hypothesis" proved="true">
     <transf name="assert" proved="true" arg1="(((-. c_one) *. a) -. (-. (c_one *. a)) = c_zero)">
      <goal name="VC minus_c_one.0.0.1.0" expl="asserted formula" proved="true">
-     <proof prover="1"><result status="valid" time="0.38" steps="286"/></proof>
+     <proof prover="1"><result status="valid" time="0.89" steps="286"/></proof>
      </goal>
      <goal name="VC minus_c_one.0.0.1.1" expl="equality hypothesis" proved="true">
      <proof prover="1"><result status="valid" time="0.01" steps="24"/></proof>
@@ -941,7 +942,7 @@
    <proof prover="2"><result status="valid" time="0.06"/></proof>
    </goal>
    <goal name="VC div_neg_r.0.1" expl="equality hypothesis" proved="true">
-   <proof prover="2"><result status="valid" time="1.82"/></proof>
+   <proof prover="2"><result status="valid" time="2.96"/></proof>
    </goal>
   </transf>
   </goal>
@@ -970,7 +971,7 @@
   </transf>
   </goal>
   <goal name="VC noc_zeroAdd.1" expl="postcondition" proved="true">
-  <proof prover="1"><result status="valid" time="2.20" steps="248"/></proof>
+  <proof prover="1"><result status="valid" time="3.82" steps="248"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1009,7 +1010,7 @@
  </transf>
  </goal>
  <goal name="VC minus_minus_fact" expl="VC for minus_minus_fact" proved="true">
- <proof prover="1"><result status="valid" time="2.47" steps="111"/></proof>
+ <proof prover="1"><result status="valid" time="4.02" steps="111"/></proof>
  </goal>
  <goal name="VC minus_minus_add" expl="VC for minus_minus_add" proved="true">
  <transf name="split_vc" proved="true" >
@@ -1163,28 +1164,28 @@
  <goal name="VC involutive_inv" expl="VC for involutive_inv" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC involutive_inv.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="2.37"/></proof>
+  <proof prover="0"><result status="valid" time="3.17"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC twice" expl="VC for twice" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC twice.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.91"/></proof>
+  <proof prover="0"><result status="valid" time="1.46"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC twice_half" expl="VC for twice_half" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC twice_half.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.56"/></proof>
+  <proof prover="0"><result status="valid" time="2.07"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC half_plus_half" expl="VC for half_plus_half" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC half_plus_half.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.02"/></proof>
+  <proof prover="0"><result status="valid" time="1.29"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1216,7 +1217,7 @@
   <goal name="VC decomp_inv_real.4" expl="postcondition" proved="true">
   <transf name="eliminate_definition" proved="true" >
    <goal name="VC decomp_inv_real.4.0" expl="postcondition" proved="true">
-   <proof prover="4"><result status="valid" time="2.06"/></proof>
+   <proof prover="4"><result status="valid" time="2.75"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1253,14 +1254,14 @@
  <goal name="VC inf_left_real" expl="VC for inf_left_real" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_left_real.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.45"/></proof>
+  <proof prover="0"><result status="valid" time="0.75"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC inf_right_real" expl="VC for inf_right_real" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_right_real.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.55"/></proof>
+  <proof prover="0"><result status="valid" time="0.86"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1337,7 +1338,7 @@
  </transf>
  </goal>
  <goal name="PartialOrder.Refl" proved="true">
- <proof prover="0"><result status="valid" time="0.42"/></proof>
+ <proof prover="0"><result status="valid" time="0.58"/></proof>
  </goal>
  <goal name="PartialOrder.Trans" proved="true">
  <proof prover="2"><result status="valid" time="0.18"/></proof>
@@ -1345,7 +1346,7 @@
  <goal name="PartialOrder.Antisymm" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="Antisymm.0" proved="true">
-  <proof prover="0"><result status="valid" time="0.85"/></proof>
+  <proof prover="0"><result status="valid" time="1.15"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1394,12 +1395,12 @@
        <proof prover="1"><result status="valid" time="0.01" steps="28"/></proof>
        </goal>
        <goal name="r_to_c_inf.0.0.0.0.0.1" expl="equality hypothesis" proved="true">
-       <proof prover="4"><result status="valid" time="1.52"/></proof>
+       <proof prover="4"><result status="valid" time="2.15"/></proof>
        </goal>
       </transf>
       </goal>
       <goal name="r_to_c_inf.0.0.0.0.1" expl="equality hypothesis" proved="true">
-      <proof prover="4"><result status="valid" time="1.92"/></proof>
+      <proof prover="4"><result status="valid" time="3.17"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1413,13 +1414,13 @@
        <goal name="r_to_c_inf.0.0.0.1.1.0" expl="asserted formula" proved="true">
        <transf name="split_vc" proved="true" >
         <goal name="r_to_c_inf.0.0.0.1.1.0.0" expl="asserted formula" proved="true">
-        <proof prover="4"><result status="valid" time="1.32"/></proof>
+        <proof prover="4"><result status="valid" time="1.70"/></proof>
         </goal>
         <goal name="r_to_c_inf.0.0.0.1.1.0.1" expl="asserted formula" proved="true">
         <proof prover="4"><result status="valid" time="0.04"/></proof>
         </goal>
         <goal name="r_to_c_inf.0.0.0.1.1.0.2" expl="asserted formula" proved="true">
-        <proof prover="4"><result status="valid" time="1.31"/></proof>
+        <proof prover="4"><result status="valid" time="1.90"/></proof>
         </goal>
        </transf>
        </goal>
@@ -1459,7 +1460,7 @@
         <proof prover="1"><result status="valid" time="0.03" steps="24"/></proof>
         </goal>
         <goal name="r_to_c_inf.1.0.0.0.2.0.1" expl="equality hypothesis" proved="true">
-        <proof prover="4"><result status="valid" time="1.08"/></proof>
+        <proof prover="4"><result status="valid" time="1.34"/></proof>
         </goal>
        </transf>
        </goal>
@@ -1522,7 +1523,7 @@
    <proof prover="2"><result status="valid" time="0.03"/></proof>
    </goal>
    <goal name="VC positive_inv_t.2.2" expl="apply premises" proved="true">
-   <proof prover="2"><result status="valid" time="3.87"/></proof>
+   <proof prover="2"><result status="valid" time="5.87"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1610,6 +1611,57 @@
   </goal>
  </transf>
  </goal>
+ <goal name="VC compat_order_add_left" expl="VC for compat_order_add_left" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC compat_order_add_left.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="35"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_left.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="35"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_left.2" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="35"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_left.3" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="35"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_left.4" expl="postcondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="37"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC compat_order_add_booth" expl="VC for compat_order_add_booth" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC compat_order_add_booth.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="39"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="39"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.2" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="39"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.3" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="39"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.4" expl="precondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="highfailure" time="0.56"/></proof>
+  <proof prover="1"><result status="valid" time="0.01" steps="41"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.5" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.6" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.7" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01" steps="41"/></proof>
+  </goal>
+  <goal name="VC compat_order_add_booth.8" expl="postcondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="45"/></proof>
+  </goal>
+ </transf>
+ </goal>
  <goal name="VC compat_order_substr" expl="VC for compat_order_substr" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC compat_order_substr.0" expl="precondition" proved="true">
@@ -1634,12 +1686,12 @@
   <goal name="VC compat_inf_mult.0" expl="postcondition" proved="true">
   <transf name="case" proved="true" arg1="(x = c_zero)">
    <goal name="VC compat_inf_mult.0.0" expl="true case (postcondition)" proved="true">
-   <proof prover="0"><result status="valid" time="1.99"/></proof>
+   <proof prover="0"><result status="valid" time="2.60"/></proof>
    </goal>
    <goal name="VC compat_inf_mult.0.1" expl="false case (postcondition)" proved="true">
    <transf name="case" proved="true" arg1="(y = c_zero)">
     <goal name="VC compat_inf_mult.0.1.0" expl="false case (true case. postcondition)" proved="true">
-    <proof prover="0"><result status="valid" time="1.93"/></proof>
+    <proof prover="0"><result status="valid" time="2.41"/></proof>
     </goal>
     <goal name="VC compat_inf_mult.0.1.1" expl="false case (postcondition)" proved="true">
     <transf name="assert" proved="true" arg1="((x *. z) &lt;=. (y *. z))">
@@ -1670,14 +1722,14 @@
  <goal name="VC transitive_infeq_inf" expl="VC for transitive_infeq_inf" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC transitive_infeq_inf.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.65"/></proof>
+  <proof prover="0"><result status="valid" time="0.66"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC transitive_inf_infeq" expl="VC for transitive_inf_infeq" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC transitive_inf_infeq.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.99"/></proof>
+  <proof prover="0"><result status="valid" time="0.91"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1694,7 +1746,7 @@
     <proof prover="1"><result status="valid" time="0.02" steps="29"/></proof>
     </goal>
     <goal name="VC pi_sup_ttwo.0.0.1" expl="precondition" proved="true">
-    <proof prover="0"><result status="valid" time="1.02"/></proof>
+    <proof prover="0"><result status="valid" time="0.98"/></proof>
     </goal>
    </transf>
    </goal>
@@ -1898,7 +1950,7 @@
     <transf name="apply" proved="true" arg1="compat_order_add">
      <goal name="VC compat_inf_add_left.0.0.0.0" expl="apply premises" proved="true">
      <proof prover="1"><result status="valid" time="0.04" steps="39"/></proof>
-     <proof prover="2"><result status="valid" time="2.24"/></proof>
+     <proof prover="2"><result status="valid" time="2.58"/></proof>
      </goal>
      <goal name="VC compat_inf_add_left.0.0.0.1" expl="apply premises" proved="true">
      <proof prover="2"><result status="valid" time="0.03"/></proof>
@@ -1917,7 +1969,7 @@
    </transf>
    </goal>
    <goal name="VC compat_inf_add_left.0.1" expl="postcondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.90"/></proof>
+   <proof prover="0"><result status="valid" time="2.28"/></proof>
    </goal>
   </transf>
   </goal>
@@ -1972,7 +2024,7 @@
   <proof prover="1"><result status="valid" time="0.01" steps="37"/></proof>
   </goal>
   <goal name="VC compat_inf_substr.3" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.30"/></proof>
+  <proof prover="0"><result status="valid" time="0.97"/></proof>
   </goal>
   <goal name="VC compat_inf_substr.4" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" time="0.03"/></proof>
@@ -2032,7 +2084,7 @@
   <proof prover="1"><result status="valid" time="0.02" steps="45"/></proof>
   </goal>
   <goal name="VC compat_order_mult_rev.4" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.50"/></proof>
+  <proof prover="0"><result status="valid" time="1.12"/></proof>
   </goal>
   <goal name="VC compat_order_mult_rev.5" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.06" steps="49"/></proof>
@@ -2132,7 +2184,7 @@
    <proof prover="4"><result status="valid" time="0.06"/></proof>
    </goal>
    <goal name="VC complete_order_real.0.1" expl="postcondition" proved="true">
-   <proof prover="0"><result status="valid" time="1.97"/></proof>
+   <proof prover="0"><result status="valid" time="1.87"/></proof>
    </goal>
   </transf>
   </goal>
@@ -2212,7 +2264,7 @@
  <goal name="VC inf_to_sup" expl="VC for inf_to_sup" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_to_sup.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.19"/></proof>
+  <proof prover="0"><result status="valid" time="0.97"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2233,7 +2285,7 @@
  <goal name="VC non_inf_eq_to_sup" expl="VC for non_inf_eq_to_sup" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC non_inf_eq_to_sup.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.49"/></proof>
+  <proof prover="0"><result status="valid" time="1.44"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2258,12 +2310,20 @@
   </goal>
  </transf>
  </goal>
+ <goal name="VC real_substr" expl="VC for real_substr" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC real_substr.0" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.51"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
  <goal name="VC inv_pos" expl="VC for inv_pos" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inv_pos.0" expl="assertion" proved="true">
   <transf name="assert" proved="true" arg1="(0.0 &lt;* real_part x)">
    <goal name="VC inv_pos.0.0" expl="asserted formula" proved="true">
-   <proof prover="0"><result status="valid" time="1.15"/></proof>
+   <proof prover="0"><result status="valid" time="1.17"/></proof>
    </goal>
    <goal name="VC inv_pos.0.1" expl="assertion" proved="true">
    <transf name="replace" proved="true" arg1="(real_part (c_one/. x))" arg2="(1.0 /* real_part x)">
@@ -2285,7 +2345,7 @@
  <goal name="VC lower_over_cons" expl="VC for lower_over_cons" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC lower_over_cons.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="6.98"/></proof>
+  <proof prover="0"><result status="valid" time="6.29"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2299,7 +2359,7 @@
  <goal name="VC real_minus" expl="VC for real_minus" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC real_minus.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.01"/></proof>
+  <proof prover="0"><result status="valid" time="0.78"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2342,7 +2402,7 @@
    <proof prover="1"><result status="valid" time="0.21" steps="37"/></proof>
    </goal>
    <goal name="VC unic_inv.0.2" expl="assertion" proved="true">
-   <proof prover="2"><result status="valid" time="5.63"/></proof>
+   <proof prover="2"><result status="valid" time="4.72"/></proof>
    </goal>
   </transf>
   </goal>
@@ -2356,7 +2416,7 @@
   <goal name="VC inf_eq_def.0" expl="postcondition" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC inf_eq_def.0.0" expl="postcondition" proved="true">
-   <proof prover="0"><result status="valid" time="0.91"/></proof>
+   <proof prover="0"><result status="valid" time="0.70"/></proof>
    </goal>
    <goal name="VC inf_eq_def.0.1" expl="postcondition" proved="true">
    <proof prover="0"><result status="valid" time="0.03"/></proof>
@@ -2368,7 +2428,7 @@
  <goal name="VC inf_minus" expl="VC for inf_minus" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_minus.0" expl="assertion" proved="true">
-  <proof prover="0"><result status="valid" time="2.68"/></proof>
+  <proof prover="0"><result status="valid" time="1.97"/></proof>
   </goal>
   <goal name="VC inf_minus.1" expl="assertion" proved="true">
   <proof prover="1"><result status="valid" time="0.05" steps="35"/></proof>
@@ -2394,7 +2454,7 @@
  <goal name="VC inf_zero_inv" expl="VC for inf_zero_inv" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_zero_inv.0" expl="assertion" proved="true">
-  <proof prover="0"><result status="valid" time="1.19"/></proof>
+  <proof prover="0"><result status="valid" time="1.44"/></proof>
   </goal>
   <goal name="VC inf_zero_inv.1" expl="assertion" proved="true">
   <proof prover="1"><result status="valid" time="0.02" steps="35"/></proof>
@@ -2413,7 +2473,7 @@
  <goal name="VC mult_pos" expl="VC for mult_pos" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_pos.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="3.77"/></proof>
+  <proof prover="0"><result status="valid" time="3.74"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2452,7 +2512,7 @@
  <goal name="VC mult_leq_c_one_leq" expl="VC for mult_leq_c_one_leq" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_leq_c_one_leq.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="6.53"/></proof>
+  <proof prover="0"><result status="valid" time="5.77"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2503,15 +2563,158 @@
  <goal name="VC mult_leq_c_one_expl" expl="VC for mult_leq_c_one_expl" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_leq_c_one_expl.0" expl="postcondition" proved="true">
-  <transf name="apply" proved="true" arg1="mult_leq_c_one">
+  <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <transf name="apply" arg1="mult_leq_c_one">
    <goal name="VC mult_leq_c_one_expl.0.0" expl="apply premises" proved="true">
    <proof prover="1"><result status="valid" time="0.01" steps="37"/></proof>
    </goal>
-   <goal name="VC mult_leq_c_one_expl.0.1" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.02" steps="37"/></proof>
+   <goal name="VC mult_leq_c_one_expl.0.1" expl="apply premises">
+   <proof prover="0" obsolete="true"><result status="highfailure" time="3.01"/></proof>
+   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
    </goal>
-   <goal name="VC mult_leq_c_one_expl.0.2" expl="apply premises" proved="true">
-   <proof prover="1"><result status="valid" time="0.03" steps="39"/></proof>
+   <goal name="VC mult_leq_c_one_expl.0.2" expl="apply premises">
+   <proof prover="0" obsolete="true"><result status="highfailure" time="3.01"/></proof>
+   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   </goal>
+  </transf>
+  <transf name="case" proved="true" arg1="(b = c_zero)">
+   <goal name="VC mult_leq_c_one_expl.0.0" expl="true case (postcondition)" proved="true">
+   <proof prover="2"><result status="valid" time="0.23"/></proof>
+   </goal>
+   <goal name="VC mult_leq_c_one_expl.0.1" expl="false case (postcondition)" proved="true">
+   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   <transf name="apply" arg1="mult_leq_c_one">
+    <goal name="VC mult_leq_c_one_expl.0.1.0" expl="apply premises" proved="true">
+    <proof prover="1"><result status="valid" time="0.02" steps="39"/></proof>
+    </goal>
+    <goal name="VC mult_leq_c_one_expl.0.1.1" expl="apply premises">
+    <proof prover="0" obsolete="true"><result status="highfailure" time="2.91"/></proof>
+    <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    </goal>
+    <goal name="VC mult_leq_c_one_expl.0.1.2" expl="apply premises">
+    <proof prover="0" obsolete="true"><result status="highfailure" time="3.49"/></proof>
+    <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    </goal>
+   </transf>
+   <transf name="case" proved="true" arg1="(b &lt;. c_zero)">
+    <goal name="VC mult_leq_c_one_expl.0.1.0" expl="false case (true case. postcondition)" proved="true">
+    <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <transf name="assert" proved="true" arg1="(a*.b &lt;=. c_zero)">
+     <goal name="VC mult_leq_c_one_expl.0.1.0.0" expl="asserted formula" proved="true">
+     <proof prover="0" obsolete="true"><result status="highfailure" time="2.37"/></proof>
+     <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="3" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <transf name="assert" proved="true" arg1="( c_zero&lt;=. a *. (-.b))">
+      <goal name="VC mult_leq_c_one_expl.0.1.0.0.0" expl="asserted formula" proved="true">
+      <proof prover="2"><result status="valid" time="0.18"/></proof>
+      </goal>
+      <goal name="VC mult_leq_c_one_expl.0.1.0.0.1" expl="asserted formula" proved="true">
+      <proof prover="0" obsolete="true"><result status="highfailure" time="1.64"/></proof>
+      <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+      <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+      <transf name="replace" proved="true" arg1="(a *. (-. b))" arg2="(-. (a*.b))" arg3="in" arg4="h1">
+       <goal name="VC mult_leq_c_one_expl.0.1.0.0.1.0" expl="asserted formula" proved="true">
+       <proof prover="2"><result status="valid" time="0.25"/></proof>
+       </goal>
+       <goal name="VC mult_leq_c_one_expl.0.1.0.0.1.1" expl="equality hypothesis" proved="true">
+       <proof prover="2"><result status="valid" time="0.04"/></proof>
+       </goal>
+      </transf>
+      </goal>
+     </transf>
+     </goal>
+     <goal name="VC mult_leq_c_one_expl.0.1.0.1" expl="false case (true case. postcondition)" proved="true">
+     <proof prover="0"><result status="valid" time="0.06"/></proof>
+     <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="2"><result status="valid" time="0.24"/></proof>
+     </goal>
+    </transf>
+    </goal>
+    <goal name="VC mult_leq_c_one_expl.0.1.1" expl="false case (postcondition)" proved="true">
+    <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <transf name="replace" proved="true" arg1="c_one" arg2="(d*. (c_one /.d))">
+     <goal name="VC mult_leq_c_one_expl.0.1.1.0" expl="false case (postcondition)" proved="true">
+     <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <transf name="apply" proved="true" arg1="compat_order_mult_both">
+      <goal name="VC mult_leq_c_one_expl.0.1.1.0.0" expl="apply premises" proved="true">
+      <proof prover="0"><result status="valid" time="0.04"/></proof>
+      <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+      <proof prover="2"><result status="valid" time="0.14"/></proof>
+      <proof prover="3"><result status="valid" time="0.02"/></proof>
+      <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+      <transf name="split_vc" proved="true" >
+       <goal name="VC mult_leq_c_one_expl.0.1.1.0.0.0" proved="true">
+       <proof prover="0"><result status="valid" time="0.03"/></proof>
+       <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+       </goal>
+       <goal name="VC mult_leq_c_one_expl.0.1.1.0.0.1" proved="true">
+       <proof prover="0"><result status="valid" time="0.04"/></proof>
+       <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
+       </goal>
+      </transf>
+      </goal>
+      <goal name="VC mult_leq_c_one_expl.0.1.1.0.1" expl="apply premises" proved="true">
+      <proof prover="1"><result status="valid" time="0.01" steps="41"/></proof>
+      </goal>
+     </transf>
+     </goal>
+     <goal name="VC mult_leq_c_one_expl.0.1.1.1" expl="equality hypothesis" proved="true">
+     <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="3" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <transf name="rewrite" proved="true" arg1="(/.)_def">
+      <goal name="VC mult_leq_c_one_expl.0.1.1.1.0" expl="equality hypothesis" proved="true">
+      <proof prover="2"><result status="valid" time="0.05"/></proof>
+      </goal>
+      <goal name="VC mult_leq_c_one_expl.0.1.1.1.1" expl="rewrite premises" proved="true">
+      <proof prover="2"><result status="valid" time="0.05"/></proof>
+      </goal>
+     </transf>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   <transf name="replace" arg1="c_one" arg2="(d*. (c_one /.d))">
+    <goal name="VC mult_leq_c_one_expl.0.1.0" expl="false case (postcondition)">
+    <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+    <transf name="apply" arg1="compat_order_mult_both">
+     <goal name="VC mult_leq_c_one_expl.0.1.0.0" expl="apply premises">
+     <proof prover="0" obsolete="true"><result status="highfailure" time="3.37"/></proof>
+     <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="3" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <proof prover="4" obsolete="true"><result status="timeout" time="5.00"/></proof>
+     <transf name="split_vc" >
+      <goal name="VC mult_leq_c_one_expl.0.1.0.0.0">
+      <proof prover="0" obsolete="true"><result status="highfailure" time="2.77"/></proof>
+      <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+      </goal>
+      <goal name="VC mult_leq_c_one_expl.0.1.0.0.1" proved="true">
+      <proof prover="0"><result status="valid" time="0.04"/></proof>
+      <proof prover="1"><result status="valid" time="0.01" steps="39"/></proof>
+      </goal>
+     </transf>
+     </goal>
+     <goal name="VC mult_leq_c_one_expl.0.1.0.1" expl="apply premises" proved="true">
+     <proof prover="1"><result status="valid" time="0.02" steps="39"/></proof>
+     </goal>
+    </transf>
+    </goal>
+    <goal name="VC mult_leq_c_one_expl.0.1.1" expl="equality hypothesis" proved="true">
+    <proof prover="0"><result status="valid" time="5.28"/></proof>
+    </goal>
+   </transf>
    </goal>
   </transf>
   </goal>
@@ -2532,7 +2735,7 @@
   <proof prover="1"><result status="valid" time="0.05" steps="41"/></proof>
   </goal>
   <goal name="VC mult_leq_c_one_rev.4" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.77"/></proof>
+  <proof prover="0"><result status="valid" time="0.68"/></proof>
   </goal>
   <goal name="VC mult_leq_c_one_rev.5" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" time="0.04"/></proof>
@@ -2584,7 +2787,7 @@
   <proof prover="1"><result status="valid" time="0.06" steps="41"/></proof>
   </goal>
   <goal name="VC mult_to_div_leq.4" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.83"/></proof>
+  <proof prover="0"><result status="valid" time="0.81"/></proof>
   </goal>
   <goal name="VC mult_to_div_leq.5" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.04" steps="45"/></proof>
@@ -2613,7 +2816,7 @@
  <goal name="VC strict_mult_pos" expl="VC for strict_mult_pos" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC strict_mult_pos.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="2.97"/></proof>
+  <proof prover="0"><result status="valid" time="3.73"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2628,7 +2831,8 @@
   <goal name="VC inv_order_complex.0" expl="assertion" proved="true">
   <transf name="split_vc" proved="true" >
    <goal name="VC inv_order_complex.0.0" expl="assertion" proved="true">
-   <proof prover="0"><result status="valid" time="2.09"/></proof>
+   <proof prover="0"><result status="valid" time="1.71"/></proof>
+   <proof prover="1"><result status="timeout" time="5.00"/></proof>
    </goal>
    <goal name="VC inv_order_complex.0.1" expl="assertion" proved="true">
    <proof prover="0"><result status="valid" time="0.05"/></proof>
@@ -2722,7 +2926,7 @@
   <proof prover="0"><result status="valid" time="0.06"/></proof>
   </goal>
   <goal name="VC leq_by_div_simpl.3" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.07"/></proof>
+  <proof prover="0"><result status="valid" time="1.14"/></proof>
   </goal>
   <goal name="VC leq_by_div_simpl.4" expl="precondition" proved="true">
   <proof prover="1"><result status="valid" time="0.11" steps="45"/></proof>
@@ -2740,6 +2944,23 @@
  </goal>
  <goal name="VC leq_by_div" expl="VC for leq_by_div" proved="true">
  <proof prover="1"><result status="valid" time="0.03" steps="37"/></proof>
+ </goal>
+ <goal name="VC strict_pos_div" expl="VC for strict_pos_div" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC strict_pos_div.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.11" steps="35"/></proof>
+  </goal>
+  <goal name="VC strict_pos_div.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.05" steps="35"/></proof>
+  </goal>
+  <goal name="VC strict_pos_div.2" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.04" steps="37"/></proof>
+  </goal>
+  <goal name="VC strict_pos_div.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
  </goal>
  <goal name="VC inf_def" expl="VC for inf_def" proved="true">
  <transf name="split_vc" proved="true" >
@@ -2826,7 +3047,7 @@
      <proof prover="2"><result status="valid" time="0.24"/></proof>
      </goal>
      <goal name="VC transitive_inf_inv_r.0.1.0.1" expl="asserted formula" proved="true">
-     <proof prover="0"><result status="valid" time="1.42"/></proof>
+     <proof prover="0"><result status="valid" time="2.42"/></proof>
      </goal>
     </transf>
     </goal>
@@ -2872,7 +3093,7 @@
  <goal name="VC transitive_sup_r" expl="VC for transitive_sup_r" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC transitive_sup_r.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.37"/></proof>
+  <proof prover="0"><result status="valid" time="1.29"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2889,7 +3110,7 @@
  <goal name="VC compat_mult_sup_right" expl="VC for compat_mult_sup_right" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC compat_mult_sup_right.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="3.26"/></proof>
+  <proof prover="0"><result status="valid" time="3.50"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2968,7 +3189,7 @@
   <proof prover="1"><result status="valid" time="0.06" steps="33"/></proof>
   </goal>
   <goal name="VC r_to_c_surj.1" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="2.80"/></proof>
+  <proof prover="2"><result status="valid" time="3.86"/></proof>
   </goal>
  </transf>
  </goal>
@@ -2981,7 +3202,7 @@
   <proof prover="1"><result status="valid" time="0.03" steps="35"/></proof>
   </goal>
   <goal name="VC r_to_c_inf_rev.2" expl="assertion" proved="true">
-  <proof prover="2"><result status="valid" time="3.80"/></proof>
+  <proof prover="2"><result status="valid" time="6.62"/></proof>
   </goal>
   <goal name="VC r_to_c_inf_rev.3" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.02" steps="39"/></proof>
@@ -3052,7 +3273,7 @@
  <goal name="VC infeq_pos_elim" expl="VC for infeq_pos_elim" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC infeq_pos_elim.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="2.78"/></proof>
+  <proof prover="0"><result status="valid" time="2.88"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3069,21 +3290,21 @@
  <goal name="VC sup_elim_left" expl="VC for sup_elim_left" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC sup_elim_left.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="2.03"/></proof>
+  <proof prover="0"><result status="valid" time="1.71"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC infeq_elim_left" expl="VC for infeq_elim_left" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC infeq_elim_left.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="4.35"/></proof>
+  <proof prover="0"><result status="valid" time="4.31"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC inf_elim_left" expl="VC for inf_elim_left" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inf_elim_left.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="3.04"/></proof>
+  <proof prover="0"><result status="valid" time="2.37"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3112,7 +3333,7 @@
  <goal name="VC t_complex_decomp" expl="VC for t_complex_decomp" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC t_complex_decomp.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="4.66"/></proof>
+  <proof prover="0"><result status="valid" time="5.80"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3125,7 +3346,7 @@
   <proof prover="0"><result status="valid" time="0.05"/></proof>
   </goal>
   <goal name="VC t_unic_decomp.2" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="2.15"/></proof>
+  <proof prover="0"><result status="valid" time="1.95"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3149,14 +3370,14 @@
  <goal name="VC real_diff" expl="VC for real_diff" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC real_diff.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.86"/></proof>
+  <proof prover="0"><result status="valid" time="0.08"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC pure_im_sum" expl="VC for pure_im_sum" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC pure_im_sum.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="3.14"/></proof>
+  <proof prover="0"><result status="valid" time="2.83"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3179,7 +3400,7 @@
   <goal name="VC pure_im_diff.0" expl="postcondition" proved="true">
   <transf name="replace" proved="true" arg1="(x -. y)" arg2="(x+. (-.y))">
    <goal name="VC pure_im_diff.0.0" expl="postcondition" proved="true">
-   <proof prover="2"><result status="valid" time="0.44"/></proof>
+   <proof prover="2"><result status="valid" time="0.23"/></proof>
    </goal>
    <goal name="VC pure_im_diff.0.1" expl="equality hypothesis" proved="true">
    <proof prover="1"><result status="valid" time="0.03" steps="35"/></proof>
@@ -3191,14 +3412,14 @@
  <goal name="VC real_div" expl="VC for real_div" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC real_div.0" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.20"/></proof>
+  <proof prover="2"><result status="valid" time="0.22"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC mult_im_im" expl="VC for mult_im_im" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_im_im.0" expl="precondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.33"/></proof>
+  <proof prover="2"><result status="valid" time="0.47"/></proof>
   </goal>
   <goal name="VC mult_im_im.1" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" time="0.07"/></proof>
@@ -3220,7 +3441,7 @@
   <proof prover="2"><result status="valid" time="0.31"/></proof>
   </goal>
   <goal name="VC mult_real_im.1" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.38"/></proof>
+  <proof prover="0"><result status="valid" time="1.14"/></proof>
   </goal>
   <goal name="VC mult_real_im.2" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" time="0.95"/></proof>
@@ -3267,12 +3488,12 @@
        <goal name="VC decomp_mult_gen.0.0.0.0.0.0" expl="asserted formula" proved="true">
        <transf name="split_vc" proved="true" >
         <goal name="VC decomp_mult_gen.0.0.0.0.0.0.0" expl="asserted formula" proved="true">
-        <proof prover="4"><result status="valid" time="0.28"/></proof>
+        <proof prover="4"><result status="valid" time="0.22"/></proof>
         </goal>
        </transf>
        </goal>
        <goal name="VC decomp_mult_gen.0.0.0.0.0.1" expl="asserted formula" proved="true">
-       <proof prover="4"><result status="valid" time="0.00"/></proof>
+       <proof prover="4"><result status="valid" time="0.01"/></proof>
        </goal>
       </transf>
       </goal>
@@ -3323,7 +3544,7 @@
   </transf>
   </goal>
   <goal name="VC decomp_mult_gen.1" expl="precondition" proved="true">
-  <proof prover="3"><result status="valid" time="1.47"/></proof>
+  <proof prover="3"><result status="valid" time="1.13"/></proof>
   </goal>
   <goal name="VC decomp_mult_gen.2" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.02" steps="35"/></proof>
@@ -3353,7 +3574,7 @@
    <proof prover="0"><result status="valid" time="0.07"/></proof>
    </goal>
    <goal name="VC inv_real.4.1" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.20" steps="49"/></proof>
+   <proof prover="1"><result status="valid" time="0.08" steps="49"/></proof>
    </goal>
   </transf>
   </goal>
@@ -3378,7 +3599,7 @@
    <goal name="VC div_real_real.3.0" expl="postcondition" proved="true">
    <transf name="replace" proved="true" arg1="(a /. b)" arg2="(a*. c_one/.b)">
     <goal name="VC div_real_real.3.0.0" expl="postcondition" proved="true">
-    <proof prover="1"><result status="valid" time="0.28" steps="47"/></proof>
+    <proof prover="1"><result status="valid" time="0.11" steps="47"/></proof>
     </goal>
     <goal name="VC div_real_real.3.0.1" expl="equality hypothesis" proved="true">
     <proof prover="0"><result status="valid" time="0.07"/></proof>
@@ -3545,7 +3766,7 @@
  <proof prover="1"><result status="valid" time="0.04" steps="43"/></proof>
  </goal>
  <goal name="VC compat_sup_div" expl="VC for compat_sup_div" proved="true">
- <proof prover="0"><result status="valid" time="3.37"/></proof>
+ <proof prover="0"><result status="valid" time="4.08"/></proof>
  </goal>
  <goal name="VC compat_inf_div" expl="VC for compat_inf_div" proved="true">
  <transf name="split_vc" proved="true" >
@@ -3708,7 +3929,7 @@
  <goal name="VC inv_inf" expl="VC for inv_inf" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC inv_inf.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="1.96"/></proof>
+  <proof prover="0"><result status="valid" time="2.11"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3789,7 +4010,7 @@
  <goal name="VC triang_p" expl="VC for triang_p" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC triang_p.0" expl="postcondition" proved="true">
-  <proof prover="3"><result status="valid" time="29.19"/></proof>
+  <proof prover="3"><result status="valid" time="15.19"/></proof>
   </goal>
  </transf>
  </goal>
@@ -3806,7 +4027,10 @@
       <goal name="VC triang_n.0.0.0.0.0" expl="postcondition" proved="true">
       <transf name="replace" proved="true" arg1="((-. b) *. (-. b))" arg2="(b*.b)">
        <goal name="VC triang_n.0.0.0.0.0.0" expl="postcondition" proved="true">
-       <proof prover="2"><result status="valid" time="0.44"/></proof>
+       <proof prover="0"><result status="highfailure" time="1.02"/></proof>
+       <proof prover="1"><result status="timeout" time="5.00"/></proof>
+       <proof prover="2"><result status="timeout" time="5.00"/></proof>
+       <proof prover="4"><result status="valid" time="0.11"/></proof>
        </goal>
        <goal name="VC triang_n.0.0.0.0.0.1" expl="equality hypothesis" proved="true">
        <proof prover="0"><result status="valid" time="0.10"/></proof>
@@ -3816,7 +4040,7 @@
      </transf>
      </goal>
      <goal name="VC triang_n.0.0.0.1" expl="equality hypothesis" proved="true">
-     <proof prover="0"><result status="valid" time="0.20"/></proof>
+     <proof prover="0"><result status="valid" time="0.07"/></proof>
      </goal>
     </transf>
     </goal>
@@ -3908,7 +4132,7 @@
   <goal name="VC triang_t.4" expl="postcondition" proved="true">
   <transf name="replace" proved="true" arg1="((a +. b) *. (a -. b))" arg2="(a *. (a-. b) +. b*. (a-.b))">
    <goal name="VC triang_t.4.0" expl="postcondition" proved="true">
-   <proof prover="1"><result status="valid" time="0.54" steps="39"/></proof>
+   <proof prover="1"><result status="valid" time="0.35" steps="39"/></proof>
    </goal>
    <goal name="VC triang_t.4.1" expl="equality hypothesis" proved="true">
    <proof prover="1"><result status="valid" time="0.04" steps="37"/></proof>
@@ -3944,14 +4168,14 @@
  <goal name="VC add_pos_strit_r" expl="VC for add_pos_strit_r" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC add_pos_strit_r.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="3.11"/></proof>
+  <proof prover="0"><result status="valid" time="1.79"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC modulus_pre_pre" expl="VC for modulus_pre_pre" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC modulus_pre_pre.0" expl="postcondition" proved="true">
-  <proof prover="4"><result status="valid" time="0.59"/></proof>
+  <proof prover="4"><result status="valid" time="0.36"/></proof>
   </goal>
   <goal name="VC modulus_pre_pre.1" expl="postcondition" proved="true">
   <transf name="rewrite" proved="true" arg1="Mul_distr_r2">
@@ -3973,7 +4197,7 @@
      <goal name="VC modulus_pre.0.0.0.0" expl="postcondition" proved="true">
      <transf name="replace" proved="true" arg1="((c *. b) *. (c *. b))" arg2="((c*.c) *. (b*.b))">
       <goal name="VC modulus_pre.0.0.0.0.0" expl="postcondition" proved="true">
-      <proof prover="1"><result status="valid" time="1.35" steps="33"/></proof>
+      <proof prover="1"><result status="valid" time="1.07" steps="33"/></proof>
       </goal>
       <goal name="VC modulus_pre.0.0.0.0.1" expl="equality hypothesis" proved="true">
       <proof prover="1"><result status="valid" time="0.01" steps="31"/></proof>
@@ -4015,7 +4239,7 @@
     <goal name="VC square_rt.2.1.0" expl="postcondition" proved="true">
     <transf name="rewrite" proved="true" arg1="result_def">
      <goal name="VC square_rt.2.1.0.0" expl="postcondition" proved="true">
-     <proof prover="1"><result status="valid" time="3.04" steps="48"/></proof>
+     <proof prover="1"><result status="valid" time="1.42" steps="48"/></proof>
      </goal>
     </transf>
     </goal>
@@ -4024,7 +4248,7 @@
   </transf>
   </goal>
   <goal name="VC square_rt.3" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.50"/></proof>
+  <proof prover="2"><result status="valid" time="0.31"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4051,7 +4275,7 @@
  <goal name="VC square_rt_infeq" expl="VC for square_rt_infeq" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC square_rt_infeq.0" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.49"/></proof>
+  <proof prover="2"><result status="valid" time="0.27"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4065,7 +4289,7 @@
    <goal name="VC square_rt_inf.0.1" expl="postcondition" proved="true">
    <transf name="case" proved="true" arg1="(square_rt x = square_rt y)">
     <goal name="VC square_rt_inf.0.1.0" expl="true case (postcondition)" proved="true">
-    <proof prover="0"><result status="valid" time="4.27"/></proof>
+    <proof prover="0"><result status="valid" time="3.79"/></proof>
     </goal>
     <goal name="VC square_rt_inf.0.1.1" expl="false case (postcondition)" proved="true">
     <proof prover="1"><result status="valid" time="0.09" steps="41"/></proof>
@@ -4230,7 +4454,7 @@
   <goal name="VC square_rt_c_one.1" expl="postcondition" proved="true">
   <transf name="rewrite" proved="true" arg1="square_rt_def">
    <goal name="VC square_rt_c_one.1.0" expl="postcondition" proved="true">
-   <proof prover="2"><result status="valid" time="0.41"/></proof>
+   <proof prover="2"><result status="valid" time="0.25"/></proof>
    </goal>
    <goal name="VC square_rt_c_one.1.1" expl="rewrite premises" proved="true">
    <proof prover="1"><result status="valid" time="0.02" steps="33"/></proof>
@@ -4395,7 +4619,7 @@
        <goal name="VC modulus_real_pos_inv.0.0.0.0.0.1" expl="postcondition" proved="true">
        <transf name="rewrite" proved="true" arg1="h">
         <goal name="VC modulus_real_pos_inv.0.0.0.0.0.1.0" expl="postcondition" proved="true">
-        <proof prover="2"><result status="valid" time="0.42"/></proof>
+        <proof prover="2"><result status="valid" time="0.26"/></proof>
         </goal>
        </transf>
        </goal>
@@ -4414,6 +4638,15 @@
    </transf>
    </goal>
   </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC modulus_real_neg" expl="VC for modulus_real_neg" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC modulus_real_neg.0" expl="postcondition" proved="true">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="valid" time="0.25"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4469,7 +4702,7 @@
         </transf>
         </goal>
         <goal name="VC strict_positive_modulus.0.1.0.0.0.1.1" expl="false case (asserted formula)" proved="true">
-        <proof prover="2"><result status="valid" time="0.31"/></proof>
+        <proof prover="2"><result status="valid" time="0.27"/></proof>
         </goal>
        </transf>
        </goal>
@@ -4498,7 +4731,7 @@
  <goal name="VC modulus_real" expl="VC for modulus_real" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC modulus_real.0" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.25"/></proof>
+  <proof prover="2"><result status="valid" time="0.22"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4559,7 +4792,7 @@
       <proof prover="0"><result status="valid" time="0.21"/></proof>
       </goal>
       <goal name="VC mult_modulus_pre.0.0.0.0.1" expl="equality hypothesis" proved="true">
-      <proof prover="1"><result status="valid" time="1.82" steps="37"/></proof>
+      <proof prover="1"><result status="valid" time="0.88" steps="37"/></proof>
       </goal>
      </transf>
      </goal>
@@ -4575,7 +4808,7 @@
     <goal name="VC mult_modulus_pre.0.1.0" expl="asserted formula" proved="true">
     <transf name="split_vc" proved="true" >
      <goal name="VC mult_modulus_pre.0.1.0.0" expl="asserted formula" proved="true">
-     <proof prover="3"><result status="valid" time="1.08"/></proof>
+     <proof prover="3"><result status="valid" time="0.50"/></proof>
      </goal>
     </transf>
     </goal>
@@ -4593,7 +4826,7 @@
     <goal name="VC mult_modulus_pre.1.0.0" expl="postcondition" proved="true">
     <transf name="rewrite" proved="true" arg1="H">
      <goal name="VC mult_modulus_pre.1.0.0.0" expl="postcondition" proved="true">
-     <proof prover="1"><result status="valid" time="1.73" steps="37"/></proof>
+     <proof prover="1"><result status="valid" time="0.89" steps="37"/></proof>
      </goal>
     </transf>
     </goal>
@@ -4692,6 +4925,108 @@
  <goal name="VC mult_modulus_rev" expl="VC for mult_modulus_rev" proved="true">
  <proof prover="1"><result status="valid" time="0.06" steps="35"/></proof>
  </goal>
+ <goal name="VC modulus_real_minus_bound" expl="VC for modulus_real_minus_bound" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC modulus_real_minus_bound.0" expl="postcondition" proved="true">
+  <transf name="split_vc" proved="true" >
+   <goal name="VC modulus_real_minus_bound.0.0" expl="postcondition" proved="true">
+   <proof prover="0"><result status="highfailure" time="1.46"/></proof>
+   <proof prover="1"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2"><result status="timeout" time="5.00"/></proof>
+   <proof prover="3"><result status="timeout" time="5.00"/></proof>
+   <proof prover="4"><result status="timeout" time="5.00"/></proof>
+   <proof prover="5"><result status="timeout" time="5.00"/></proof>
+   <transf name="replace" proved="true" arg1="(a -&#39;&#39; b)" arg2="(a -. b)" arg3="in" arg4="H">
+    <goal name="VC modulus_real_minus_bound.0.0.0" expl="postcondition" proved="true">
+    <transf name="case" proved="true" arg1="(a=b)">
+     <goal name="VC modulus_real_minus_bound.0.0.0.0" expl="true case (postcondition)" proved="true">
+     <proof prover="2"><result status="valid" time="0.37"/></proof>
+     </goal>
+     <goal name="VC modulus_real_minus_bound.0.0.0.1" expl="false case (postcondition)" proved="true">
+     <transf name="case" proved="true" arg1="(a&lt;.b)">
+      <goal name="VC modulus_real_minus_bound.0.0.0.1.0" expl="false case (true case. postcondition)" proved="true">
+      <proof prover="2"><result status="valid" time="0.48"/></proof>
+      </goal>
+      <goal name="VC modulus_real_minus_bound.0.0.0.1.1" expl="false case (postcondition)" proved="true">
+      <transf name="rewrite" proved="true" arg1="modulus_real_pos" arg2="in" arg3="H">
+       <goal name="VC modulus_real_minus_bound.0.0.0.1.1.0" expl="false case (postcondition)" proved="true">
+       <proof prover="2"><result status="valid" time="0.42"/></proof>
+       </goal>
+       <goal name="VC modulus_real_minus_bound.0.0.0.1.1.1" expl="rewrite premises" proved="true">
+       <proof prover="2"><result status="valid" time="0.07"/></proof>
+       </goal>
+       <goal name="VC modulus_real_minus_bound.0.0.0.1.1.2" expl="rewrite premises" proved="true">
+       <proof prover="2"><result status="valid" time="0.34"/></proof>
+       </goal>
+      </transf>
+      </goal>
+     </transf>
+     </goal>
+    </transf>
+    </goal>
+    <goal name="VC modulus_real_minus_bound.0.0.1" expl="equality hypothesis" proved="true">
+    <proof prover="2"><result status="valid" time="0.07"/></proof>
+    </goal>
+   </transf>
+   </goal>
+   <goal name="VC modulus_real_minus_bound.0.1" expl="postcondition" proved="true">
+   <proof prover="0"><result status="highfailure" time="2.32"/></proof>
+   <proof prover="1"><result status="timeout" time="5.00"/></proof>
+   <proof prover="2"><result status="timeout" time="5.00"/></proof>
+   <proof prover="3"><result status="timeout" time="5.00"/></proof>
+   <proof prover="4"><result status="timeout" time="5.00"/></proof>
+   <proof prover="5"><result status="timeout" time="5.00"/></proof>
+   <transf name="replace" proved="true" arg1="(a -&#39;&#39; b)" arg2="(a -. b)" arg3="in" arg4="H">
+    <goal name="VC modulus_real_minus_bound.0.1.0" expl="postcondition" proved="true">
+    <transf name="case" proved="true" arg1="(a=b)">
+     <goal name="VC modulus_real_minus_bound.0.1.0.0" expl="true case (postcondition)" proved="true">
+     <proof prover="2"><result status="valid" time="0.08"/></proof>
+     </goal>
+     <goal name="VC modulus_real_minus_bound.0.1.0.1" expl="false case (postcondition)" proved="true">
+     <transf name="case" proved="true" arg1="(a&lt;.b)">
+      <goal name="VC modulus_real_minus_bound.0.1.0.1.0" expl="false case (true case. postcondition)" proved="true">
+      <proof prover="0"><result status="highfailure" time="1.38"/></proof>
+      <proof prover="1"><result status="timeout" time="5.00"/></proof>
+      <proof prover="2"><result status="timeout" time="5.00"/></proof>
+      <proof prover="4"><result status="timeout" time="5.00"/></proof>
+      <proof prover="5"><result status="timeout" time="5.00"/></proof>
+      <transf name="replace" proved="true" arg1="(modulus (a -. b))" arg2="(b-.a)" arg3="in" arg4="H">
+       <goal name="VC modulus_real_minus_bound.0.1.0.1.0.0" expl="false case (true case. postcondition)" proved="true">
+       <proof prover="2"><result status="valid" time="0.07"/></proof>
+       </goal>
+       <goal name="VC modulus_real_minus_bound.0.1.0.1.0.1" expl="equality hypothesis" proved="true">
+       <proof prover="0"><result status="highfailure" time="1.59"/></proof>
+       <proof prover="1"><result status="timeout" time="5.00"/></proof>
+       <proof prover="4"><result status="valid" time="0.08"/></proof>
+       </goal>
+      </transf>
+      </goal>
+      <goal name="VC modulus_real_minus_bound.0.1.0.1.1" expl="false case (postcondition)" proved="true">
+      <transf name="rewrite" proved="true" arg1="modulus_real_pos" arg2="in" arg3="H">
+       <goal name="VC modulus_real_minus_bound.0.1.0.1.1.0" expl="false case (postcondition)" proved="true">
+       <proof prover="2"><result status="valid" time="0.44"/></proof>
+       </goal>
+       <goal name="VC modulus_real_minus_bound.0.1.0.1.1.1" expl="rewrite premises" proved="true">
+       <proof prover="2"><result status="valid" time="0.07"/></proof>
+       </goal>
+       <goal name="VC modulus_real_minus_bound.0.1.0.1.1.2" expl="rewrite premises" proved="true">
+       <proof prover="2"><result status="valid" time="0.35"/></proof>
+       </goal>
+      </transf>
+      </goal>
+     </transf>
+     </goal>
+    </transf>
+    </goal>
+    <goal name="VC modulus_real_minus_bound.0.1.1" expl="equality hypothesis" proved="true">
+    <proof prover="2"><result status="valid" time="0.07"/></proof>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
  <goal name="VC mult_real_modulus" expl="VC for mult_real_modulus" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC mult_real_modulus.0" expl="precondition" proved="true">
@@ -4702,6 +5037,37 @@
   </goal>
   <goal name="VC mult_real_modulus.2" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC mult_real_modulus_rev" expl="VC for mult_real_modulus_rev" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC mult_real_modulus_rev.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="39"/></proof>
+  </goal>
+  <goal name="VC mult_real_modulus_rev.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="39"/></proof>
+  </goal>
+  <goal name="VC mult_real_modulus_rev.2" expl="postcondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.03" steps="41"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC modulus_real_div" expl="VC for modulus_real_div">
+ <transf name="split_vc" >
+  <goal name="VC modulus_real_div.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.04" steps="39"/></proof>
+  </goal>
+  <goal name="VC modulus_real_div.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.08" steps="41"/></proof>
+  </goal>
+  <goal name="VC modulus_real_div.2" expl="postcondition">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1"><result status="timeout" time="5.00"/></proof>
+  <proof prover="2"><result status="timeout" time="5.00"/></proof>
+  <proof prover="3"><result status="timeout" time="5.00"/></proof>
+  <proof prover="4"><result status="timeout" time="5.00"/></proof>
+  <proof prover="5"><result status="timeout" time="5.00"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4741,7 +5107,7 @@
  <goal name="VC modulus_infeq" expl="VC for modulus_infeq" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC modulus_infeq.0" expl="postcondition" proved="true">
-  <proof prover="2"><result status="valid" time="0.49"/></proof>
+  <proof prover="2"><result status="valid" time="0.31"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4807,10 +5173,10 @@
     <goal name="VC modulus_simpl_leq.0.0.0" expl="true case (postcondition)" proved="true">
     <transf name="case" proved="true" arg1="(c_zero &lt;=. a)">
      <goal name="VC modulus_simpl_leq.0.0.0.0" expl="true case (postcondition)" proved="true">
-     <proof prover="2"><result status="valid" time="0.63"/></proof>
+     <proof prover="2"><result status="valid" time="0.41"/></proof>
      </goal>
      <goal name="VC modulus_simpl_leq.0.0.0.1" expl="false case (true case. postcondition)" proved="true">
-     <proof prover="3"><result status="valid" time="4.26"/></proof>
+     <proof prover="3"><result status="valid" time="3.04"/></proof>
      </goal>
     </transf>
     </goal>
@@ -4840,7 +5206,7 @@
    <goal name="VC modulus_simpl_leq_rev.0.0" expl="true case (postcondition)" proved="true">
    <transf name="case" proved="true" arg1="(real_ c)">
     <goal name="VC modulus_simpl_leq_rev.0.0.0" expl="true case (postcondition)" proved="true">
-    <proof prover="3"><result status="valid" time="4.78"/></proof>
+    <proof prover="3"><result status="valid" time="3.64"/></proof>
     </goal>
     <goal name="VC modulus_simpl_leq_rev.0.0.1" expl="false case (true case. postcondition)" proved="true">
     <proof prover="1"><result status="valid" time="0.02" steps="45"/></proof>
@@ -4892,7 +5258,7 @@
  <goal name="VC sum_frac" expl="VC for sum_frac" proved="true">
  <transf name="split_vc" proved="true" >
   <goal name="VC sum_frac.0" expl="postcondition" proved="true">
-  <proof prover="4"><result status="valid" time="0.35"/></proof>
+  <proof prover="4"><result status="valid" time="0.54"/></proof>
   </goal>
  </transf>
  </goal>
@@ -4900,6 +5266,22 @@
  <transf name="split_vc" proved="true" >
   <goal name="VC sum_frac_rev.0" expl="postcondition" proved="true">
   <proof prover="1"><result status="valid" time="0.05" steps="39"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC div_pos" expl="VC for div_pos" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC div_pos.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.04" steps="41"/></proof>
+  </goal>
+  <goal name="VC div_pos.1" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.02" steps="41"/></proof>
+  </goal>
+  <goal name="VC div_pos.2" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.07" steps="43"/></proof>
+  </goal>
+  <goal name="VC div_pos.3" expl="postcondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.09" steps="45"/></proof>
   </goal>
  </transf>
  </goal>

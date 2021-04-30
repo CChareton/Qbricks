@@ -921,6 +921,24 @@ lemma pi_sup_zero : c_zero <. pi
     assert {real_part x +* real_part z <=* real_part y +* real_part z };
     assert {real_part (x +. z) <=* real_part (y +. z) }
 
+  let lemma compat_order_add_left  (x y z : complex)
+      requires{x <=. y}
+      requires{real_ x}
+      requires{real_ y}
+      requires{real_ z}
+      ensures{ z +. x <=.  z +. y}
+  = compat_order_add x y z
+
+  let lemma compat_order_add_both  (x y z  t: complex)
+      requires{x <=. y}
+      requires{z <=. t}
+      requires{real_ x}
+      requires{real_ y}
+      requires{real_ z}
+      requires{real_ t}
+      ensures{ z +. x <=.  t +. y}
+    = compat_order_add_left x y z;
+      compat_order_add z t y
 
      
   let lemma compat_order_substr  (x y z : complex)
